@@ -40,7 +40,51 @@ Round_7 <- read_sav("r7_merged_data_34ctry.release.sav")
 
 ```{r setup, include=FALSE}
 
-#
+#Before appending the data. I recode all the necessary variables from the AB Data. 
+
+library(car)
+
+#Round 1 (Refused and Missing are Dropped)
+
+  #Institutional Trust (Police, Court of Law, Army, Electoral Commission)
+  
+  #Police 
+  Round_1$trspol <- recode(Round_1$trspol, "1=-0.250") 
+  Round_1$trspol <- recode(Round_1$trspol, "2=-0.125")
+  Round_1$trspol <- recode(Round_1$trspol, "9=0")
+  Round_1$trspol <- recode(Round_1$trspol, "3=0.125")
+  Round_1$trspol <- recode(Round_1$trspol, "4=0.250")
+  Round_1$trspol <- recode(Round_1$trspol, "98=NA")
+  Round_1$trspol <- recode(Round_1$trspol, "99=NA")
+  
+  #Courts
+  Round_1$trscts <- recode(Round_1$trscts, "1=-0.250") 
+  Round_1$trscts <- recode(Round_1$trscts, "2=-0.125")
+  Round_1$trscts <- recode(Round_1$trscts, "9=0")
+  Round_1$trscts <- recode(Round_1$trscts, "3=0.125")
+  Round_1$trscts <- recode(Round_1$trscts, "4=0.250")
+  Round_1$trscts <- recode(Round_1$trscts, "98=NA")
+  Round_1$trscts <- recode(Round_1$trscts, "99=NA")
+  #Army
+  Round_1$trsarm <- recode(Round_1$trsarm, "1=-0.250") 
+  Round_1$trsarm <- recode(Round_1$trsarm, "2=-0.125")
+  Round_1$trsarm <- recode(Round_1$trsarm, "9=0")
+  Round_1$trsarm <- recode(Round_1$trsarm, "3=0.125")
+  Round_1$trsarm <- recode(Round_1$trsarm, "4=0.250")
+  Round_1$trsarm <- recode(Round_1$trsarm, "98=NA")
+  Round_1$trsarm <- recode(Round_1$trsarm, "99=NA")
+  #Trust Electoral Commission
+  Round_1$trsnec <- recode(Round_1$trsnec, "1=-0.250") 
+  Round_1$trsnec <- recode(Round_1$trsnec, "2=-0.125")
+  Round_1$trsnec <- recode(Round_1$trsnec, "9=0")
+  Round_1$trsnec <- recode(Round_1$trsnec, "3=0.125")
+  Round_1$trsnec <- recode(Round_1$trsnec, "4=0.250")
+  Round_1$trsnec <- recode(Round_1$trsnec, "98=NA")
+  Round_1$trsnec <- recode(Round_1$trsnec, "99=NA")
+
+  #Institutional Trust Variable for Round 1. 
+  Round_1$int_trust <- Round_1$trspol + Round_1$trscts + Round_1$trsarm + Round_1$trsnec
+  
 
 
 
