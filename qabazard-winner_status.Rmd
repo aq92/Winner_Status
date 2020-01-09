@@ -203,7 +203,7 @@ library(car)
   Round_1$parcam <- recode(Round_1$parcam, "98=NA")
   Round_1$parcam <- recode(Round_1$parcam, "99=NA")
   
-    #Electoral Participation Index 
+    #Electoral Participation Index .
   Round_1$elec_part <- Round_1$parvot + Round_1$parral + Round_1$parcam
   
   
