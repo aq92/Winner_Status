@@ -1,0 +1,69 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: false
+    fig_caption: true
+    latex_engine: pdflatex
+    template: svm-latex-ms2.tex
+title: "e" 
+thanks: "The paper's revision history and the materials needed to reproduce its analyses can be found [on Github here](https://github.com/aq92/Winner_Status.git). Corresponding author: [ahmad-qabazard@uiowa.edu](mailto:ahmad-qabazard@uiowa.edu). Current version: `r format(Sys.time(), '%B %d, %Y')`."
+author:
+- name: Ahmad S. Qabazard
+  affiliation: University of Iowa
+abstract: "e"
+keywords: "e"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+fontsize: 12pt
+spacing: double
+bibliography: \dummy{`r file.path(getwd(),'qabazard-7450')`}
+
+biblio-style: apsr
+citecolor: black
+linkcolor: black
+endnote: no
+---
+```{r setup, include=FALSE}
+#Begin by making sure the data is in the correct place. The following commands bring the data in as they are named by AB. 
+
+#Load each survey round. 
+
+Round_1 <- read_sav("merged_r1_data.sav")
+Round_2 <- read_sav("merged_r2_data.sav")
+Round_3 <- read_sav("merged_r3_data.sav")
+Round_4 <- read_sav("merged_r4_data.sav")
+Round_5 <- read_sav("merged-round-5-data-34-countries-2011-2013-last-update-july-2015.sav")
+Round_6 <- read_sav("merged_r6_data_2016_36countries2.sav")
+Round_7 <- read_sav("r7_merged_data_34ctry.release.sav")
+
+```
+
+```{r setup, include=FALSE}
+
+#
+
+
+
+
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
