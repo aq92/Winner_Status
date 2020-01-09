@@ -206,10 +206,83 @@ library(car)
     #Electoral Participation Index .
   Round_1$elec_part <- Round_1$parvot + Round_1$parral + Round_1$parcam
   
+    #Political Interest (Moehler 2009 does not specify how she codes do not know responses. Since they are excluded from the coding part of the appendix I will omit then and check the number of observations)
+  Round_1$scint <- recode(Round_1$scint, "4=0")
+  Round_1$scint <- recode(Round_1$scint, "3=1")
+  Round_1$scint <- recode(Round_1$scint, "2=2")
+  Round_1$scint <- recode(Round_1$scint, "1=3")
+  Round_1$scint <- recode(Round_1$scint, "5=NA")
+  Round_1$scint <- recode(Round_1$scint, "98=NA")
+  Round_1$scint <- recode(Round_1$scint, "99=NA")
   
-
-
+    #Exposure to Mass Media (Same applies to do not knows here)
+    #Radio
+  Round_1$medrad <- recode(Round_1$medrad, "9=NA")
+  Round_1$medrad <- recode(Round_1$medrad, "98=NA")
+  Round_1$medrad <- recode(Round_1$medrad, "99=NA")
+    #TV News 
+  Round_1$medtv <- recode(Round_1$medtv, "9=NA")
+  Round_1$medtv <- recode(Round_1$medtv, "98=NA")
+  Round_1$medtv <- recode(Round_1$medtv, "99=NA")  
+    #Newspaper
+  Round_1$mednew <- recode(Round_1$mednew, "9=NA")
+  Round_1$mednew <- recode(Round_1$mednew, "98=NA")
+  Round_1$mednew <- recode(Round_1$mednew, "99=NA")  
   
+  #Education (Same applies to do not knows here)
+  Round_1$educ <- recode(Round_1$educ, "10=NA")
+  Round_1$educ <- recode(Round_1$educ, "98=NA")
+  Round_1$educ <- recode(Round_1$educ, "99=NA")
+  
+  #Gender (Female)
+  Round_1$gender <- recode(Round_1$gender, "2=1")
+  Round_1$gender <- recode(Round_1$gender, "1=0")
+  
+  #Age 
+  Round_1$age <- recode(Round_1$age, "0=NA")
+  Round_1$age <- recode(Round_1$age, "101=NA")
+  Round_1$age <- recode(Round_1$age, "999=NA")
+  
+  #Elections by Country
+    #Year (Since the first round does not include when the interview was conducted the year the last year of the round 1999/2001)
+    Round_1$year <- 2001
+    
+    #Country are recoded to the lastest code book (round 6)
+    Round_1$state[Round_1$country == 1] <- 3 #Botswana
+    Round_1$state[Round_1$country == 2] <- 11 #Ghana    
+    Round_1$state[Round_1$country == 3] <- 14   #Lesotho
+    Round_1$state[Round_1$country == 4] <- 17   #Malawi
+    Round_1$state[Round_1$country == 5] <- 18 #Mali
+    Round_1$state[Round_1$country == 6] <- 22  #Namibia
+    Round_1$state[Round_1$country == 7] <- 24  #Nigeria
+    Round_1$state[Round_1$country == 8] <- 28 #South Africa
+    Round_1$state[Round_1$country == 9] <- 31 #Tanzania
+    Round_1$state[Round_1$country == 10] <- 34 #Uganda
+    Round_1$state[Round_1$country == 11] <- 35 #Zambia
+    Round_1$state[Round_1$country == 12] <- 36 #Zimbabwe
+    
+    #Election Year
+    Round_1$election_year[Round_1$country == 1] <- 1999 #Botswana
+    Round_1$election_year[Round_1$country == 2] <- 1996 #Ghana    
+    Round_1$election_year[Round_1$country == 3] <- 1999   #Lesotho
+    Round_1$election_year[Round_1$country == 4] <- 1999   #Malawi
+    Round_1$election_year[Round_1$country == 5] <- 1997 #Mali
+    Round_1$election_year[Round_1$country == 6] <- 1999  #Namibia
+    Round_1$election_year[Round_1$country == 7] <- 1999  #Nigeria
+    Round_1$election_year[Round_1$country == 8] <- 1999 #South Africa
+    Round_1$election_year[Round_1$country == 9] <- 2000 #Tanzania
+    Round_1$election_year[Round_1$country == 10] <- 1996 #Uganda
+    Round_1$election_year[Round_1$country == 11] <- 1996 #Zambia
+    Round_1$election_year[Round_1$country == 12] <- 1996 #Zimbabwe    
+    
+    #Years since election
+    
+    Round_1$years_since_election = Round_1$year - Round_1$election_year
+    
+    
+    
+    
+      
 ```
 
 ## R Markdown
