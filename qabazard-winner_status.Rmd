@@ -85,11 +85,131 @@ library(car)
   #Institutional Trust Variable for Round 1. 
   Round_1$int_trust <- Round_1$trspol + Round_1$trscts + Round_1$trsarm + Round_1$trsnec
   
+  #Electoral Integrity
+  Round_1$pfrele <- recode(Round_1$pfrele, "1=-1")
+  Round_1$pfrele <- recode(Round_1$pfrele, "2=-0.5")
+  Round_1$pfrele <- recode(Round_1$pfrele, "9=0")
+  Round_1$pfrele <- recode(Round_1$pfrele, "3=0.5")
+  Round_1$pfrele <- recode(Round_1$pfrele, "4=1")
+  Round_1$pfrele <- recode(Round_1$pfrele, "98=NA")
+  Round_1$pfrele <- recode(Round_1$pfrele, "99=NA")
+
+  #Government Performance
+    #Education
+  Round_1$pfgedu <- recode(Round_1$pfgedu, "1=0")
+  Round_1$pfgedu <- recode(Round_1$pfgedu, "2=1")
+  Round_1$pfgedu <- recode(Round_1$pfgedu, "9=2")
+  Round_1$pfgedu <- recode(Round_1$pfgedu, "3=3")
+  Round_1$pfgedu <- recode(Round_1$pfgedu, "4=4")
+  Round_1$pfgedu <- recode(Round_1$pfgedu, "98=NA")
+  Round_1$pfgedu <- recode(Round_1$pfgedu, "99=NA")
+    #Health
+  Round_1$pfghlt <- recode(Round_1$pfghlt, "1=0")
+  Round_1$pfghlt <- recode(Round_1$pfghlt, "2=1")
+  Round_1$pfghlt <- recode(Round_1$pfghlt, "9=2")
+  Round_1$pfghlt <- recode(Round_1$pfghlt, "3=3")
+  Round_1$pfghlt <- recode(Round_1$pfghlt, "4=4")
+  Round_1$pfghlt <- recode(Round_1$pfghlt, "98=NA")
+  Round_1$pfghlt <- recode(Round_1$pfghlt, "99=NA")
+    #Jobs 
+  Round_1$pfeemp <- recode(Round_1$pfeemp, "1=0")
+  Round_1$pfeemp <- recode(Round_1$pfeemp, "2=1")
+  Round_1$pfeemp <- recode(Round_1$pfeemp, "9=2")
+  Round_1$pfeemp <- recode(Round_1$pfeemp, "3=3")
+  Round_1$pfeemp <- recode(Round_1$pfeemp, "4=4")
+  Round_1$pfeemp <- recode(Round_1$pfeemp, "98=NA")
+  Round_1$pfeemp <- recode(Round_1$pfeemp, "99=NA")
+    #Prices
+  Round_1$pfeprc <- recode(Round_1$pfeprc, "1=0")
+  Round_1$pfeprc <- recode(Round_1$pfeprc, "2=1")
+  Round_1$pfeprc <- recode(Round_1$pfeprc, "9=2")
+  Round_1$pfeprc <- recode(Round_1$pfeprc, "3=3")
+  Round_1$pfeprc <- recode(Round_1$pfeprc, "4=4")
+  Round_1$pfeprc <- recode(Round_1$pfeprc, "98=NA")
+  Round_1$pfeprc <- recode(Round_1$pfeprc, "99=NA")
+  
+  #Government Performance Index
+  Round_1$gov_perf <- Round_1$pfgedu + Round_1$pfghlt + Round_1$pfeemp + Round_1$pfeprc
+  
+  #Economic Performance 
+    #Satisfy with the condition of national economy today.
+  Round_1$pfenow <- recode(Round_1$pfenow, "1=0")
+  Round_1$pfenow <- recode(Round_1$pfenow, "2=1")
+  Round_1$pfenow <- recode(Round_1$pfenow, "6=2")
+  Round_1$pfenow <- recode(Round_1$pfenow, "3=2")  
+  Round_1$pfenow <- recode(Round_1$pfenow, "4=3")
+  Round_1$pfenow <- recode(Round_1$pfenow, "5=4")
+  Round_1$pfenow <- recode(Round_1$pfenow, "98=NA")
+  Round_1$pfenow <- recode(Round_1$pfenow, "99=NA")
+    #Present versus future (one year)
+  Round_1$pfefut <- recode(Round_1$pfefut, "1=0")
+  Round_1$pfefut <- recode(Round_1$pfefut, "2=1")
+  Round_1$pfefut <- recode(Round_1$pfefut, "9=2")
+  Round_1$pfefut <- recode(Round_1$pfefut, "3=2")
+  Round_1$pfefut <- recode(Round_1$pfefut, "4=3")  
+  Round_1$pfefut <- recode(Round_1$pfefut, "5=4")  
+  Round_1$pfefut <- recode(Round_1$pfefut, "98=NA")
+  Round_1$pfefut <- recode(Round_1$pfefut, "99=NA") 
+    #Present versus past satisfaction with economic life conditions
+  Round_1$pfepas <- recode(Round_1$pfepas, "1=0")
+  Round_1$pfepas <- recode(Round_1$pfepas, "2=1")
+  Round_1$pfepas <- recode(Round_1$pfepas, "9=2")
+  Round_1$pfepas <- recode(Round_1$pfepas, "3=2")
+  Round_1$pfepas <- recode(Round_1$pfepas, "4=3")  
+  Round_1$pfepas <- recode(Round_1$pfepas, "5=4")  
+  Round_1$pfepas <- recode(Round_1$pfepas, "98=NA")
+  Round_1$pfepas <- recode(Round_1$pfepas, "99=NA")  
+    #Own living conditions compared to others
+  Round_1$pfeerd <- recode(Round_1$pfeerd, "1=0")
+  Round_1$pfeerd <- recode(Round_1$pfeerd, "2=1")
+  Round_1$pfeerd <- recode(Round_1$pfeerd, "9=2")
+  Round_1$pfeerd <- recode(Round_1$pfeerd, "3=2")
+  Round_1$pfeerd <- recode(Round_1$pfeerd, "4=3")  
+  Round_1$pfeerd <- recode(Round_1$pfeerd, "5=4")  
+  Round_1$pfeerd <- recode(Round_1$pfeerd, "98=NA")
+  Round_1$pfeerd <- recode(Round_1$pfeerd, "99=NA")
+  
+  #Economic Satisfaction Index
+  Round_1$econ_sat <- Round_1$pfenow + Round_1$pfefut + Round_1$pfepas + Round_1$pfeerd
+  
+  #Electoral Participation
+    #Voting
+  Round_1$parvot <- recode(Round_1$parvot, "0=0")
+  Round_1$parvot <- recode(Round_1$parvot, "1=0")
+  Round_1$parvot <- recode(Round_1$parvot, "2=0")
+  Round_1$parvot <- recode(Round_1$parvot, "3=1")
+  Round_1$parvot <- recode(Round_1$parvot, "4=0")
+  Round_1$parvot <- recode(Round_1$parvot, "5=0")
+  Round_1$parvot <- recode(Round_1$parvot, "98=NA")
+  Round_1$parvot <- recode(Round_1$parvot, "99=NA")
+    
+    #Election Rally
+  Round_1$parral <- recode(Round_1$parral, "0=0")
+  Round_1$parral <- recode(Round_1$parral, "1=0.333")
+  Round_1$parral <- recode(Round_1$parral, "2=0.667")
+  Round_1$parral <- recode(Round_1$parral, "3=1")
+  Round_1$parral <- recode(Round_1$parral, "4=0")
+  Round_1$parral <- recode(Round_1$parral, "9=0")
+  Round_1$parral <- recode(Round_1$parral, "98=NA")
+  Round_1$parral <- recode(Round_1$parral, "99=NA")
+
+    #Work for political candidate
+  Round_1$parcam <- recode(Round_1$parcam, "0=0")
+  Round_1$parcam <- recode(Round_1$parcam, "1=0.333")
+  Round_1$parcam <- recode(Round_1$parcam, "2=0.667")
+  Round_1$parcam <- recode(Round_1$parcam, "3=1")
+  Round_1$parcam <- recode(Round_1$parcam, "4=0")
+  Round_1$parcam <- recode(Round_1$parcam, "9=0")
+  Round_1$parcam <- recode(Round_1$parcam, "98=NA")
+  Round_1$parcam <- recode(Round_1$parcam, "99=NA")
+  
+    #Electoral Participation Index 
+  Round_1$elec_part <- Round_1$parvot + Round_1$parral + Round_1$parcam
+  
+  
 
 
-
-
-
+  
 ```
 
 ## R Markdown
