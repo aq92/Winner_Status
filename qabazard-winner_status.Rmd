@@ -279,6 +279,49 @@ library(car)
     
     Round_1$years_since_election = Round_1$year - Round_1$election_year
     
+    #Turnovers
+    Round_1$pol_turnover[Round_1$country == 1] <- 0 #Botswana
+    Round_1$pol_turnover[Round_1$country == 2] <- 0 #Ghana    
+    Round_1$pol_turnover[Round_1$country == 3] <- 1   #Lesotho
+    Round_1$pol_turnover[Round_1$country == 4] <- 0   #Malawi
+    Round_1$pol_turnover[Round_1$country == 5] <- 0 #Mali
+    Round_1$pol_turnover[Round_1$country == 6] <- 0  #Namibia
+    Round_1$pol_turnover[Round_1$country == 7] <- 0  #Nigeria
+    Round_1$pol_turnover[Round_1$country == 8] <- 0 #South Africa
+    Round_1$pol_turnover[Round_1$country == 9] <- 0 #Tanzania
+    Round_1$pol_turnover[Round_1$country == 10] <- 0 #Uganda
+    Round_1$pol_turnover[Round_1$country == 11] <- 1 #Zambia
+    Round_1$pol_turnover[Round_1$country == 12] <- 0 #Zimbabwe 
+    
+        #Year of last turnover or first election
+    Round_1$year_turnover[Round_1$country == 1] <- 1966 #Botswana
+    Round_1$year_turnover[Round_1$country == 2] <- 1992 #Ghana    
+    Round_1$year_turnover[Round_1$country == 3] <- 1998   #Lesotho
+    Round_1$year_turnover[Round_1$country == 4] <- 1966   #Malawi
+    Round_1$year_turnover[Round_1$country == 5] <- 1992 #Mali
+    Round_1$year_turnover[Round_1$country == 6] <- 1990  #Namibia
+    Round_1$year_turnover[Round_1$country == 7] <- 1983  #Nigeria
+    Round_1$year_turnover[Round_1$country == 8] <- 1994 #South Africa
+    Round_1$year_turnover[Round_1$country == 9] <- 1962 #Tanzania
+    Round_1$year_turnover[Round_1$country == 10] <- 1963 #Uganda
+    Round_1$year_turnover[Round_1$country == 11] <- 1991 #Zambia
+    Round_1$year_turnover[Round_1$country == 12] <- 1980 #Zimbabwe  
+    
+      #Winner 
+    Round_1$winner <- 0 
+    Round_1$winner[Round_1$pidwin==2] <- 1
+    Round_1$winner[Round_1$pidwin==8] <- NA
+    Round_1$winner[Round_1$pidwin==9] <- NA
+    Round_1$winner[Round_1$pidwin==99] <- NA
+    
+    #Independent
+    Round_1$independent <- 0
+    Round_1$independent[Round_1$pidwin == 1] <- 1
+    Round_1$independent[Round_1$pidwin == 8] <- NA
+    Round_1$independent[Round_1$pidwin == 9] <- NA
+    Round_1$independent[Round_1$pidwin == 99] <- NA
+    
+    
     
     
     
