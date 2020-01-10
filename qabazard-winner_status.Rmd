@@ -395,7 +395,7 @@ library(car)
   Round_2$q45c <- recode(Round_2$q45c, "-1=NA")
   
   #Government Performance Index
-  Round_2$gov_perf <- Round_1$q45g + Round_2$q45f + Round_2$q45b + Round_2$q45c
+  Round_2$gov_perf <- Round_2$q45g + Round_2$q45f + Round_2$q45b + Round_2$q45c
   
     #Economic Performance 
     #Satisfy with the condition of national economy today.
@@ -436,7 +436,7 @@ library(car)
   Round_2$q1b <- recode(Round_2$q1b, "-1=NA")
   
   #Economic Satisfaction Index
-  Round_2$econ_sat <- Round_1$q1a + Round_1$q4a + Round_1$q3a + Round_1$q1b
+  Round_2$econ_sat <- Round_2$q1a + Round_2$q4a + Round_2$q3a + Round_2$q1b
   
 #NO Electoral Participation Index because none of the items included by Moehler (2009), including whether or not a person voted, are included in this round. 
   
@@ -463,19 +463,19 @@ library(car)
   Round_2$q26c <- recode(Round_2$q26c, "-1=NA") 
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
-  Round_2$educ <- recode(Round_2$educ, "0=0")
-  Round_2$educ <- recode(Round_2$educ, "98=NA")
-  Round_2$educ <- recode(Round_2$educ, "99=NA")
-  Round_2$educ <- recode(Round_2$educ, "-1=NA")
+  Round_2$educ <- recode(Round_2$q84, "0=0")
+  Round_2$educ <- recode(Round_2$q84, "98=NA")
+  Round_2$educ <- recode(Round_2$q84, "99=NA")
+  Round_2$educ <- recode(Round_2$q84, "-1=NA")
   
   #Gender (Female)
-  Round_2$gender <- recode(Round_2$gender, "2=1")
-  Round_2$gender <- recode(Round_2$gender, "1=0")
+  Round_2$gender <- recode(Round_2$q96, "2=1")
+  Round_2$gender <- recode(Round_2$q96, "1=0")
   
   #Age 
-  Round_2$age <- recode(Round_2$age, "-1=NA")
-  Round_2$age <- recode(Round_2$age, "998=NA")
-  Round_2$age <- recode(Round_2$age, "999=NA")  
+  Round_2$age <- recode(Round_2$q80, "-1=NA")
+  Round_2$age <- recode(Round_2$q80, "998=NA")
+  Round_2$age <- recode(Round_2$q80, "999=NA")  
 
   #Elections by Country
     #Year (Interview year is the last year of the round.)
@@ -583,13 +583,185 @@ library(car)
     Round_2$winner[Round_2$q87a==999] <- NA
     
     #Independent
-    Round_1$independent <- 0
-    Round_1$independent[Round_1$q87a == 0] <- 1
-    Round_1$independent[Round_1$q87a == 998] <- NA
-    Round_1$independent[Round_1$q87a == 999] <- NA
-    Round_1$independent[Round_1$q87a == -1] <- NA
+    Round_2$independent <- 0
+    Round_2$independent[Round_2$q87a == 0] <- 1
+    Round_2$independent[Round_2$q87a == 998] <- NA
+    Round_2$independent[Round_2$q87a == 999] <- NA
+    Round_2$independent[Round_2$q87a == -1] <- NA
     
     
+    #Round 3 
+ #Institutional Trust (Police, Court of Law, Army, Electoral Commission)
+  
+  #Police 
+  Round_3$q55h <- recode(Round_3$q55h, "0=-0.250") 
+  Round_3$q55h <- recode(Round_3$q55h, "1=-0.125")
+  Round_3$q55h <- recode(Round_3$q55h, "9=0")
+  Round_3$q55h <- recode(Round_3$q55h, "2=0.125")
+  Round_3$q55h <- recode(Round_3$q55h, "3=0.250")
+  Round_3$q55h <- recode(Round_3$q55h, "98=NA")
+  Round_3$q55h <- recode(Round_3$q55h, "-1=NA")
+  
+  #Courts
+  Round_3$q55i <- recode(Round_3$q55i, "0=-0.250") 
+  Round_3$q55i <- recode(Round_3$q55i, "1=-0.125")
+  Round_3$q55i <- recode(Round_3$q55i, "9=0")
+  Round_3$q55i <- recode(Round_3$q55i, "2=0.125")
+  Round_3$q55i <- recode(Round_3$q55i, "3=0.250")
+  Round_3$q55i <- recode(Round_3$q55i, "98=NA")
+  Round_3$q55i <- recode(Round_3$q55i, "-1=NA")
+  #Army
+  Round_3$q55g <- recode(Round_3$q55g, "0=-0.250") 
+  Round_3$q55g <- recode(Round_3$q55g, "1=-0.125")
+  Round_3$q55g <- recode(Round_3$q55g, "9=0")
+  Round_3$q55g <- recode(Round_3$q55g, "2=0.125")
+  Round_3$q55g <- recode(Round_3$q55g, "3=0.250")
+  Round_3$q55g <- recode(Round_3$q55g, "98=NA")
+  Round_3$q55g <- recode(Round_3$q55g, "-1=NA")
+  #Trust Electoral Commission
+  Round_3$q55c <- recode(Round_3$q55c, "0=-0.250") 
+  Round_3$q55c <- recode(Round_3$q55c, "1=-0.125")
+  Round_3$q55c <- recode(Round_3$q55c, "9=0")
+  Round_3$q55c <- recode(Round_3$q55c, "2=0.125")
+  Round_3$q55c <- recode(Round_3$q55c, "3=0.250")
+  Round_3$q55c <- recode(Round_3$q55c, "98=NA")
+  Round_3$q55c <- recode(Round_3$q55c, "-1=NA")
+
+  #Institutional Trust Variable for Round 1. 
+  Round_3$int_trust <- Round_3$q55h + Round_3$q55i + Round_3$q55g + Round_3$q55c
+  
+    #Government Performance
+    #Education
+  Round_3$q65g <- recode(Round_3$q65g, "1=0")
+  Round_3$q65g <- recode(Round_3$q65g, "2=1")
+  Round_3$q65g <- recode(Round_3$q65g, "9=2")
+  Round_3$q65g <- recode(Round_3$q65g, "3=3")
+  Round_3$q65g <- recode(Round_3$q65g, "4=4")
+  Round_3$q65g <- recode(Round_3$q65g, "98=NA")
+  Round_3$q65g <- recode(Round_3$q65g, "-1=NA")
+    #Health
+  Round_3$q65f <- recode(Round_3$q65f, "1=0")
+  Round_3$q65f <- recode(Round_3$q65f, "2=1")
+  Round_3$q65f <- recode(Round_3$q65f, "9=2")
+  Round_3$q65f <- recode(Round_3$q65f, "3=3")
+  Round_3$q65f <- recode(Round_3$q65f, "4=4")
+  Round_3$q65f <- recode(Round_3$q65f, "98=NA")
+  Round_3$q65f <- recode(Round_3$q65f, "-1=NA")
+    #Jobs 
+  Round_3$q65b <- recode(Round_3$q65b, "1=0")
+  Round_3$q65b <- recode(Round_3$q65b, "2=1")
+  Round_3$q65b <- recode(Round_3$q65b, "9=2")
+  Round_3$q65b <- recode(Round_3$q65b, "3=3")
+  Round_3$q65b <- recode(Round_3$q65b, "4=4")
+  Round_3$q65b <- recode(Round_3$q65b, "98=NA")
+  Round_3$q65b <- recode(Round_3$q65b, "-1=NA")
+    #Prices
+  Round_3$q65c <- recode(Round_3$q65c, "1=0")
+  Round_3$q65c <- recode(Round_3$q65c, "2=1")
+  Round_3$q65c <- recode(Round_3$q65c, "9=2")
+  Round_3$q65c <- recode(Round_3$q65c, "3=3")
+  Round_3$q65c <- recode(Round_3$q65c, "4=4")
+  Round_3$q65c <- recode(Round_3$q65c, "98=NA")
+  Round_3$q65c <- recode(Round_3$q65c, "-1=NA")
+  
+  #Government Performance Index
+  Round_3$gov_perf <- Round_3$q65g + Round_3$q65f + Round_3$q65b + Round_3$q65c
+  
+    #Economic Performance 
+    #Satisfy with the condition of national economy today.
+  Round_3$q4a <- recode(Round_3$q4a, "1=0")
+  Round_3$q4a <- recode(Round_3$q4a, "2=1")
+  Round_3$q4a <- recode(Round_3$q4a, "9=2")
+  Round_3$q4a <- recode(Round_3$q4a, "3=2")  
+  Round_3$q4a <- recode(Round_3$q4a, "4=3")
+  Round_3$q4a <- recode(Round_3$q4a, "5=4")
+  Round_3$q4a <- recode(Round_3$q4a, "998=NA")
+  Round_3$q4a <- recode(Round_3$q4a, "-1=NA")
+    #Present versus future (one year)
+  Round_3$q7a <- recode(Round_3$q7a, "1=0")
+  Round_3$q7a <- recode(Round_3$q7a, "2=1")
+  Round_3$q7a <- recode(Round_3$q7a, "9=2")
+  Round_3$q7a <- recode(Round_3$q7a, "3=2")  
+  Round_3$q7a <- recode(Round_3$q7a, "4=3")
+  Round_3$q7a <- recode(Round_3$q7a, "5=4")
+  Round_3$q7a <- recode(Round_3$q7a, "998=NA")
+  Round_3$q7a <- recode(Round_3$q7a, "-1=NA")
+    #Present versus past satisfaction with economic life conditions
+  Round_3$q6a <- recode(Round_3$q6a, "1=0")
+  Round_3$q6a <- recode(Round_3$q6a, "2=1")
+  Round_3$q6a <- recode(Round_3$q6a, "9=2")
+  Round_3$q6a <- recode(Round_3$q6a, "3=2")  
+  Round_3$q6a <- recode(Round_3$q6a, "4=3")
+  Round_3$q6a <- recode(Round_3$q6a, "5=4")
+  Round_3$q6a <- recode(Round_3$q6a, "998=NA")
+  Round_3$q6a <- recode(Round_3$q6a, "-1=NA")
+    #Own living conditions compared to others
+  Round_3$q5 <- recode(Round_3$q5, "1=0")
+  Round_3$q5 <- recode(Round_3$q5, "2=1")
+  Round_3$q5 <- recode(Round_3$q5, "9=2")
+  Round_3$q5 <- recode(Round_3$q5, "3=2")  
+  Round_3$q5 <- recode(Round_3$q5, "4=3")
+  Round_3$q5 <- recode(Round_3$q5, "5=4")
+  Round_3$q5 <- recode(Round_3$q5, "998=NA")
+  Round_3$q5 <- recode(Round_3$q5, "-1=NA")
+  
+  #Economic Satisfaction Index
+  Round_3$econ_sat <- Round_3$q7a + Round_3$q7a + Round_3$q6a + Round_3$q5  
+  
+  #Participation: Since the only variable Moehler 2009 includes in this index and included in this round is voting. Use is it as a binary indicator of participation. 
+  
+  Round_3$q30 <- recode(Round_3$q30, "1=1")
+  Round_3$q30 <- recode(Round_3$q30, "2=0")
+  Round_3$q30 <- recode(Round_3$q30, "3=0")
+  Round_3$q30 <- recode(Round_3$q30, "4=0")
+  Round_3$q30 <- recode(Round_3$q30, "5=0")
+  Round_3$q30 <- recode(Round_3$q30, "6=0")
+  Round_3$q30 <- recode(Round_3$q30, "7=0")
+  Round_3$q30 <- recode(Round_3$q30, "9=0")
+  Round_3$q30 <- recode(Round_3$q30, "98=NA")
+  Round_3$q30 <- recode(Round_3$q30, "-1=NA")
+
+  #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
+  Round_3$q16 <- recode(Round_3$q16, "0=0")
+  Round_3$q16 <- recode(Round_3$q16, "1=1")
+  Round_3$q16 <- recode(Round_3$q16, "2=2")
+  Round_3$q16 <- recode(Round_3$q16, "3=3")  
+  Round_3$q16 <- recode(Round_3$q16, "9=NA")
+  Round_3$q16 <- recode(Round_3$q16, "98=NA")
+  Round_3$q16 <- recode(Round_3$q16, "-1=NA")
+  
+    #Exposure to Mass Media (Same applies to do not knows here)
+    #Radio
+  Round_3$q15a <- recode(Round_3$q15a, "9=NA")
+  Round_3$q15a <- recode(Round_3$q15a, "98=NA")
+  Round_3$q15a <- recode(Round_3$q15a, "-1=NA")
+    #TV News 
+  Round_3$q15b <- recode(Round_3$q15b, "9=NA")
+  Round_3$q15b <- recode(Round_3$q15b, "98=NA")
+  Round_3$q15b <- recode(Round_3$q15b, "-1=NA")
+    #Newspaper
+  Round_3$q15c <- recode(Round_3$q15c, "9=NA")
+  Round_3$q15c <- recode(Round_3$q15c, "98=NA")
+  Round_3$q15c <- recode(Round_3$q15c, "-1=NA")
+  
+  #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
+  Round_3$educ <- recode(Round_3$q90, "0=0")
+  Round_3$educ <- recode(Round_3$q90, "98=NA")
+  Round_3$educ <- recode(Round_3$q90, "99=NA")
+  Round_3$educ <- recode(Round_3$q90, "-1=NA")
+  
+  #Gender (Female)
+  Round_3$gender <- recode(Round_3$q101, "2=1")
+  Round_3$gender <- recode(Round_3$q101, "1=0")
+  
+  #Age 
+  Round_3$age <- recode(Round_3$q1, "-1=NA")
+  Round_3$age <- recode(Round_3$q1, "998=NA")
+  Round_3$age <- recode(Round_3$q1, "999=NA")  
+  
+  
+
+      
     
     
           
