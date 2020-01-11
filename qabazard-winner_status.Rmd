@@ -951,7 +951,7 @@ library(car)
   Round_4$Q57D <- recode(Round_4$Q57D, "-1=NA")
   
   #Government Performance Index
-  Round_3$gov_perf <- Round_3$Q57H + Round_3$Q57G + Round_3$Q57C + Round_3$Q57D
+  Round_4$gov_perf <- Round_4$Q57H + Round_4$Q57G + Round_4$Q57C + Round_4$Q57D
   
     #Economic Performance 
     #Satisfy with the condition of national economy today.
@@ -1008,13 +1008,13 @@ library(car)
   Round_4$Q23D <- recode(Round_4$Q23D, "-1=NA")
 
   #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
-  Round_4$Q13 <- recode(Round_4$Q16, "0=0")
-  Round_4$Q13 <- recode(Round_4$Q16, "1=1")
-  Round_4$Q13 <- recode(Round_4$Q16, "2=2")
-  Round_4$Q13 <- recode(Round_4$Q16, "3=3")  
-  Round_4$Q13 <- recode(Round_4$Q16, "9=NA")
-  Round_4$Q13 <- recode(Round_4$Q16, "998=NA")
-  Round_4$Q13 <- recode(Round_4$Q16, "-1=NA")
+  Round_4$Q13 <- recode(Round_4$Q13, "0=0")
+  Round_4$Q13 <- recode(Round_4$Q13, "1=1")
+  Round_4$Q13 <- recode(Round_4$Q13, "2=2")
+  Round_4$Q13 <- recode(Round_4$Q13, "3=3")  
+  Round_4$Q13 <- recode(Round_4$Q13, "9=NA")
+  Round_4$Q13 <- recode(Round_4$Q13, "998=NA")
+  Round_4$Q13 <- recode(Round_4$Q13, "-1=NA")
   
     #Exposure to Mass Media (Same applies to do not knows here)
     #Radio
@@ -1179,7 +1179,337 @@ library(car)
     Round_4$independent[Round_4$Q85 == 9] <- 1
     Round_4$independent[Round_4$Q85 == -1] <- NA
       
+    #Round 5 
+    #Institutional Trust (Police, Court of Law, Army, Electoral Commission)
+  
+  #Police 
+  Round_5$Q59H <- recode(Round_5$Q59H, "0=-0.250") 
+  Round_5$Q59H <- recode(Round_5$Q59H, "1=-0.125")
+  Round_5$Q59H <- recode(Round_5$Q59H, "9=0")
+  Round_5$Q59H <- recode(Round_5$Q59H, "2=0.125")
+  Round_5$Q59H <- recode(Round_5$Q59H, "3=0.250")
+  Round_5$Q59H <- recode(Round_5$Q59H, "998=NA")
+  Round_5$Q59H <- recode(Round_5$Q59H, "-1=NA")
+  
+  #Courts
+  Round_5$Q59J <- recode(Round_5$Q59J, "0=-0.250") 
+  Round_5$Q59J <- recode(Round_5$Q59J, "1=-0.125")
+  Round_5$Q59J <- recode(Round_5$Q59J, "9=0")
+  Round_5$Q59J <- recode(Round_5$Q59J, "2=0.125")
+  Round_5$Q59J <- recode(Round_5$Q59J, "3=0.250")
+  Round_5$Q59J <- recode(Round_5$Q59J, "998=NA")
+  Round_5$Q59J <- recode(Round_5$Q59J, "-1=NA")
+  
+  
+  #Army
+  Round_5$Q59I <- recode(Round_5$Q59I, "0=-0.250") 
+  Round_5$Q59I <- recode(Round_5$Q59I, "1=-0.125")
+  Round_5$Q59I <- recode(Round_5$Q59I, "9=0")
+  Round_5$Q59I <- recode(Round_5$Q59I, "2=0.125")
+  Round_5$Q59I <- recode(Round_5$Q59I, "3=0.250")
+  Round_5$Q59I <- recode(Round_5$Q59I, "998=NA")
+  Round_5$Q59I <- recode(Round_5$Q59I, "-1=NA")
+  
+  #Trust Electoral Commission
+  Round_5$Q59C <- recode(Round_5$Q59C, "0=-0.250") 
+  Round_5$Q59C <- recode(Round_5$Q59C, "1=-0.125")
+  Round_5$Q59C <- recode(Round_5$Q59C, "9=0")
+  Round_5$Q59C <- recode(Round_5$Q59C, "2=0.125")
+  Round_5$Q59C <- recode(Round_5$Q59C, "3=0.250")
+  Round_5$Q59C <- recode(Round_5$Q59C, "998=NA")
+  Round_5$Q59C <- recode(Round_5$Q59C, "-1=NA")
+
+  #Institutional Trust Variable for Round 1. 
+  Round_5$int_trust <- Round_5$Q59H + Round_5$Q59J + Round_5$Q59I + Round_5$Q59C 
+  
+    #Government Performance
+    #Education
+  Round_5$Q65H <- recode(Round_5$Q65H, "1=0")
+  Round_5$Q65H <- recode(Round_5$Q65H, "2=1")
+  Round_5$Q65H <- recode(Round_5$Q65H, "9=2")
+  Round_5$Q65H <- recode(Round_5$Q65H, "3=3")
+  Round_5$Q65H <- recode(Round_5$Q65H, "4=4")
+  Round_5$Q65H <- recode(Round_5$Q65H, "998=NA")
+  Round_5$Q65H <- recode(Round_5$Q65H, "-1=NA")
+    #Health
+  Round_5$Q65G <- recode(Round_5$Q65G, "1=0")
+  Round_5$Q65G <- recode(Round_5$Q65G, "2=1")
+  Round_5$Q65G <- recode(Round_5$Q65G, "9=2")
+  Round_5$Q65G <- recode(Round_5$Q65G, "3=3")
+  Round_5$Q65G <- recode(Round_5$Q65G, "4=4")
+  Round_5$Q65G <- recode(Round_5$Q65G, "998=NA")
+  Round_5$Q65G <- recode(Round_5$Q65G, "-1=NA")
+    #Jobs 
+  Round_5$Q65C <- recode(Round_5$Q65C, "1=0")
+  Round_5$Q65C <- recode(Round_5$Q65C, "2=1")
+  Round_5$Q65C <- recode(Round_5$Q65C, "9=2")
+  Round_5$Q65C <- recode(Round_5$Q65C, "3=3")
+  Round_5$Q65C <- recode(Round_5$Q65C, "4=4")
+  Round_5$Q65C <- recode(Round_5$Q65C, "998=NA")
+  Round_5$Q65C <- recode(Round_5$Q65C, "-1=NA")
+    #Prices
+  Round_5$Q65D <- recode(Round_5$Q65D, "1=0")
+  Round_5$Q65D <- recode(Round_5$Q65D, "2=1")
+  Round_5$Q65D <- recode(Round_5$Q65D, "9=2")
+  Round_5$Q65D <- recode(Round_5$Q65D, "3=3")
+  Round_5$Q65D <- recode(Round_5$Q65D, "4=4")
+  Round_5$Q65D <- recode(Round_5$Q65D, "998=NA")
+  Round_5$Q65D <- recode(Round_5$Q65D, "-1=NA")
+  
+  #Government Performance Index
+  Round_5$gov_perf <- Round_5$Q65H + Round_5$Q65G + Round_5$Q65C + Round_5$Q65D
+  
+    #Economic Performance 
+    #Satisfy with the condition of national economy today.
+  Round_5$Q3A <- recode(Round_5$Q3A, "1=0")
+  Round_5$Q3A <- recode(Round_5$Q3A, "2=1")
+  Round_5$Q3A <- recode(Round_5$Q3A, "9=2")
+  Round_5$Q3A <- recode(Round_5$Q3A, "3=2")  
+  Round_5$Q3A <- recode(Round_5$Q3A, "4=3")
+  Round_5$Q3A <- recode(Round_5$Q3A, "5=4")
+  Round_5$Q3A <- recode(Round_5$Q3A, "998=NA")
+  Round_5$Q3A <- recode(Round_5$Q3A, "-1=NA")
+    #Present versus future (one year)
+  Round_5$Q6A <- recode(Round_5$Q6A, "1=0")
+  Round_5$Q6A <- recode(Round_5$Q6A, "2=1")
+  Round_5$Q6A <- recode(Round_5$Q6A, "9=2")
+  Round_5$Q6A <- recode(Round_5$Q6A, "3=2")  
+  Round_5$Q6A <- recode(Round_5$Q6A, "4=3")
+  Round_5$Q6A <- recode(Round_5$Q6A, "5=4")
+  Round_5$Q6A <- recode(Round_5$Q6A, "998=NA")
+  Round_5$Q6A <- recode(Round_5$Q6A, "-1=NA")
+    #Present versus past satisfaction with economic life conditions
+  Round_5$Q5A <- recode(Round_5$Q5A, "1=0")
+  Round_5$Q5A <- recode(Round_5$Q5A, "2=1")
+  Round_5$Q5A <- recode(Round_5$Q5A, "9=2")
+  Round_5$Q5A <- recode(Round_5$Q5A, "3=2")  
+  Round_5$Q5A <- recode(Round_5$Q5A, "4=3")
+  Round_5$Q5A <- recode(Round_5$Q5A, "5=4")
+  Round_5$Q5A <- recode(Round_5$Q5A, "998=NA")
+  Round_5$Q5A <- recode(Round_5$Q5A, "-1=NA")
+    #Own living conditions compared to others
+  Round_5$Q4 <- recode(Round_5$Q4, "1=0")
+  Round_5$Q4 <- recode(Round_5$Q4, "2=1")
+  Round_5$Q4 <- recode(Round_5$Q4, "9=2")
+  Round_5$Q4 <- recode(Round_5$Q4, "3=2")  
+  Round_5$Q4 <- recode(Round_5$Q4, "4=3")
+  Round_5$Q4 <- recode(Round_5$Q4, "5=4")
+  Round_5$Q4 <- recode(Round_5$Q4, "998=NA")
+  Round_5$Q4 <- recode(Round_5$Q4, "-1=NA")
+  
+  #Economic Satisfaction Index
+  Round_5$econ_sat <- Round_5$Q3A + Round_5$Q6A + Round_5$Q5A + Round_5$Q4  
+  
+  #Participation: Since the only variable Moehler 2009 includes in this index and included in this round is voting. Use is it as a binary indicator of participation.
+  
+  Round_5$Q27 <- recode(Round_5$Q27, "1=1")
+  Round_5$Q27 <- recode(Round_5$Q27, "2=0")
+  Round_5$Q27 <- recode(Round_5$Q27, "3=0")
+  Round_5$Q27 <- recode(Round_5$Q27, "4=0")
+  Round_5$Q27 <- recode(Round_5$Q27, "5=0")
+  Round_5$Q27 <- recode(Round_5$Q27, "6=0")
+  Round_5$Q27 <- recode(Round_5$Q27, "7=0")
+  Round_5$Q27 <- recode(Round_5$Q27, "9=0")
+  Round_5$Q27 <- recode(Round_5$Q27, "998=NA")
+  Round_5$Q27 <- recode(Round_5$Q27, "-1=NA")
+
+  #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
+  Round_5$Q14 <- recode(Round_5$Q14, "0=0")
+  Round_5$Q14 <- recode(Round_5$Q14, "1=1")
+  Round_5$Q14 <- recode(Round_5$Q14, "2=2")
+  Round_5$Q14 <- recode(Round_5$Q14, "3=3")  
+  Round_5$Q14 <- recode(Round_5$Q14, "9=NA")
+  Round_5$Q14 <- recode(Round_5$Q14, "998=NA")
+  Round_5$Q14 <- recode(Round_5$Q14, "-1=NA")
+  
+    #Exposure to Mass Media (Same applies to do not knows here)
+    #Radio
+  Round_5$Q13A <- recode(Round_5$Q13A, "9=NA")
+  Round_5$Q13A <- recode(Round_5$Q13A, "998=NA")
+  Round_5$Q13A <- recode(Round_5$Q13A, "-1=NA")
+    #TV News 
+  Round_5$Q13B <- recode(Round_5$Q13B, "9=NA")
+  Round_5$Q13B <- recode(Round_5$Q13B, "998=NA")
+  Round_5$Q13B <- recode(Round_5$Q13B, "-1=NA")
+    #Newspaper
+  Round_5$Q13C <- recode(Round_5$Q13C, "9=NA")
+  Round_5$Q13C <- recode(Round_5$Q13C, "998=NA")
+  Round_5$Q13C <- recode(Round_5$Q13C, "-1=NA")
+  
+  #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
+  Round_5$educ <- recode(Round_5$Q97, "0=0")
+  Round_5$educ <- recode(Round_5$Q97, "998=NA")
+  Round_5$educ <- recode(Round_5$Q97, "99=NA")
+  Round_5$educ <- recode(Round_5$Q97, "-1=NA")
+  
+  #Gender (Female)
+  Round_5$gender <- recode(Round_5$Q101, "2=1")
+  Round_5$gender <- recode(Round_5$Q101, "1=0")
+  
+  #Age 
+  Round_5$age <- recode(Round_5$Q1, "-1=NA")
+  Round_5$age <- recode(Round_5$Q1, "998=NA")
+  Round_5$age <- recode(Round_5$Q1, "999=NA")  
+  
+  #Elections by Country
+    #Year (Interview year is the last year of the round.)
+    Round_5$year <- 2013
     
+    #Country are recoded to the lastest code book (round 6)
+    Round_5$state[Round_5$COUNTRY_ALPHA == 3] <- 3 #Botswana
+    Round_5$state[Round_5$COUNTRY_ALPHA == 11] <- 11 #Ghana    
+    Round_5$state[Round_5$COUNTRY_ALPHA == 14] <- 14   #Lesotho
+    Round_5$state[Round_5$COUNTRY_ALPHA == 17] <- 17   #Malawi
+    Round_5$state[Round_5$COUNTRY_ALPHA == 18] <- 18 #Mali
+    Round_5$state[Round_5$COUNTRY_ALPHA == 22] <- 22  #Namibia
+    Round_5$state[Round_5$COUNTRY_ALPHA == 24] <- 24  #Nigeria
+    Round_5$state[Round_5$COUNTRY_ALPHA == 27] <- 28 #South Africa
+    Round_5$state[Round_5$COUNTRY_ALPHA == 30] <- 31 #Tanzania
+    Round_5$state[Round_5$COUNTRY_ALPHA == 33] <- 34 #Uganda
+    Round_5$state[Round_5$COUNTRY_ALPHA == 34] <- 35 #Zambia
+    Round_5$state[Round_5$COUNTRY_ALPHA == 35] <- 36 #Zimbabwe
+    Round_5$state[Round_5$COUNTRY_ALPHA == 7] <- 7 #Cape Verde    
+    Round_5$state[Round_5$COUNTRY_ALPHA == 13] <- 13 #Kenya    
+    Round_5$state[Round_5$COUNTRY_ALPHA == 21] <- 21 #Mozambique    
+    Round_5$state[Round_5$COUNTRY_ALPHA == 25] <- 26 #Senegal   
+    Round_5$state[Round_5$COUNTRY_ALPHA == 16] <- 16 #Madagascar
+    Round_5$state[Round_5$COUNTRY_ALPHA == 2] <- 2 #Benin
+    Round_5$state[Round_5$COUNTRY_ALPHA == 4] <- 4 #Burkina Faso 
+    Round_5$state[Round_5$COUNTRY_ALPHA == 15] <- 15 #Liberia 
+    Round_5$state[Round_5$COUNTRY_ALPHA == 5] <- 37 #Burundi  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 6] <- 6  #Cameroon   
+    Round_5$state[Round_5$COUNTRY_ALPHA == 8] <- 8  #Cote d'Ivoire  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 12] <- 12  #Guinea  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 19] <- 19  #Mauritius  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 23] <- 24  #Niger  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 26] <- 27  #Sierra Leone  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 28] <- 29  #Sudan  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 29] <- 30  #Swaziland  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 31] <- 32  #Togo  
+
+    #Election Free and Fair (I do not understand the question dropped)
+    Round_5$Q28 <- recode(Round_5$Q28, "4=1")
+    Round_5$Q28 <- recode(Round_5$Q28, "3=0.5")    
+    Round_5$Q28 <- recode(Round_5$Q28, "9=0") 
+    Round_5$Q28 <- recode(Round_5$Q28, "2=-0.5")  
+    Round_5$Q28 <- recode(Round_5$Q28, "1=-1")  
+    Round_5$Q28 <- recode(Round_5$Q28, "8=NA")  
+    Round_5$Q28 <- recode(Round_5$Q28, "998=NA")  
+    Round_5$Q28 <- recode(Round_5$Q28, "-1=NA")  
+
+    #Election Year
+    Round_5$election_year[Round_5$state == 3] <- 2004 #Botswana
+    Round_5$election_year[Round_5$state == 11] <- 2004 #Ghana    
+    Round_5$election_year[Round_5$state == 14] <- 2007   #Lesotho
+    Round_5$election_year[Round_5$state == 17] <- 2004   #Malawi
+    Round_5$election_year[Round_5$state == 18] <- 2007 #Mali
+    Round_5$election_year[Round_5$state == 22] <- 2004  #Namibia
+    Round_5$election_year[Round_5$state == 24] <- 2007  #Nigeria
+    Round_5$election_year[Round_5$state == 28] <- 2004 #South Africa
+    Round_5$election_year[Round_5$state == 31] <- 2005 #Tanzania
+    Round_5$election_year[Round_5$state == 34] <- 2006 #Uganda
+    Round_5$election_year[Round_5$state == 35] <- 2006 #Zambia
+    Round_5$election_year[Round_5$state == 36] <- 2008 #Zimbabwe
+    Round_5$election_year[Round_5$state == 7] <- 2005 #Cape Verde    
+    Round_5$election_year[Round_5$state == 13] <- 2007 #Kenya    
+    Round_5$election_year[Round_5$state == 21] <- 2004 #Mozambique    
+    Round_5$election_year[Round_5$state == 26] <- 2007 #Senegal   
+    Round_5$election_year[Round_5$state == 16] <- 2008 #Madagascar
+    Round_5$election_year[Round_5$state == 2] <- 2007 #Benin
+    Round_5$election_year[Round_5$state == 4] <- 2007 #Burkina Faso
+    Round_5$election_year[Round_5$state == 15] <- 2005 #Liberia
+    Round_5$state[Round_5$state == 37] <- 37 #Burundi  
+    Round_5$state[Round_5$state == 6] <- 6  #Cameroon   
+    Round_5$state[Round_5$state == 8] <- 8  #Cote d'Ivoire  
+    Round_5$state[Round_5$state == 12] <- 12  #Guinea  
+    Round_5$state[Round_5$state == 19] <- 19  #Mauritius  
+    Round_5$state[Round_5$state == 24] <- 24  #Niger  
+    Round_5$state[Round_5$state == 27] <- 27  #Sierra Leone  
+    Round_5$state[Round_5$state == 29] <- 29  #Sudan  
+    Round_5$state[Round_5$state == 30] <- 30  #Swaziland  
+    Round_5$state[Round_5$state == 32] <- 32  #Togo  
+    
+    #Years since election
+    
+    Round_3$years_since_election = Round_3$year - Round_3$election_year
+    
+    #Turnovers
+    Round_4$pol_turnover[Round_4$state == 3] <- 0 #Botswana
+    Round_4$pol_turnover[Round_4$state == 11] <- 1 #Ghana    
+    Round_4$pol_turnover[Round_4$state == 14] <- 1   #Lesotho
+    Round_4$pol_turnover[Round_4$state == 17] <- 1   #Malawi
+    Round_4$pol_turnover[Round_4$state == 18] <- 2 #Mali
+    Round_4$pol_turnover[Round_4$state == 22] <- 0  #Namibia
+    Round_4$pol_turnover[Round_4$state == 24] <- 0  #Nigeria
+    Round_4$pol_turnover[Round_4$state == 28] <- 0 #South Africa
+    Round_4$pol_turnover[Round_4$state == 31] <- 0 #Tanzania
+    Round_4$pol_turnover[Round_4$state == 34] <- 1 #Uganda
+    Round_4$pol_turnover[Round_4$state == 35] <- 1 #Zambia
+    Round_4$pol_turnover[Round_4$state == 36] <- 0 #Zimbabwe
+    Round_4$pol_turnover[Round_4$state == 7] <- 1 #Cape Verde    
+    Round_4$pol_turnover[Round_4$state == 13] <- 1 #Kenya    
+    Round_4$pol_turnover[Round_4$state == 21] <- 0 #Mozambique    
+    Round_4$pol_turnover[Round_4$state == 26] <- 1 #Senegal   
+    Round_4$pol_turnover[Round_4$state == 16] <- 2 #Madagascar
+    Round_4$pol_turnover[Round_4$state == 2] <- 3 #Benin
+    Round_4$pol_turnover[Round_4$state == 4] <- 0 #Burkina Faso
+    Round_4$pol_turnover[Round_4$state == 15] <- 1 #Liberia 
+        
+        #Year of last turnover or first election
+    Round_4$year_turnover[Round_4$state == 3] <- 1966 #Botswana
+    Round_4$year_turnover[Round_4$state == 11] <- 1992 #Ghana    
+    Round_4$year_turnover[Round_4$state == 14] <- 1998   #Lesotho
+    Round_4$year_turnover[Round_4$state == 17] <- 2004   #Malawi
+    Round_4$year_turnover[Round_4$state == 18] <- 2002 #Mali
+    Round_4$year_turnover[Round_4$state == 22] <- 1990  #Namibia
+    Round_4$year_turnover[Round_4$state == 24] <- 1983  #Nigeria
+    Round_4$year_turnover[Round_4$state == 28] <- 1994 #South Africa
+    Round_4$year_turnover[Round_4$state == 31] <- 1962 #Tanzania
+    Round_4$year_turnover[Round_4$state == 34] <- 2006 #Uganda
+    Round_4$year_turnover[Round_4$state == 35] <- 1991 #Zambia
+    Round_4$year_turnover[Round_4$state == 36] <- 1980 #Zimbabwe  
+    Round_4$year_turnover[Round_4$state == 7] <- 2001 #Cape Verde    
+    Round_4$year_turnover[Round_4$state == 13] <- 2002 #Kenya    
+    Round_4$year_turnover[Round_4$state == 21] <- 1994 #Mozambique    
+    Round_4$year_turnover[Round_4$state == 26] <- 2000 #Senegal
+    Round_4$year_turnover[Round_4$state == 16] <- 2001 #Madagascar
+    Round_4$year_turnover[Round_4$state == 2] <- 2006 #Benin 
+    Round_4$year_turnover[Round_4$state == 4] <- 2002 #Burkina Faso 
+    Round_4$year_turnover[Round_4$state == 15] <- 2005 #Liberia 
+
+    
+      #Winner
+    Round_4$winner <- 0 
+    Round_4$winner[Round_4$Q86==142 & Round_4$state == 3] <- 1 #Botswana
+    Round_4$winner[Round_4$Q86==262 & Round_4$state == 11] <- 1 #Ghana 
+    Round_4$winner[Round_4$Q86==340 & Round_4$state == 14] <- 1 #Lesotho   
+    Round_4$winner[Round_4$Q86==145 & Round_4$state == 17] <- 1 #Malawi    
+    #MALI: Independent President   18 #Mali
+    Round_4$winner[Round_4$Q86==590 & Round_4$state == 22] <- 1 #Namibia    
+    Round_4$winner[Round_4$Q86==623 & Round_4$state == 24] <- 1 #Nigeria    
+    Round_4$winner[Round_4$Q86==702 & Round_4$state == 28] <- 1 #South Africa   
+    Round_4$winner[Round_4$Q86==740 & Round_4$state == 31] <- 1 #Tanzania   
+    Round_4$winner[Round_4$Q86==780 & Round_4$state == 34] <- 1 #Uganda   
+    Round_4$winner[Round_4$Q86==822 & Round_4$state == 35] <- 1  #Zambia  
+    Round_4$winner[Round_4$Q86==861 & Round_4$state == 36] <- 1    #Zimbabwe
+    Round_4$winner[Round_4$Q86==221 & Round_4$state == 7] <- 1    #Cape Verde
+    Round_4$winner[Round_4$Q86==305 & Round_4$state == 13] <- 1    #Kenya
+    Round_4$winner[Round_4$Q86==540 & Round_4$state == 21] <- 1    #Mozambique
+    Round_4$winner[Round_4$Q86==660 & Round_4$state == 26] <- 1    #Senegal
+    Round_4$winner[Round_4$Q86==420 & Round_4$state == 16] <- 1    #Madagascar
+        #IND        2         Benin
+    Round_4$winner[Round_4$Q86==180 & Round_4$state == 4] <- 1    #Burkina Faso
+    Round_4$winner[Round_4$Q86==409 & Round_4$state == 15] <- 1    #Liberia
+    Round_4$winner[Round_4$Q86==-1] <- NA
+    Round_4$winner[Round_4$Q86==8] <- NA
+    Round_4$winner[Round_4$Q86==998] <- NA
+    
+    #Independent
+    Round_4$independent <- 0
+    Round_4$independent[Round_4$Q85 == 0] <- 1
+    Round_4$independent[Round_4$Q85 == 8] <- NA
+    Round_4$independent[Round_4$Q85 == 9] <- 1
+    Round_4$independent[Round_4$Q85 == -1] <- NA
     
           
 ```
