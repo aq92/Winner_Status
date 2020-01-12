@@ -38,7 +38,6 @@ Round_6 <- read_sav("merged_r6_data_2016_36countries2.sav")
 Round_7 <- read_sav("r7_merged_data_34ctry.release.sav")
 
 
-#Round 1
 #Before appending the data. I recode all the necessary variables from the AB Data. 
 
 library(car)
@@ -92,6 +91,8 @@ library(car)
   Round_1$pfrele <- recode(Round_1$pfrele, "4=1")
   Round_1$pfrele <- recode(Round_1$pfrele, "98=NA")
   Round_1$pfrele <- recode(Round_1$pfrele, "99=NA")
+  
+  Round_1$free_fair <- Round_1$pfrele
 
   #Government Performance
     #Education
@@ -214,6 +215,8 @@ library(car)
   Round_1$scint <- recode(Round_1$scint, "98=NA")
   Round_1$scint <- recode(Round_1$scint, "99=NA")
   
+  Round_1$interest <- Round_1$scint
+  
     #Exposure to Mass Media (Same applies to do not knows here)
     #Radio
   Round_1$medrad <- recode(Round_1$medrad, "9=NA")
@@ -227,6 +230,8 @@ library(car)
   Round_1$mednew <- recode(Round_1$mednew, "9=NA")
   Round_1$mednew <- recode(Round_1$mednew, "98=NA")
   Round_1$mednew <- recode(Round_1$mednew, "99=NA")  
+  
+  Round_1$mass_media <- Round_1$medrad + Round_1$medtv + Round_1$mednew
   
   #Education (Same applies to do not knows here)
   Round_1$educ <- recode(Round_1$educ, "10=NA")
@@ -448,6 +453,8 @@ library(car)
   Round_2$q27 <- recode(Round_2$q27, "98=NA")
   Round_2$q27 <- recode(Round_2$q27, "-1=NA")
   
+  Round_2$interest <- Round_2$q27
+  
     #Exposure to Mass Media (Same applies to do not knows here)
     #Radio
   Round_2$q26a <- recode(Round_2$q26a, "9=NA")
@@ -461,6 +468,8 @@ library(car)
   Round_2$q26c <- recode(Round_2$q26c, "9=NA")
   Round_2$q26c <- recode(Round_2$q26c, "98=NA")
   Round_2$q26c <- recode(Round_2$q26c, "-1=NA") 
+  
+  Round_2$mass_media <- Round_2$q26a + Round_2$q26b + Round_2$q26c
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
   Round_2$educ <- recode(Round_2$q84, "0=0")
@@ -664,9 +673,22 @@ library(car)
   Round_3$q65c <- recode(Round_3$q65c, "98=NA")
   Round_3$q65c <- recode(Round_3$q65c, "-1=NA")
   
-  #Government Performance Index
+ #Government Performance Index
   Round_3$gov_perf <- Round_3$q65g + Round_3$q65f + Round_3$q65b + Round_3$q65c
+    
   
+    #Election Free and Fair (I do not understand the question dropped)
+    Round_3$q45 <- recode(Round_3$q45, "4=1")
+    Round_3$q45 <- recode(Round_3$q45, "3=0.5")    
+    Round_3$q45 <- recode(Round_3$q45, "9=0") 
+    Round_3$q45 <- recode(Round_3$q45, "2=-0.5")  
+    Round_3$q45 <- recode(Round_3$q45, "1=-1")  
+    Round_3$q45 <- recode(Round_3$q45, "8=NA")  
+    Round_3$q45 <- recode(Round_3$q45, "98=NA")  
+    Round_3$q45 <- recode(Round_3$q45, "-1=NA")  
+  
+    Round_3$free_fair <- Round_3$q45
+    
     #Economic Performance 
     #Satisfy with the condition of national economy today.
   Round_3$q4a <- recode(Round_3$q4a, "1=0")
@@ -720,6 +742,8 @@ library(car)
   Round_3$q30 <- recode(Round_3$q30, "9=0")
   Round_3$q30 <- recode(Round_3$q30, "98=NA")
   Round_3$q30 <- recode(Round_3$q30, "-1=NA")
+  
+  Round_3$elec_part <- Round_3$q30
 
   #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
   Round_3$q16 <- recode(Round_3$q16, "0=0")
@@ -729,6 +753,8 @@ library(car)
   Round_3$q16 <- recode(Round_3$q16, "9=NA")
   Round_3$q16 <- recode(Round_3$q16, "98=NA")
   Round_3$q16 <- recode(Round_3$q16, "-1=NA")
+  
+  Round_3$interest <- Round_3$q16
   
     #Exposure to Mass Media (Same applies to do not knows here)
     #Radio
@@ -743,6 +769,8 @@ library(car)
   Round_3$q15c <- recode(Round_3$q15c, "9=NA")
   Round_3$q15c <- recode(Round_3$q15c, "98=NA")
   Round_3$q15c <- recode(Round_3$q15c, "-1=NA")
+  
+  Round_3$mass_media <- Round_3$q15a + Round_3$q15b + Round_3$q15c
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
   Round_3$educ <- recode(Round_3$q90, "0=0")
@@ -994,6 +1022,17 @@ library(car)
   #Economic Satisfaction Index
   Round_4$econ_sat <- Round_4$Q4A + Round_4$Q7A + Round_4$Q6A + Round_4$Q6B  
   
+  
+      #Election Free and Fair (I do not understand the question dropped)
+    Round_4$Q71 <- recode(Round_4$Q71, "4=1")
+    Round_4$Q71 <- recode(Round_4$Q71, "3=0.5")    
+    Round_4$Q71 <- recode(Round_4$Q71, "9=0") 
+    Round_4$Q71 <- recode(Round_4$Q71, "2=-0.5")  
+    Round_4$Q71 <- recode(Round_4$Q71, "1=-1")  
+    Round_4$Q71 <- recode(Round_4$Q71, "8=NA")  
+    Round_4$Q71 <- recode(Round_4$Q71, "998=NA")  
+    Round_4$Q71 <- recode(Round_4$Q71, "-1=NA")  
+  
   #Participation: Since the only variable Moehler 2009 includes in this index and included in this round is voting. Use is it as a binary indicator of participation.
   
   Round_4$Q23D <- recode(Round_4$Q23D, "1=1")
@@ -1006,6 +1045,8 @@ library(car)
   Round_4$Q23D <- recode(Round_4$Q23D, "9=0")
   Round_4$Q23D <- recode(Round_4$Q23D, "998=NA")
   Round_4$Q23D <- recode(Round_4$Q23D, "-1=NA")
+  
+  Round_4$elec_part <- Round_4$Q23D
 
   #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
   Round_4$Q13 <- recode(Round_4$Q13, "0=0")
@@ -1015,6 +1056,8 @@ library(car)
   Round_4$Q13 <- recode(Round_4$Q13, "9=NA")
   Round_4$Q13 <- recode(Round_4$Q13, "998=NA")
   Round_4$Q13 <- recode(Round_4$Q13, "-1=NA")
+  
+  Round_4$interest <- Round_4$Q13
   
     #Exposure to Mass Media (Same applies to do not knows here)
     #Radio
@@ -1029,6 +1072,8 @@ library(car)
   Round_4$Q12C <- recode(Round_4$Q12C, "9=NA")
   Round_4$Q12C <- recode(Round_4$Q12C, "998=NA")
   Round_4$Q12C <- recode(Round_4$Q12C, "-1=NA")
+  
+  Round_4$mass_media <- Round_4$Q12A + Round_4$Q12B + Round_4$Q12C
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
   Round_4$educ <- recode(Round_4$Q89, "0=0")
@@ -1312,6 +1357,8 @@ library(car)
   Round_5$Q27 <- recode(Round_5$Q27, "9=0")
   Round_5$Q27 <- recode(Round_5$Q27, "998=NA")
   Round_5$Q27 <- recode(Round_5$Q27, "-1=NA")
+  
+  Round_5$elec_part <- Round_5$Q27
 
   #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
   Round_5$Q14 <- recode(Round_5$Q14, "0=0")
@@ -1321,6 +1368,8 @@ library(car)
   Round_5$Q14 <- recode(Round_5$Q14, "9=NA")
   Round_5$Q14 <- recode(Round_5$Q14, "998=NA")
   Round_5$Q14 <- recode(Round_5$Q14, "-1=NA")
+  
+  Round_5$interest <- Round_5$Q14
   
     #Exposure to Mass Media (Same applies to do not knows here)
     #Radio
@@ -1335,6 +1384,8 @@ library(car)
   Round_5$Q13C <- recode(Round_5$Q13C, "9=NA")
   Round_5$Q13C <- recode(Round_5$Q13C, "998=NA")
   Round_5$Q13C <- recode(Round_5$Q13C, "-1=NA")
+  
+  Round_6$mass_media <- Round_5$Q13C + Round_5$Q13B + Round_5$Q13A
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
   Round_5$educ <- recode(Round_5$Q97, "0=0")
@@ -1396,6 +1447,8 @@ library(car)
     Round_5$Q28 <- recode(Round_5$Q28, "8=NA")  
     Round_5$Q28 <- recode(Round_5$Q28, "998=NA")  
     Round_5$Q28 <- recode(Round_5$Q28, "-1=NA")  
+    
+    Round_5$free_fair <- Round_5$Q28
 
     #Election Year
     Round_5$election_year[Round_5$state == 3] <- 2009 #Botswana
@@ -1680,6 +1733,8 @@ library(car)
   Round_6$Q21 <- recode(Round_6$Q21, "9=0")
   Round_6$Q21 <- recode(Round_6$Q21, "98=NA")
   Round_6$Q21 <- recode(Round_6$Q21, "-1=NA")
+  
+  Round_6$elec_part <- Round_6$Q21
 
   #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
   Round_6$Q13 <- recode(Round_6$Q14, "0=0")
@@ -1689,6 +1744,8 @@ library(car)
   Round_6$Q13 <- recode(Round_6$Q14, "9=NA")
   Round_6$Q13 <- recode(Round_6$Q14, "98=NA")
   Round_6$Q13 <- recode(Round_6$Q14, "-1=NA")
+  
+  Round_$interest <- Round_6$Q13
   
     #Exposure to Mass Media (Same applies to do not knows here)
     #Radio
@@ -1703,6 +1760,8 @@ library(car)
   Round_6$Q12C <- recode(Round_6$Q12C, "9=NA")
   Round_6$Q12C <- recode(Round_6$Q12C, "98=NA")
   Round_6$Q12C <- recode(Round_6$Q12C, "-1=NA")
+  
+  Round_6$mass_media <- Round_6$Q12A + Round_6$Q12B + Round_6$Q12C
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
   Round_6$educ <- recode(Round_6$Q97, "0=0")
@@ -1768,6 +1827,8 @@ library(car)
     Round_6$Q22 <- recode(Round_6$Q22, "8=NA")  
     Round_6$Q22 <- recode(Round_6$Q22, "98=NA")  
     Round_6$Q22 <- recode(Round_6$Q22, "-1=NA")  
+    
+    Round_6$free_fair <- Round_6$Q22
 
     #Election Year
     Round_6$election_year[Round_6$state == 3] <- 2009 #Botswana
