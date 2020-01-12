@@ -1099,7 +1099,7 @@ library(car)
     
     #Years since election
     
-    Round_3$years_since_election = Round_3$year - Round_3$election_year
+    Round_4$years_since_election = Round_4$year - Round_4$election_year
     
     #Turnovers
     Round_4$pol_turnover[Round_4$state == 3] <- 0 #Botswana
@@ -1176,7 +1176,7 @@ library(car)
     Round_4$independent <- 0
     Round_4$independent[Round_4$Q85 == 0] <- 1
     Round_4$independent[Round_4$Q85 == 8] <- NA
-    Round_4$independent[Round_4$Q85 == 9] <- 1
+    Round_4$independent[Round_4$Q85 == 9] <- NA
     Round_4$independent[Round_4$Q85 == -1] <- NA
       
     #Round 5 
@@ -1398,118 +1398,153 @@ library(car)
     Round_5$Q28 <- recode(Round_5$Q28, "-1=NA")  
 
     #Election Year
-    Round_5$election_year[Round_5$state == 3] <- 2004 #Botswana
-    Round_5$election_year[Round_5$state == 11] <- 2004 #Ghana    
+    Round_5$election_year[Round_5$state == 3] <- 2009 #Botswana
+    Round_5$election_year[Round_5$state == 11] <- 2008 #Ghana    
     Round_5$election_year[Round_5$state == 14] <- 2007   #Lesotho
-    Round_5$election_year[Round_5$state == 17] <- 2004   #Malawi
+    Round_5$election_year[Round_5$state == 17] <- 2009   #Malawi
     Round_5$election_year[Round_5$state == 18] <- 2007 #Mali
-    Round_5$election_year[Round_5$state == 22] <- 2004  #Namibia
-    Round_5$election_year[Round_5$state == 24] <- 2007  #Nigeria
-    Round_5$election_year[Round_5$state == 28] <- 2004 #South Africa
-    Round_5$election_year[Round_5$state == 31] <- 2005 #Tanzania
-    Round_5$election_year[Round_5$state == 34] <- 2006 #Uganda
-    Round_5$election_year[Round_5$state == 35] <- 2006 #Zambia
+    Round_5$election_year[Round_5$state == 22] <- 2009  #Namibia
+    Round_5$election_year[Round_5$state == 24] <- 2011  #Nigeria
+    Round_5$election_year[Round_5$state == 28] <- 2009 #South Africa
+    Round_5$election_year[Round_5$state == 31] <- 2010 #Tanzania
+    Round_5$election_year[Round_5$state == 34] <- 2011 #Uganda
+    Round_5$election_year[Round_5$state == 35] <- 2011 #Zambia
     Round_5$election_year[Round_5$state == 36] <- 2008 #Zimbabwe
-    Round_5$election_year[Round_5$state == 7] <- 2005 #Cape Verde    
+    Round_5$election_year[Round_5$state == 7] <- 2011 #Cape Verde    
     Round_5$election_year[Round_5$state == 13] <- 2007 #Kenya    
-    Round_5$election_year[Round_5$state == 21] <- 2004 #Mozambique    
-    Round_5$election_year[Round_5$state == 26] <- 2007 #Senegal   
-    Round_5$election_year[Round_5$state == 16] <- 2008 #Madagascar
-    Round_5$election_year[Round_5$state == 2] <- 2007 #Benin
-    Round_5$election_year[Round_5$state == 4] <- 2007 #Burkina Faso
-    Round_5$election_year[Round_5$state == 15] <- 2005 #Liberia
-    Round_5$state[Round_5$state == 37] <- 37 #Burundi  
-    Round_5$state[Round_5$state == 6] <- 6  #Cameroon   
-    Round_5$state[Round_5$state == 8] <- 8  #Cote d'Ivoire  
-    Round_5$state[Round_5$state == 12] <- 12  #Guinea  
-    Round_5$state[Round_5$state == 19] <- 19  #Mauritius  
-    Round_5$state[Round_5$state == 24] <- 24  #Niger  
-    Round_5$state[Round_5$state == 27] <- 27  #Sierra Leone  
-    Round_5$state[Round_5$state == 29] <- 29  #Sudan  
-    Round_5$state[Round_5$state == 30] <- 30  #Swaziland  
-    Round_5$state[Round_5$state == 32] <- 32  #Togo  
+    Round_5$election_year[Round_5$state == 21] <- 2009 #Mozambique    
+    Round_5$election_year[Round_5$state == 26] <- 2012 #Senegal   
+    Round_5$election_year[Round_5$state == 16] <- 2009 #Madagascar
+    Round_5$election_year[Round_5$state == 2] <- 2011 #Benin
+    Round_5$election_year[Round_5$state == 4] <- 2010 #Burkina Faso
+    Round_5$election_year[Round_5$state == 15] <- 2011 #Liberia
+    Round_5$election_year[Round_5$state == 37] <- 2010 #Burundi  
+    Round_5$election_year[Round_5$state == 6] <- 2011  #Cameroon   
+    Round_5$election_year[Round_5$state == 8] <- 2010  #Cote d'Ivoire  
+    Round_5$election_year[Round_5$state == 12] <- 2010  #Guinea  
+    Round_5$election_year[Round_5$state == 19] <- 2010  #Mauritius  
+    Round_5$election_year[Round_5$state == 24] <- 2011  #Niger  
+    Round_5$election_year[Round_5$state == 27] <- 2007  #Sierra Leone  
+    Round_5$election_year[Round_5$state == 29] <- 2010  #Sudan  
+    Round_5$election_year[Round_5$state == 30] <- 2008  #Swaziland  
+    Round_5$election_year[Round_5$state == 32] <- 2010  #Togo  
     
     #Years since election
     
-    Round_3$years_since_election = Round_3$year - Round_3$election_year
+    Round_5$years_since_election = Round_5$year - Round_5$election_year
     
     #Turnovers
-    Round_4$pol_turnover[Round_4$state == 3] <- 0 #Botswana
-    Round_4$pol_turnover[Round_4$state == 11] <- 1 #Ghana    
-    Round_4$pol_turnover[Round_4$state == 14] <- 1   #Lesotho
-    Round_4$pol_turnover[Round_4$state == 17] <- 1   #Malawi
-    Round_4$pol_turnover[Round_4$state == 18] <- 2 #Mali
-    Round_4$pol_turnover[Round_4$state == 22] <- 0  #Namibia
-    Round_4$pol_turnover[Round_4$state == 24] <- 0  #Nigeria
-    Round_4$pol_turnover[Round_4$state == 28] <- 0 #South Africa
-    Round_4$pol_turnover[Round_4$state == 31] <- 0 #Tanzania
-    Round_4$pol_turnover[Round_4$state == 34] <- 1 #Uganda
-    Round_4$pol_turnover[Round_4$state == 35] <- 1 #Zambia
-    Round_4$pol_turnover[Round_4$state == 36] <- 0 #Zimbabwe
-    Round_4$pol_turnover[Round_4$state == 7] <- 1 #Cape Verde    
-    Round_4$pol_turnover[Round_4$state == 13] <- 1 #Kenya    
-    Round_4$pol_turnover[Round_4$state == 21] <- 0 #Mozambique    
-    Round_4$pol_turnover[Round_4$state == 26] <- 1 #Senegal   
-    Round_4$pol_turnover[Round_4$state == 16] <- 2 #Madagascar
-    Round_4$pol_turnover[Round_4$state == 2] <- 3 #Benin
-    Round_4$pol_turnover[Round_4$state == 4] <- 0 #Burkina Faso
-    Round_4$pol_turnover[Round_4$state == 15] <- 1 #Liberia 
-        
+    Round_5$pol_turnover[Round_5$state == 3] <- 0 #Botswana
+    Round_5$pol_turnover[Round_5$state == 11] <- 2 #Ghana    
+    Round_5$pol_turnover[Round_5$state == 14] <- 2   #Lesotho
+    Round_5$pol_turnover[Round_5$state == 17] <- 2   #Malawi
+    Round_5$pol_turnover[Round_5$state == 18] <- 2 #Mali
+    Round_5$pol_turnover[Round_5$state == 22] <- 0  #Namibia
+    Round_5$pol_turnover[Round_5$state == 24] <- 0  #Nigeria
+    Round_5$pol_turnover[Round_5$state == 28] <- 0 #South Africa
+    Round_5$pol_turnover[Round_5$state == 31] <- 0 #Tanzania
+    Round_5$pol_turnover[Round_5$state == 34] <- 1 #Uganda
+    Round_5$pol_turnover[Round_5$state == 35] <- 2 #Zambia
+    Round_5$pol_turnover[Round_5$state == 36] <- 0 #Zimbabwe
+    Round_5$pol_turnover[Round_5$state == 7] <- 2 #Cape Verde    
+    Round_5$pol_turnover[Round_5$state == 13] <- 1 #Kenya    
+    Round_5$pol_turnover[Round_5$state == 21] <- 0 #Mozambique    
+    Round_5$pol_turnover[Round_5$state == 26] <- 1 #Senegal   
+    Round_5$pol_turnover[Round_5$state == 16] <- 3 #Madagascar
+    Round_5$pol_turnover[Round_5$state == 2] <- 3 #Benin
+    Round_5$pol_turnover[Round_5$state == 4] <- 0 #Burkina Faso
+    Round_5$pol_turnover[Round_5$state == 15] <- 1 #Liberia
+    Round_5$pol_turnover[Round_5$state == 37] <- 0 #Burundi  
+    Round_5$pol_turnover[Round_5$state == 6] <- 0  #Cameroon   
+    Round_5$pol_turnover[Round_5$state == 8] <- 0  #Cote d'Ivoire  
+    Round_5$pol_turnover[Round_5$state == 12] <- 0  #Guinea  
+    Round_5$pol_turnover[Round_5$state == 19] <- 5  #Mauritius  
+    Round_5$pol_turnover[Round_5$state == 24] <- 0  #Niger  
+    Round_5$pol_turnover[Round_5$state == 27] <- 1  #Sierra Leone  
+    Round_5$pol_turnover[Round_5$state == 29] <- 0  #Sudan  
+    Round_5$pol_turnover[Round_5$state == 30] <- 0  #Swaziland  
+    Round_5$pol_turnover[Round_5$state == 32] <- 0  #Togo  
         #Year of last turnover or first election
-    Round_4$year_turnover[Round_4$state == 3] <- 1966 #Botswana
-    Round_4$year_turnover[Round_4$state == 11] <- 1992 #Ghana    
-    Round_4$year_turnover[Round_4$state == 14] <- 1998   #Lesotho
-    Round_4$year_turnover[Round_4$state == 17] <- 2004   #Malawi
-    Round_4$year_turnover[Round_4$state == 18] <- 2002 #Mali
-    Round_4$year_turnover[Round_4$state == 22] <- 1990  #Namibia
-    Round_4$year_turnover[Round_4$state == 24] <- 1983  #Nigeria
-    Round_4$year_turnover[Round_4$state == 28] <- 1994 #South Africa
-    Round_4$year_turnover[Round_4$state == 31] <- 1962 #Tanzania
-    Round_4$year_turnover[Round_4$state == 34] <- 2006 #Uganda
-    Round_4$year_turnover[Round_4$state == 35] <- 1991 #Zambia
-    Round_4$year_turnover[Round_4$state == 36] <- 1980 #Zimbabwe  
-    Round_4$year_turnover[Round_4$state == 7] <- 2001 #Cape Verde    
-    Round_4$year_turnover[Round_4$state == 13] <- 2002 #Kenya    
-    Round_4$year_turnover[Round_4$state == 21] <- 1994 #Mozambique    
-    Round_4$year_turnover[Round_4$state == 26] <- 2000 #Senegal
-    Round_4$year_turnover[Round_4$state == 16] <- 2001 #Madagascar
-    Round_4$year_turnover[Round_4$state == 2] <- 2006 #Benin 
-    Round_4$year_turnover[Round_4$state == 4] <- 2002 #Burkina Faso 
-    Round_4$year_turnover[Round_4$state == 15] <- 2005 #Liberia 
+    Round_5$year_turnover[Round_5$state == 3] <- 1966 #Botswana
+    Round_5$year_turnover[Round_5$state == 11] <- 2012 #Ghana    
+    Round_5$year_turnover[Round_5$state == 14] <- 2012   #Lesotho
+    Round_5$year_turnover[Round_5$state == 17] <- 2009   #Malawi
+    Round_5$year_turnover[Round_5$state == 18] <- 2007 #Mali
+    Round_5$year_turnover[Round_5$state == 22] <- 1990  #Namibia
+    Round_5$year_turnover[Round_5$state == 24] <- 1983  #Nigeria
+    Round_5$year_turnover[Round_5$state == 28] <- 1994 #South Africa
+    Round_5$year_turnover[Round_5$state == 31] <- 1962 #Tanzania
+    Round_5$year_turnover[Round_5$state == 34] <- 2006 #Uganda
+    Round_5$year_turnover[Round_5$state == 35] <- 2011 #Zambia
+    Round_5$year_turnover[Round_5$state == 36] <- 1980 #Zimbabwe  
+    Round_5$year_turnover[Round_5$state == 7] <- 2011 #Cape Verde    
+    Round_5$year_turnover[Round_5$state == 13] <- 2002 #Kenya    
+    Round_5$year_turnover[Round_5$state == 21] <- 1994 #Mozambique    
+    Round_5$year_turnover[Round_5$state == 26] <- 2000 #Senegal
+    Round_5$year_turnover[Round_5$state == 16] <- 2009 #Madagascar
+    Round_5$year_turnover[Round_5$state == 2] <- 2006 #Benin 
+    Round_5$year_turnover[Round_5$state == 4] <- 2002 #Burkina Faso 
+    Round_5$year_turnover[Round_5$state == 15] <- 2005 #Liberia 
+    Round_5$year_turnover[Round_5$state == 37] <- 2005 #Burundi  
+    Round_5$year_turnover[Round_5$state == 6] <- 1992  #Cameroon   
+    Round_5$year_turnover[Round_5$state == 8] <- 2000  #Cote d'Ivoire  
+    Round_5$year_turnover[Round_5$state == 12] <- 2010  #Guinea  
+    Round_5$year_turnover[Round_5$state == 19] <- 2005  #Mauritius  
+    Round_5$year_turnover[Round_5$state == 24] <- 2011  #Niger  
+    Round_5$year_turnover[Round_5$state == 27] <- 2007  #Sierra Leone  
+    Round_5$year_turnover[Round_5$state == 29] <- 1996  #Sudan  
+    Round_5$year_turnover[Round_5$state == 30] <- 1993  #Swaziland  
+    Round_5$year_turnover[Round_5$state == 32] <- 1993 #Togo  
 
     
       #Winner
-    Round_4$winner <- 0 
-    Round_4$winner[Round_4$Q86==142 & Round_4$state == 3] <- 1 #Botswana
-    Round_4$winner[Round_4$Q86==262 & Round_4$state == 11] <- 1 #Ghana 
-    Round_4$winner[Round_4$Q86==340 & Round_4$state == 14] <- 1 #Lesotho   
-    Round_4$winner[Round_4$Q86==145 & Round_4$state == 17] <- 1 #Malawi    
-    #MALI: Independent President   18 #Mali
-    Round_4$winner[Round_4$Q86==590 & Round_4$state == 22] <- 1 #Namibia    
-    Round_4$winner[Round_4$Q86==623 & Round_4$state == 24] <- 1 #Nigeria    
-    Round_4$winner[Round_4$Q86==702 & Round_4$state == 28] <- 1 #South Africa   
-    Round_4$winner[Round_4$Q86==740 & Round_4$state == 31] <- 1 #Tanzania   
-    Round_4$winner[Round_4$Q86==780 & Round_4$state == 34] <- 1 #Uganda   
-    Round_4$winner[Round_4$Q86==822 & Round_4$state == 35] <- 1  #Zambia  
-    Round_4$winner[Round_4$Q86==861 & Round_4$state == 36] <- 1    #Zimbabwe
-    Round_4$winner[Round_4$Q86==221 & Round_4$state == 7] <- 1    #Cape Verde
-    Round_4$winner[Round_4$Q86==305 & Round_4$state == 13] <- 1    #Kenya
-    Round_4$winner[Round_4$Q86==540 & Round_4$state == 21] <- 1    #Mozambique
-    Round_4$winner[Round_4$Q86==660 & Round_4$state == 26] <- 1    #Senegal
-    Round_4$winner[Round_4$Q86==420 & Round_4$state == 16] <- 1    #Madagascar
+    Round_5$winner <- 0 
+    Round_5$winner[Round_5$Q89B==141 & Round_5$state == 3] <- 1 #Botswana
+    Round_5$winner[Round_5$Q89B==261 & Round_5$state == 11] <- 1 #Ghana 
+    Round_5$winner[Round_5$Q89B==340 & Round_5$state == 14] <- 1 #Lesotho   
+    Round_5$winner[Round_5$Q89B==462 & Round_5$state == 17] <- 1 #Malawi    
+    #MALI: Party not found Alliance for Democracy and Progress (ADP)   18 #Mali
+    Round_5$winner[Round_5$Q89B==590 & Round_5$state == 22] <- 1 #Namibia    
+    Round_5$winner[Round_5$Q89B==638 & Round_5$state == 24] <- 1 #Nigeria    
+    Round_5$winner[Round_5$Q89B==702 & Round_5$state == 28] <- 1 #South Africa   
+    Round_5$winner[Round_5$Q89B==740 & Round_5$state == 31] <- 1 #Tanzania   
+    Round_5$winner[Round_5$Q89B==780 & Round_5$state == 34] <- 1 #Uganda   
+    Round_5$winner[Round_5$Q89B==826 & Round_5$state == 35] <- 1  #Zambia  
+    Round_5$winner[Round_5$Q89B==861 & Round_5$state == 36] <- 1    #Zimbabwe
+    Round_5$winner[Round_5$Q89B==220 & Round_5$state == 7] <- 1    #Cape Verde
+    Round_5$winner[Round_5$Q89B==302 & Round_5$state == 13] <- 1    #Kenya
+    Round_5$winner[Round_5$Q89B==540 & Round_5$state == 21] <- 1    #Mozambique
+    Round_5$winner[Round_5$Q89B==191 & Round_5$state == 26] <- 1    #Senegal
+    #Round_5$winner[Round_5$Q89B==420 & Round_5$state == 16] <- 1 HVM PARTY NOT FOUND    #Madagascar
         #IND        2         Benin
-    Round_4$winner[Round_4$Q86==180 & Round_4$state == 4] <- 1    #Burkina Faso
-    Round_4$winner[Round_4$Q86==409 & Round_4$state == 15] <- 1    #Liberia
-    Round_4$winner[Round_4$Q86==-1] <- NA
-    Round_4$winner[Round_4$Q86==8] <- NA
-    Round_4$winner[Round_4$Q86==998] <- NA
+    Round_5$winner[Round_5$Q89B==181 & Round_5$state == 4] <- 1    #Burkina Faso
+    Round_5$winner[Round_5$Q89B==386 & Round_5$state == 15] <- 1    #Liberia
+    Round_5$winner[Round_5$Q89B==1184 & Round_5$state == 37] <- 2005 #Burundi  
+    Round_5$winner[Round_5$Q89B==1220 & Round_5$state == 6] <- 1992  #Cameroon   
+    Round_5$winner[Round_5$Q89B==1262 & Round_5$state == 8] <- 2000  #Cote d'Ivoire  
+    Round_5$winner[Round_5$Q89B==1300 & Round_5$state == 12] <- 2010  #Guinea  
+    Round_5$winner[Round_5$Q89B==903 & Round_5$state == 19] <- 2005  #Mauritius  
+    Round_5$winner[Round_5$Q89B==900 & Round_5$state == 19] <- 2005  #Mauritius  
+    Round_5$winner[Round_5$Q89B==901 & Round_5$state == 19] <- 2005  #Mauritius  
+    Round_5$winner[Round_5$Q89B==1105 & Round_5$state == 24] <- 2011  #Niger  
+    Round_5$winner[Round_5$Q89B==930 & Round_5$state == 27] <- 2007  #Sierra Leone  
+    Round_5$winner[Round_5$Q89B==1540 & Round_5$state == 29] <- 1996  #Sudan  
+    #Round_5$winner[Round_5$Q89B==420 & Round_5$state == 30] <- 1993  #Swaziland  Non partisan
+    Round_5$winner[Round_5$Q89B==1140 & Round_5$state == 32] <- 1993 #Togo      
+    
+    
+    
+    
+    Round_5$winner[Round_5$Q89B==-1] <- NA
+    Round_5$winner[Round_5$Q89B==9996] <- NA
+    Round_5$winner[Round_5$Q89B==9998] <- NA
     
     #Independent
-    Round_4$independent <- 0
-    Round_4$independent[Round_4$Q85 == 0] <- 1
-    Round_4$independent[Round_4$Q85 == 8] <- NA
-    Round_4$independent[Round_4$Q85 == 9] <- 1
-    Round_4$independent[Round_4$Q85 == -1] <- NA
+    Round_5$independent <- 0
+    Round_5$independent[Round_5$Q89A == 0] <- 1
+    Round_5$independent[Round_5$Q89A == 8] <- NA
+    Round_5$independent[Round_5$Q89A == 9] <- NA
+    Round_5$independent[Round_5$Q89A == -1] <- NA
     
           
 ```
