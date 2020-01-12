@@ -1376,7 +1376,7 @@ library(car)
     Round_5$state[Round_5$COUNTRY_ALPHA == 2] <- 2 #Benin
     Round_5$state[Round_5$COUNTRY_ALPHA == 4] <- 4 #Burkina Faso 
     Round_5$state[Round_5$COUNTRY_ALPHA == 15] <- 15 #Liberia 
-    Round_5$state[Round_5$COUNTRY_ALPHA == 5] <- 37 #Burundi  
+    Round_5$state[Round_5$COUNTRY_ALPHA == 5] <- 5 #Burundi  
     Round_5$state[Round_5$COUNTRY_ALPHA == 6] <- 6  #Cameroon   
     Round_5$state[Round_5$COUNTRY_ALPHA == 8] <- 8  #Cote d'Ivoire  
     Round_5$state[Round_5$COUNTRY_ALPHA == 12] <- 12  #Guinea  
@@ -1519,18 +1519,18 @@ library(car)
         #IND        2         Benin
     Round_5$winner[Round_5$Q89B==181 & Round_5$state == 4] <- 1    #Burkina Faso
     Round_5$winner[Round_5$Q89B==386 & Round_5$state == 15] <- 1    #Liberia
-    Round_5$winner[Round_5$Q89B==1184 & Round_5$state == 37] <- 2005 #Burundi  
-    Round_5$winner[Round_5$Q89B==1220 & Round_5$state == 6] <- 1992  #Cameroon   
-    Round_5$winner[Round_5$Q89B==1262 & Round_5$state == 8] <- 2000  #Cote d'Ivoire  
-    Round_5$winner[Round_5$Q89B==1300 & Round_5$state == 12] <- 2010  #Guinea  
-    Round_5$winner[Round_5$Q89B==903 & Round_5$state == 19] <- 2005  #Mauritius  
-    Round_5$winner[Round_5$Q89B==900 & Round_5$state == 19] <- 2005  #Mauritius  
-    Round_5$winner[Round_5$Q89B==901 & Round_5$state == 19] <- 2005  #Mauritius  
-    Round_5$winner[Round_5$Q89B==1105 & Round_5$state == 24] <- 2011  #Niger  
-    Round_5$winner[Round_5$Q89B==930 & Round_5$state == 27] <- 2007  #Sierra Leone  
-    Round_5$winner[Round_5$Q89B==1540 & Round_5$state == 29] <- 1996  #Sudan  
-    #Round_5$winner[Round_5$Q89B==420 & Round_5$state == 30] <- 1993  #Swaziland  Non partisan
-    Round_5$winner[Round_5$Q89B==1140 & Round_5$state == 32] <- 1993 #Togo      
+    Round_5$winner[Round_5$Q89B==1184 & Round_5$state == 37] <- 1 #Burundi  
+    Round_5$winner[Round_5$Q89B==1220 & Round_5$state == 6] <- 1  #Cameroon   
+    Round_5$winner[Round_5$Q89B==1262 & Round_5$state == 8] <- 1  #Cote d'Ivoire  
+    Round_5$winner[Round_5$Q89B==1300 & Round_5$state == 12] <- 1  #Guinea  
+    Round_5$winner[Round_5$Q89B==903 & Round_5$state == 19] <- 1  #Mauritius  
+    Round_5$winner[Round_5$Q89B==900 & Round_5$state == 19] <- 1  #Mauritius  
+    Round_5$winner[Round_5$Q89B==901 & Round_5$state == 19] <- 1  #Mauritius  
+    Round_5$winner[Round_5$Q89B==1105 & Round_5$state == 24] <- 1  #Niger  
+    Round_5$winner[Round_5$Q89B==930 & Round_5$state == 27] <- 1  #Sierra Leone  
+    Round_5$winner[Round_5$Q89B==1540 & Round_5$state == 29] <- 1  #Sudan  
+    #Round_5$winner[Round_5$Q89B==420 & Round_5$state == 30] <- 1  #Swaziland  Non partisan
+    Round_5$winner[Round_5$Q89B==1140 & Round_5$state == 32] <- 1 #Togo      
     
     
     
@@ -1545,6 +1545,387 @@ library(car)
     Round_5$independent[Round_5$Q89A == 8] <- NA
     Round_5$independent[Round_5$Q89A == 9] <- NA
     Round_5$independent[Round_5$Q89A == -1] <- NA
+    
+    
+    #Round 6 
+    #Institutional Trust (Police, Court of Law, Army, Electoral Commission)
+  
+  #Police 
+  Round_6$Q52H <- recode(Round_6$Q52H, "0=-0.250") 
+  Round_6$Q52H <- recode(Round_6$Q52H, "1=-0.125")
+  Round_6$Q52H <- recode(Round_6$Q52H, "9=0")
+  Round_6$Q52H <- recode(Round_6$Q52H, "2=0.125")
+  Round_6$Q52H <- recode(Round_6$Q52H, "3=0.250")
+  Round_6$Q52H <- recode(Round_6$Q52H, "998=NA")
+  Round_6$Q52H <- recode(Round_6$Q52H, "-1=NA")
+  
+  #Courts
+  Round_6$Q52J <- recode(Round_6$Q52J, "0=-0.250") 
+  Round_6$Q52J <- recode(Round_6$Q52J, "1=-0.125")
+  Round_6$Q52J <- recode(Round_6$Q52J, "9=0")
+  Round_6$Q52J <- recode(Round_6$Q52J, "2=0.125")
+  Round_6$Q52J <- recode(Round_6$Q52J, "3=0.250")
+  Round_6$Q52J <- recode(Round_6$Q52J, "998=NA")
+  Round_6$Q52J <- recode(Round_6$Q52J, "-1=NA")
+  
+  
+  #Army
+  Round_6$Q52I <- recode(Round_6$Q52I, "0=-0.250") 
+  Round_6$Q52I <- recode(Round_6$Q52I, "1=-0.125")
+  Round_6$Q52I <- recode(Round_6$Q52I, "9=0")
+  Round_6$Q52I <- recode(Round_6$Q52I, "2=0.125")
+  Round_6$Q52I <- recode(Round_6$Q52I, "3=0.250")
+  Round_6$Q52I <- recode(Round_6$Q52I, "998=NA")
+  Round_6$Q52I <- recode(Round_6$Q52I, "-1=NA")
+  
+  #Trust Electoral Commission
+  Round_6$Q52C <- recode(Round_6$Q52C, "0=-0.250") 
+  Round_6$Q52C <- recode(Round_6$Q52C, "1=-0.125")
+  Round_6$Q52C <- recode(Round_6$Q52C, "9=0")
+  Round_6$Q52C <- recode(Round_6$Q52C, "2=0.125")
+  Round_6$Q52C <- recode(Round_6$Q52C, "3=0.250")
+  Round_6$Q52C <- recode(Round_6$Q52C, "998=NA")
+  Round_6$Q52C <- recode(Round_6$Q52C, "-1=NA")
+
+  #Institutional Trust Variable for Round 1. 
+  Round_6$int_trust <- Round_6$Q52H + Round_6$Q52J + Round_6$Q52I + Round_6$Q52C 
+  
+    #Government Performance
+    #Education
+  Round_6$Q66H <- recode(Round_6$Q66H, "1=0")
+  Round_6$Q66H <- recode(Round_6$Q66H, "2=1")
+  Round_6$Q66H <- recode(Round_6$Q66H, "9=2")
+  Round_6$Q66H <- recode(Round_6$Q66H, "3=3")
+  Round_6$Q66H <- recode(Round_6$Q66H, "4=4")
+  Round_6$Q66H <- recode(Round_6$Q66H, "98=NA")
+  Round_6$Q66H <- recode(Round_6$Q66H, "-1=NA")
+    #Health
+  Round_6$Q66G <- recode(Round_6$Q66G, "1=0")
+  Round_6$Q66G <- recode(Round_6$Q66G, "2=1")
+  Round_6$Q66G <- recode(Round_6$Q66G, "9=2")
+  Round_6$Q66G <- recode(Round_6$Q66G, "3=3")
+  Round_6$Q66G <- recode(Round_6$Q66G, "4=4")
+  Round_6$Q66G <- recode(Round_6$Q66G, "98=NA")
+  Round_6$Q66G <- recode(Round_6$Q66G, "-1=NA")
+    #Jobs 
+  Round_6$Q66C <- recode(Round_6$Q66C, "1=0")
+  Round_6$Q66C <- recode(Round_6$Q66C, "2=1")
+  Round_6$Q66C <- recode(Round_6$Q66C, "9=2")
+  Round_6$Q66C <- recode(Round_6$Q66C, "3=3")
+  Round_6$Q66C <- recode(Round_6$Q66C, "4=4")
+  Round_6$Q66C <- recode(Round_6$Q66C, "98=NA")
+  Round_6$Q66C <- recode(Round_6$Q66C, "-1=NA")
+    #Prices
+  Round_6$Q66D <- recode(Round_6$Q66D, "1=0")
+  Round_6$Q66D <- recode(Round_6$Q66D, "2=1")
+  Round_6$Q66D <- recode(Round_6$Q66D, "9=2")
+  Round_6$Q66D <- recode(Round_6$Q66D, "3=3")
+  Round_6$Q66D <- recode(Round_6$Q66D, "4=4")
+  Round_6$Q66D <- recode(Round_6$Q66D, "98=NA")
+  Round_6$Q66D <- recode(Round_6$Q66D, "-1=NA")
+  
+  #Government Performance Index
+  Round_6$gov_perf <- Round_6$Q66H + Round_6$Q66G + Round_6$Q66C + Round_6$Q66D
+  
+    #Economic Performance 
+    #Satisfy with the condition of national economy today.
+  Round_6$Q4A <- recode(Round_6$Q4A, "1=0")
+  Round_6$Q4A <- recode(Round_6$Q4A, "2=1")
+  Round_6$Q4A <- recode(Round_6$Q4A, "9=2")
+  Round_6$Q4A <- recode(Round_6$Q4A, "3=2")  
+  Round_6$Q4A <- recode(Round_6$Q4A, "4=3")
+  Round_6$Q4A <- recode(Round_6$Q4A, "5=4")
+  Round_6$Q4A <- recode(Round_6$Q4A, "98=NA")
+  Round_6$Q4A <- recode(Round_6$Q4A, "-1=NA")
+    #Present versus future (one year)
+  Round_6$Q7 <- recode(Round_6$Q7, "1=0")
+  Round_6$Q7 <- recode(Round_6$Q7, "2=1")
+  Round_6$Q7 <- recode(Round_6$Q7, "9=2")
+  Round_6$Q7 <- recode(Round_6$Q7, "3=2")  
+  Round_6$Q7 <- recode(Round_6$Q7, "4=3")
+  Round_6$Q7 <- recode(Round_6$Q7, "5=4")
+  Round_6$Q7 <- recode(Round_6$Q7, "98=NA")
+  Round_6$Q7 <- recode(Round_6$Q7, "-1=NA")
+    #Present versus past satisfaction with economic life conditions
+  Round_6$Q6 <- recode(Round_6$Q6, "1=0")
+  Round_6$Q6 <- recode(Round_6$Q6, "2=1")
+  Round_6$Q6 <- recode(Round_6$Q6, "9=2")
+  Round_6$Q6 <- recode(Round_6$Q6, "3=2")  
+  Round_6$Q6 <- recode(Round_6$Q6, "4=3")
+  Round_6$Q6 <- recode(Round_6$Q6, "5=4")
+  Round_6$Q6 <- recode(Round_6$Q6, "98=NA")
+  Round_6$Q6 <- recode(Round_6$Q6, "-1=NA")
+    #Own living conditions compared to others
+  Round_6$Q5 <- recode(Round_6$Q5, "1=0")
+  Round_6$Q5 <- recode(Round_6$Q5, "2=1")
+  Round_6$Q5 <- recode(Round_6$Q5, "9=2")
+  Round_6$Q5 <- recode(Round_6$Q5, "3=2")  
+  Round_6$Q5 <- recode(Round_6$Q5, "4=3")
+  Round_6$Q5 <- recode(Round_6$Q5, "5=4")
+  Round_6$Q5 <- recode(Round_6$Q5, "98=NA")
+  Round_6$Q5 <- recode(Round_6$Q5, "-1=NA")
+  
+  #Economic Satisfaction Index
+  Round_6$econ_sat <- Round_6$Q4A + Round_6$Q7 + Round_6$Q6 + Round_6$Q5  
+  
+  #Participation: Since the only variable Moehler 2009 includes in this index and included in this round is voting. Use is it as a binary indicator of participation.
+  
+  Round_6$Q21 <- recode(Round_6$Q21, "1=1")
+  Round_6$Q21 <- recode(Round_6$Q21, "2=0")
+  Round_6$Q21 <- recode(Round_6$Q21, "3=0")
+  Round_6$Q21 <- recode(Round_6$Q21, "4=0")
+  Round_6$Q21 <- recode(Round_6$Q21, "5=0")
+  Round_6$Q21 <- recode(Round_6$Q21, "6=0")
+  Round_6$Q21 <- recode(Round_6$Q21, "7=0")
+  Round_6$Q21 <- recode(Round_6$Q21, "9=0")
+  Round_6$Q21 <- recode(Round_6$Q21, "98=NA")
+  Round_6$Q21 <- recode(Round_6$Q21, "-1=NA")
+
+  #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
+  Round_6$Q13 <- recode(Round_6$Q14, "0=0")
+  Round_6$Q13 <- recode(Round_6$Q14, "1=1")
+  Round_6$Q13 <- recode(Round_6$Q14, "2=2")
+  Round_6$Q13 <- recode(Round_6$Q14, "3=3")  
+  Round_6$Q13 <- recode(Round_6$Q14, "9=NA")
+  Round_6$Q13 <- recode(Round_6$Q14, "98=NA")
+  Round_6$Q13 <- recode(Round_6$Q14, "-1=NA")
+  
+    #Exposure to Mass Media (Same applies to do not knows here)
+    #Radio
+  Round_6$Q12A <- recode(Round_6$Q12A, "9=NA")
+  Round_6$Q12A <- recode(Round_6$Q12A, "98=NA")
+  Round_6$Q12A <- recode(Round_6$Q12A, "-1=NA")
+    #TV News 
+  Round_6$Q12B <- recode(Round_6$Q12B, "9=NA")
+  Round_6$Q12B <- recode(Round_6$Q12B, "98=NA")
+  Round_6$Q12B <- recode(Round_6$Q12B, "-1=NA")
+    #Newspaper
+  Round_6$Q12C <- recode(Round_6$Q12C, "9=NA")
+  Round_6$Q12C <- recode(Round_6$Q12C, "98=NA")
+  Round_6$Q12C <- recode(Round_6$Q12C, "-1=NA")
+  
+  #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
+  Round_6$educ <- recode(Round_6$Q97, "0=0")
+  Round_6$educ <- recode(Round_6$Q97, "98=NA")
+  Round_6$educ <- recode(Round_6$Q97, "99=NA")
+  Round_6$educ <- recode(Round_6$Q97, "-1=NA")
+  
+  #Gender (Female)
+  Round_6$gender <- recode(Round_6$Q101, "2=1")
+  Round_6$gender <- recode(Round_6$Q101, "1=0")
+  
+  #Age 
+  Round_6$age <- recode(Round_6$Q1, "-1=NA")
+  Round_6$age <- recode(Round_6$Q1, "98=NA")
+  Round_6$age <- recode(Round_6$Q1, "999=NA")  
+  
+  #Elections by Country
+    #Year (Interview year is the last year of the round.)
+    Round_6$year <- 2015
+    
+    #Country are recoded to the lastest code book (round 6)
+    Round_6$state[Round_6$COUNTRY == 3] <- 3 #Botswana
+    Round_6$state[Round_6$COUNTRY == 11] <- 11 #Ghana    
+    Round_6$state[Round_6$COUNTRY == 14] <- 14   #Lesotho
+    Round_6$state[Round_6$COUNTRY == 17] <- 17   #Malawi
+    Round_6$state[Round_6$COUNTRY == 18] <- 18 #Mali
+    Round_6$state[Round_6$COUNTRY == 22] <- 22  #Namibia
+    Round_6$state[Round_6$COUNTRY == 24] <- 24  #Nigeria
+    Round_6$state[Round_6$COUNTRY == 28] <- 28 #South Africa
+    Round_6$state[Round_6$COUNTRY == 31] <- 31 #Tanzania
+    Round_6$state[Round_6$COUNTRY == 34] <- 34 #Uganda
+    Round_6$state[Round_6$COUNTRY == 35] <- 35 #Zambia
+    Round_6$state[Round_6$COUNTRY == 36] <- 36 #Zimbabwe
+    Round_6$state[Round_6$COUNTRY == 7] <- 7 #Cape Verde    
+    Round_6$state[Round_6$COUNTRY == 13] <- 13 #Kenya    
+    Round_6$state[Round_6$COUNTRY == 21] <- 21 #Mozambique    
+    Round_6$state[Round_6$COUNTRY == 26] <- 26 #Senegal   
+    Round_6$state[Round_6$COUNTRY == 16] <- 16 #Madagascar
+    Round_6$state[Round_6$COUNTRY == 2] <- 2 #Benin
+    Round_6$state[Round_6$COUNTRY == 4] <- 4 #Burkina Faso 
+    Round_6$state[Round_6$COUNTRY == 15] <- 15 #Liberia 
+    Round_6$state[Round_6$COUNTRY == 5] <- 5 #Burundi  
+    Round_6$state[Round_6$COUNTRY == 6] <- 6  #Cameroon   
+    Round_6$state[Round_6$COUNTRY == 8] <- 8  #Cote d'Ivoire  
+    Round_6$state[Round_6$COUNTRY == 12] <- 12  #Guinea  
+    Round_6$state[Round_6$COUNTRY == 19] <- 19  #Mauritius  
+    Round_6$state[Round_6$COUNTRY == 23] <- 23  #Niger  
+    Round_6$state[Round_6$COUNTRY == 27] <- 27  #Sierra Leone  
+    Round_6$state[Round_6$COUNTRY == 29] <- 29  #Sudan  
+    Round_6$state[Round_6$COUNTRY == 30] <- 30  #Swaziland  
+    Round_6$state[Round_6$COUNTRY == 32] <- 32  #Togo  
+    Round_6$state[Round_6$COUNTRY == 36] <- 36  #Gabon  
+    Round_6$state[Round_6$COUNTRY == 37] <- 37  #Sao Tome and Principe  
+
+    
+    
+    #Election Free and Fair (I do not understand the question dropped)
+    Round_6$Q22 <- recode(Round_6$Q22, "4=1")
+    Round_6$Q22 <- recode(Round_6$Q22, "3=0.5")    
+    Round_6$Q22 <- recode(Round_6$Q22, "9=0") 
+    Round_6$Q22 <- recode(Round_6$Q22, "2=-0.5")  
+    Round_6$Q22 <- recode(Round_6$Q22, "1=-1")  
+    Round_6$Q22 <- recode(Round_6$Q22, "8=NA")  
+    Round_6$Q22 <- recode(Round_6$Q22, "98=NA")  
+    Round_6$Q22 <- recode(Round_6$Q22, "-1=NA")  
+
+    #Election Year
+    Round_6$election_year[Round_6$state == 3] <- 2009 #Botswana
+    Round_6$election_year[Round_6$state == 11] <- 2012 #Ghana    
+    Round_6$election_year[Round_6$state == 14] <- 2012   #Lesotho
+    Round_6$election_year[Round_6$state == 17] <- 2014   #Malawi
+    Round_6$election_year[Round_6$state == 18] <- 2013 #Mali
+    Round_6$election_year[Round_6$state == 22] <- 2009  #Namibia
+    Round_6$election_year[Round_6$state == 24] <- 2011  #Nigeria
+    Round_6$election_year[Round_6$state == 28] <- 2014 #South Africa
+    Round_6$election_year[Round_6$state == 31] <- 2010 #Tanzania
+    Round_6$election_year[Round_6$state == 34] <- 2011 #Uganda
+    Round_6$election_year[Round_6$state == 35] <- 2011 #Zambia
+    Round_6$election_year[Round_6$state == 36] <- 2013 #Zimbabwe
+    Round_6$election_year[Round_6$state == 7] <- 2011 #Cape Verde    
+    Round_6$election_year[Round_6$state == 13] <- 2013 #Kenya    
+    Round_6$election_year[Round_6$state == 21] <- 2014 #Mozambique    
+    Round_6$election_year[Round_6$state == 26] <- 2012 #Senegal   
+    Round_6$election_year[Round_6$state == 16] <- 2013 #Madagascar
+    Round_6$election_year[Round_6$state == 2] <- 2011 #Benin
+    Round_6$election_year[Round_6$state == 4] <- 2010 #Burkina Faso
+    Round_6$election_year[Round_6$state == 15] <- 2011 #Liberia
+    Round_6$election_year[Round_6$state == 37] <- 2010 #Burundi  
+    Round_6$election_year[Round_6$state == 6] <- 2011  #Cameroon   
+    Round_6$election_year[Round_6$state == 8] <- 2010  #Cote d'Ivoire  
+    Round_6$election_year[Round_6$state == 12] <- 2010  #Guinea  
+    Round_6$election_year[Round_6$state == 19] <- 2010  #Mauritius  
+    Round_6$election_year[Round_6$state == 24] <- 2011  #Niger  
+    Round_6$election_year[Round_6$state == 27] <- 2012  #Sierra Leone  
+    Round_6$election_year[Round_6$state == 29] <- 2015  #Sudan  
+    Round_6$election_year[Round_6$state == 30] <- 2013  #Swaziland  
+    Round_6$election_year[Round_6$state == 32] <- 2015  #Togo  
+    Round_6$election_year[Round_6$state == 36] <- 2009  #Gabon  
+    Round_6$election_year[Round_6$state == 37] <- 2011  #Sao Tome and Principe      
+    
+    #Years since election
+    
+    Round_6$years_since_election = Round_6$year - Round_6$election_year
+    
+    #Turnovers
+    Round_6$pol_turnover[Round_6$state == 3] <- 0 #Botswana
+    Round_6$pol_turnover[Round_6$state == 11] <- 2 #Ghana    
+    Round_6$pol_turnover[Round_6$state == 14] <- 2   #Lesotho
+    Round_6$pol_turnover[Round_6$state == 17] <- 2   #Malawi
+    Round_6$pol_turnover[Round_6$state == 18] <- 3 #Mali
+    Round_6$pol_turnover[Round_6$state == 22] <- 0  #Namibia
+    Round_6$pol_turnover[Round_6$state == 24] <- 0  #Nigeria
+    Round_6$pol_turnover[Round_6$state == 28] <- 0 #South Africa
+    Round_6$pol_turnover[Round_6$state == 31] <- 0 #Tanzania
+    Round_6$pol_turnover[Round_6$state == 34] <- 1 #Uganda
+    Round_6$pol_turnover[Round_6$state == 35] <- 2 #Zambia
+    Round_6$pol_turnover[Round_6$state == 36] <- 0 #Zimbabwe
+    Round_6$pol_turnover[Round_6$state == 7] <- 2 #Cape Verde    
+    Round_6$pol_turnover[Round_6$state == 13] <- 2 #Kenya    
+    Round_6$pol_turnover[Round_6$state == 21] <- 0 #Mozambique    
+    Round_6$pol_turnover[Round_6$state == 26] <- 1 #Senegal   
+    Round_6$pol_turnover[Round_6$state == 16] <- 3 #Madagascar
+    Round_6$pol_turnover[Round_6$state == 2] <- 3 #Benin
+    Round_6$pol_turnover[Round_6$state == 4] <- 0 #Burkina Faso
+    Round_6$pol_turnover[Round_6$state == 15] <- 1 #Liberia
+    Round_6$pol_turnover[Round_6$state == 37] <- 0 #Burundi  
+    Round_6$pol_turnover[Round_6$state == 6] <- 0  #Cameroon   
+    Round_6$pol_turnover[Round_6$state == 8] <- 0  #Cote d'Ivoire  
+    Round_6$pol_turnover[Round_6$state == 12] <- 0  #Guinea  
+    Round_6$pol_turnover[Round_6$state == 19] <- 5  #Mauritius  
+    Round_6$pol_turnover[Round_6$state == 24] <- 0  #Niger  
+    Round_6$pol_turnover[Round_6$state == 27] <- 1  #Sierra Leone  
+    Round_6$pol_turnover[Round_6$state == 29] <- 0  #Sudan  
+    Round_6$pol_turnover[Round_6$state == 30] <- 0  #Swaziland  
+    Round_6$pol_turnover[Round_6$state == 32] <- 0  #Togo  
+    Round_6$pol_turnover[Round_6$state == 36] <- 0  #Gabon  
+    Round_6$pol_turnover[Round_6$state == 37] <- 2  #Sao Tome and Principe      
+    
+    
+    
+        #Year of last turnover or first election
+    Round_6$year_turnover[Round_6$state == 3] <- 1966 #Botswana
+    Round_6$year_turnover[Round_6$state == 11] <- 2012 #Ghana    
+    Round_6$year_turnover[Round_6$state == 14] <- 2012   #Lesotho
+    Round_6$year_turnover[Round_6$state == 17] <- 2009   #Malawi
+    Round_6$year_turnover[Round_6$state == 18] <- 2013 #Mali
+    Round_6$year_turnover[Round_6$state == 22] <- 1990  #Namibia
+    Round_6$year_turnover[Round_6$state == 24] <- 1983  #Nigeria
+    Round_6$year_turnover[Round_6$state == 28] <- 1994 #South Africa
+    Round_6$year_turnover[Round_6$state == 31] <- 1962 #Tanzania
+    Round_6$year_turnover[Round_6$state == 34] <- 2006 #Uganda
+    Round_6$year_turnover[Round_6$state == 35] <- 2011 #Zambia
+    Round_6$year_turnover[Round_6$state == 36] <- 1980 #Zimbabwe  
+    Round_6$year_turnover[Round_6$state == 7] <- 2011 #Cape Verde    
+    Round_6$year_turnover[Round_6$state == 13] <- 2013 #Kenya    
+    Round_6$year_turnover[Round_6$state == 21] <- 1994 #Mozambique    
+    Round_6$year_turnover[Round_6$state == 26] <- 2000 #Senegal
+    Round_6$year_turnover[Round_6$state == 16] <- 2009 #Madagascar
+    Round_6$year_turnover[Round_6$state == 2] <- 2006 #Benin 
+    Round_6$year_turnover[Round_6$state == 4] <- 2002 #Burkina Faso 
+    Round_6$year_turnover[Round_6$state == 15] <- 2005 #Liberia 
+    Round_6$year_turnover[Round_6$state == 37] <- 2005 #Burundi  
+    Round_6$year_turnover[Round_6$state == 6] <- 1992  #Cameroon   
+    Round_6$year_turnover[Round_6$state == 8] <- 2000  #Cote d'Ivoire  
+    Round_6$year_turnover[Round_6$state == 12] <- 2010  #Guinea  
+    Round_6$year_turnover[Round_6$state == 19] <- 2005  #Mauritius  
+    Round_6$year_turnover[Round_6$state == 24] <- 2011  #Niger  
+    Round_6$year_turnover[Round_6$state == 27] <- 2007  #Sierra Leone  
+    Round_6$year_turnover[Round_6$state == 29] <- 1996  #Sudan  
+    Round_6$year_turnover[Round_6$state == 30] <- 1993  #Swaziland  
+    Round_6$year_turnover[Round_6$state == 32] <- 1993 #Togo  
+    Round_6$year_turnover[Round_6$state == 36] <- 1993  #Gabon  
+    Round_6$year_turnover[Round_6$state == 37] <- 2011  #Sao Tome and Principe   
+    
+      #Winner
+    Round_6$winner <- 0 
+    Round_6$winner[Round_6$Q90B==141 & Round_6$state == 3] <- 1 #Botswana
+    Round_6$winner[Round_6$Q90B==261 & Round_6$state == 11] <- 1 #Ghana 
+    Round_6$winner[Round_6$Q90B==340 & Round_6$state == 14] <- 1 #Lesotho   
+    Round_6$winner[Round_6$Q90B==462 & Round_6$state == 17] <- 1 #Malawi   
+    Round_6$winner[Round_6$Q90B==516 & Round_6$state == 18] <- 1 #Mali  
+    Round_6$winner[Round_6$Q90B==590 & Round_6$state == 22] <- 1 #Namibia    
+    Round_6$winner[Round_6$Q90B==638 & Round_6$state == 24] <- 1 #Nigeria    
+    Round_6$winner[Round_6$Q90B==702 & Round_6$state == 28] <- 1 #South Africa   
+    Round_6$winner[Round_6$Q90B==740 & Round_6$state == 31] <- 1 #Tanzania   
+    Round_6$winner[Round_6$Q90B==780 & Round_6$state == 34] <- 1 #Uganda   
+    Round_6$winner[Round_6$Q90B==826 & Round_6$state == 35] <- 1  #Zambia  
+    Round_6$winner[Round_6$Q90B==861 & Round_6$state == 36] <- 1    #Zimbabwe
+    Round_6$winner[Round_6$Q90B==220 & Round_6$state == 7] <- 1    #Cape Verde
+    Round_6$winner[Round_6$Q90B==305 & Round_6$state == 13] <- 1    #Kenya
+    Round_6$winner[Round_6$Q90B==540 & Round_6$state == 21] <- 1    #Mozambique
+    Round_6$winner[Round_6$Q90B==185 & Round_6$state == 26] <- 1    #Senegal
+    Round_6$winner[Round_6$Q90B==441 & Round_6$state == 16] <- 1 #Madagascar
+        #IND        2         Benin
+    Round_6$winner[Round_6$Q90B==181 & Round_6$state == 4] <- 1    #Burkina Faso
+    Round_6$winner[Round_6$Q90B==386 & Round_6$state == 15] <- 1    #Liberia
+    Round_6$winner[Round_6$Q90B==1180 & Round_6$state == 37] <- 1 #Burundi  
+    Round_6$winner[Round_6$Q90B==1220 & Round_6$state == 6] <- 1  #Cameroon   
+    Round_6$winner[Round_6$Q90B==1262 & Round_6$state == 8] <- 1  #Cote d'Ivoire  
+    Round_6$winner[Round_6$Q90B==1300 & Round_6$state == 12] <- 1  #Guinea  
+    Round_6$winner[Round_6$Q90B==903 & Round_6state == 19] <- 1  #Mauritius  
+    Round_6$winner[Round_6$Q90B==900 & Round_6$state == 19] <- 1  #Mauritius  
+    Round_6$winner[Round_6$Q90B==901 & Round_6$state == 19] <- 1  #Mauritius  
+    Round_6$winner[Round_6$Q90B==1105 & Round_6$state == 24] <- 1  #Niger  
+    Round_6$winner[Round_6$Q90B==931 & Round_6$state == 27] <- 1  #Sierra Leone  
+    Round_6$winner[Round_6$Q90B==1540 & Round_6$state == 29] <- 1  #Sudan  
+    #Round_5$winner[Round_6$Q90B==420 & Round_6$state == 30] <- 1  #Swaziland  Non partisan
+    Round_6$winner[Round_6$Q90B==1140 & Round_6$state == 32] <- 1 #Togo      
+    Round_6$winner[Round_6$Q90B==1700 & Round_6$state == 36] <- 1  #Gabon  
+    # IND 1  #Sao Tome and Principe      
+    
+    
+    
+    Round_6$winner[Round_6$Q90B==-1] <- NA
+    Round_6$winner[Round_6$Q90B==9996] <- NA
+    Round_6$winner[Round_6$Q90B==9998] <- NA
+    
+    #Independent
+    Round_6$independent <- 0
+    Round_6$independent[Round_6$Q90A == 0] <- 1
+    Round_6$independent[Round_6$Q90A == 8] <- NA
+    Round_6$independent[Round_6$Q90A == 9] <- NA
+    Round_6$independent[Round_6$Q90A == -1] <- NA  
     
           
 ```
