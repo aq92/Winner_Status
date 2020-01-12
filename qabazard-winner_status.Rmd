@@ -24,7 +24,122 @@ linkcolor: black
 endnote: no
 ---
 
-```{r setup, include=FALSE}
+Affiliation with the winning party is shown to be an important determinant of political trust and support (Anderson and Guillory 1997; Anderson et al. 2005). That is, when citizens identify with a political party that won the election, they are more inclined to trust in political institutions (Moehler 2009). Winning and losing has also been shown to be important in determining levels of support in newly democratized states (Anderson et al. 2005). The unfamiliarity with losing is predicted to be important in determining levels of political support among citizens affiliated with political parties that lost the elections^[See Chapter 6 in Anderson et al 2005 for the complete argument for losing predicting political support in newly democratized states.]. Others have questioned whether winners and losers have varying levels of political support for the regime when residing in contexts where competitive elections are rare, and elections are perceived to be imperfect, as was the case in Sub-Saharan Africa (Moehler 2009). However, the increase in the number of free and fair elections in the region over the past two decades and increased availability of comparable public opinion data requires revisiting the mechanisms that link winning and losing to levels of political support (Lindberg 2006).  
+
+Since the winners of today, in cases where turnover occurs, are the losers of tomorrow, increased experience with elections is an opportunity to test the stability of levels of public support. Previous work suggests that increased experience with elections, decreases the legitimacy gap between winners and losers of political contests (Moehler and Lindberg 2009). Given the available public opinion data, the authors of these works can only assume that citizens observe the results of the elections and update their attitudes towards, for example, institutions accordingly. For instance, citizens affiliated with a political party that lost the election may be less inclined to trust in political institutions than if their preferred party had one that election. While this argument may seem less cognitively demanding than that which is presented in work about government performance (Van der Meer 2016), it still requires citizens to have a heightened interest in politics and knowledge about electoral outcomes.  
+    
+Revisiting the question of partisanship in Sub-Saharan Africa is a fruitful opportunity to test whether the effects observed in previous studies hold (Moehler 2009; Moehler and Lindberg 2009). Having more free, fair, and competitive elections in the region allows for increased opportunities to test the effects of winner status on trust in political institutions. Additionally, the presence of several additional waves of Afrobarometer (AB) data allows for more coverage of elections and larger samples analyzed after each election.  
+
+This paper uses data from six rounds of AB surveys conducted in 32 countries in Sub-Saharan Africa between 1999 and 2015.   
+	
+# Electoral Outcomes and Political Support:  
+
+While political support is undoubtably important, it is unclear what levels of trust and perceived legitimacy are required in a democratic polity (Warren 2017). The question is especially challenging to scholars studying newly democratized states (Anderson et al 2005). In democracies, citizens are expected to be critical of institutions. The literature that focuses on advanced democracies shows levels of trust in institutions to be declining (Norris 1999). However, scholars have noted a gap in political trust and perceived legitimacy among winners and losers of electoral contests.  
+
+The effect of winner/loser status is consistent and has been confirmed in cross-national and regional studies (Anderson and Guillory 1997; Moehler 2009; Moehler and Lindberg 2009). However, most work that explains variations in political support between winners and losers relies on theories generated in studies about western democracies (Anderson et al. 2005, 91). That being said, scholars have theorized the presence of an effect resulting from challenges associated with states that experience infrequent and irregular elections. For example, Moehler (2009) argues that the effect of winner/loser status operates through evaluations of electoral integrity. Others argue that the gap in political support between winners and losers is reduced with political turnover (Moehler and Lindberg 2009).  
+
+Reducing the gap in levels of political support between winners and losers is crucial for legitimacy and systems support (Craig et al. 2006). While having elections may have democratizing effects (Lindberg 2004), elections are also viewed as threats to systems support and levels of political trust (Ginsberg and Weissberg 1978 cited in Nadeau and Blais 1993). Losers accepting the results of elections is important for political legitimation. In cases of newly democratized states, where political systems and institutions are not yet stable, mass perceptions of legitimacy are crucial (Moehler 2009, 346).  
+  
+What explains the legitimacy gap between winners and losers? To explain the link between winning/losing and trust, scholars argue that winners award their governments more legitimacy than independents and supporters of the losing party (Moehler 2009; 348). Others emphasize losers’ consent and claim that losing has stronger negative effects in newly democratized states (Anderson et al. 2005). Others shed light on problems that are not always considered by scholars working on this topic. Some respondents may identify with the winning party and this may lead to problems in inference^[See Bratton et al. 2004 in the following chapter and section “Institutional Influences: Party Identification”].  
+
+Beyond the direct influence of party identification, previous literature emphasizes perceptions of the fairness of the electoral process. Scholars working with cross-national samples, samples that include advanced industrialized democracies, and regional analyses that focus on newly democratized states all refer to perceptions of the fairness of the electoral process (Craig et al 2005; Moehler 2009; Moehler and Lindberg 2006). While a gap between the perceptions of winners and losers may exist, an individual affiliated with a losing political party, while also perceiving the electoral process to be fair, may be more inclined to trust in political institutions.  
+  
+In the case of the legitimacy gap in Sub-Saharan Africa, the increase in the number of competitive, multiparty elections beginning in the 1990s imposes additional challenges to the mechanisms that link electoral outcomes to political support (Bratton et al. 2004, 256). Working with multiple AB survey waves^[Moehler and Lindberg 2009 use rounds 1-3 of the Afrobarometer surveys.], Moehler and Lindberg show that the political legitimacy gap has decreased with at least one political turnover. However, they show that electoral fairness does not matter in decreasing the gap between winners and losers of the most recent election^[The assessment of electoral fairness used by Moehler and Lindberg (2009) is the perception measure from the AB surveys. The measure is external.]  (Moehler and Lindberg 2009). Looking only at survey responses between 1999 and 2006, it is not clear whether political turnovers are moderating levels of political support among winners and losers.  
+  
+I argue that the increase in the number of competitive elections challenges the assumption that respondents observe political changes, such as their favored parties winning the most recent elections or observing partial or full political turnover and factoring these changes into their levels of political support for institutions. To test the assumptions proposed in previous literature (Moehler 2009; Moehler and Lindberg 2009), I focus on an individual respondent’s levels of trust in political institutions. This paper builds on the contributions of Moehler (2009) and Moehler and Lindberg (2009) theoretically and empirically. This analysis subjects results presented in the aforementioned articles to empirical and theoretical scrutiny in order to attenuate concerns that findings regarding the effects of winning/losing only hold as a result of the political circumstances in the era covered by these articles. The results is a series of theoretically motivated hypotheses that strengthen or weaken the three main theories presented by previous scholars.  
+
+# Theory and Hypotheses: 
+
+This section draws attention to theories that explain the association between winner/loser status and levels of political support. First, I explain the theories and consequences of a direct link between affiliations with the winning/losing party and political support. Second, I explain how scholars have emphasized perceptions of the fairness of the electoral process as a variable mediating the effect of party affiliation. Third, I explain how political turnovers have been shown to reduce the legitimacy gap between winners and losers of the political process. Throughout my description of these mechanisms, I highlight the assumptions that have to do with respondents’ levels of political interest and knowledge. I argue that previous literature overestimates voters’ attention to electoral outcomes when responding to items that measure political support. I exploit variations in the number of elections that occur in each state, in whether there was political turnover after the elections, and whether respondents were surveyed in years that were unique for the presence of recent elections.  
+
+## H1: The Home Team Hypothesis^[Holmberg (1999, 117)]
+
+[insert diagram]
+
+The argument for a relationship between party affiliation, electoral outcomes, and political support has a long history and extends back to key works which rely on cross-national samples of democracies (Anderson and Guillory 1997), samples from an established democracy (Nadeau and Blais 1993, Craig et al 2006), and extended to newly democratized states (Anderson et al. 2005). Some works emphasize the reaction of respondents affiliated with the party that won an election (Moehler 2009) and others emphasize the reaction of respondents affiliated with losers of the electoral process (Nadeau and Blais 1993; Anderson et al. 2005). In both cases this argument is often described as a “Home Team” hypothesis (Holmberg 1999, 117; Norris 1999; 223; cited in Banducci and Karp 2003, 447). This hypothesis implies that since their politicians are in power, respondents that feel closer to a particular political party are more likely to grant political support.  
+
+In literature on political support in Sub-Saharan Africa, the “home team” hypothesis is tested and there is evidence that winners are more trusting in government institutions (Moehler 2009). In the case of established democracies and states with less experience with elections, the “home team” hypothesis requires voters to observe electoral outcomes and know who won and lost the elections. However, researchers are not able to verify the respondents’ levels of political knowledge when using AB data^[Some waves included measures of political knowledge, but these items were asked in specific countries. See Bratton et al. 2004-page 436 note 30.]. Yet, other works confirm previous findings that show winner/loser status determining levels of political support (Moehler and Lindberg 2009).  
+
+While the findings show evidence of the theorized short-term effects of winning and losing elections, previous literature does not consider whether the effects are a result of the absence of political turnovers. In the absence of political turnover, elections confirm the association between the incumbent party and political institutions. In this circumstance, respondents of both the incumbent party and opposition party can attribute political responsibility to the incumbent party. For example, when a respondent is asked about a particular political institution and one party has been in power for multiple election cycles, a respondent that feels closer to the opposition party will make a decision under different conditions than that of a respondent surveyed where political turnover occurred. If respondents condition levels of political support on the party in power, then we should expect a respondent in a state that didn’t experience turnover to be more likely to attribute blame and withhold support than a respondent in a state that experienced multiple transitions of power. Therefore, the home team hypothesis, when tested, should account for the presence and absence of electoral turnovers.  
+
+*H1A: Controlling for the number of political turnovers, being affiliated with the winner party leads to increased political trust and support.*  
+
+In addition to political turnovers, for there to be a direct link between party identification and political support, this effect should be independent of political interest and engagement. Previous studies that test the “home team” hypothesis use a variable from the AB data that combines party identification and strength of partisanship^[Only the first round of the AB surveys asks respondent the close to party item and whether the respondent voted for the ruling or opposing. However, the latter was not used, in either Moehler (2009) and Moehler and Lindberg (2009), to test for the effect of winner/loser status on partisanship. Reasons for this might be that it is not clear what elections the item is referring to.] (Moehler 2009; Moehler and Lindberg 2009). The variable asks if a respondent feels close to a political party. Then, each respondent is asked to report the political party that he/she feels close to. Therefore, it is not possible to capture the effects of leaning partisans or any degree of partisanship for that matter.  
+
+In addition to this limitation, previous research conflates the effects of winning and losing by coding the closeness to party variable with lower values indicating a respondent that feels close to a party that lost, respondents not affiliated with any political party are coded to the middle category, and higher categories indicating respondents that feel close to parties that won the election (Moehler 2009; Moehler and Lindberg 2009). This way of operationalization is problematic for the hypothesized relationship because it conflates the effects of winning and losing. The effects are not necessarily symmetric, winners cannot always be expected to grant their government more political support^[This is a reference to coding of the independent variable in Moehler (2009). However, the author does not claim that winners are always expected to grant their government political support. This claim is made to as part of the example in the following sentence.]. Consider a case were winners are not satisfied with their government, but this is masked by variation in the levels of support of independents and losers. In this case, the coding decisions do not capture what is intended of them.  
+
+*H1B: Relative to the effect of losing the elections, winner status should, controlling for the effect of being an independent, lead to increased trust and support.*  
+
+In order to determine whether attitudes are stable or fluctuate as a result of electoral results and to address the aforementioned concerns, I test whether winning status predicts levels of political support. In my coding decisions, I separate the effects of winning and losing for clarity. Evidence of an effect of party affiliation supports the “home team” hypothesis and confirms the findings of previous scholars (Moehler 2009; Moehler and Lindberg 2009). An absence of the consistent effect of party affiliation is evidence that scholars may be overestimating the effects of electoral outcomes and attitudes instability. While we may not conclude that the absence of an effect is evidence of a particular factor at play, we can look to factors such as the distance from the most recent elections, whether there was political turnover, or whether the effect is driven by winners or losers as evidence that respondents are not behaving in ways theories of the “home team” hypothesis expect of them.  
+
+As a result of the time the AB data is collected, some respondents are surveyed soon after elections and others a times distant from elections. Since the effects of electoral outcomes are discussed as short-term forces, accounting for time passed since the elections is necessary to test whether the effect is, in fact, short-termed (Banducci and Karp 2003). If the effect of winning holds regardless of how distant the election was from the time respondents were surveyed, this is evidence that electoral outcomes have persistent effects. If the effects of winning the elections decline with that passes after the elections, this is evidence that the effect is short-termed (Banducci and Karp 2003). If the effect of winning holds regardless of how distant the election was from the time respondents were surveyed, this is evidence that electoral outcomes have persistent effects. If the effects of winning the elections decline with that passes after the elections, this is evidence that the effect is short-termed.  
+
+*H1C: Conditional on the years that passed since the most recent election, winner status leads to higher levels of political trust and support.*  
+  
+  
+## H2: Electoral Integrity as Mediating Factor:
+
+[Insert Diagram here]
+
+In addition to the presence of a direct effect, it has been argued that perceptions of the freeness and fairness of an election mediate the effects of winning/losing an election when predicting levels of political support (Moehler 2009). This argument is grounded in the idea that losers would be more tolerant of an electoral outcome that results from free and fair elections. Previous literature tests this argument, which is adopted from the social psychology literature (Lind and Tyler 1988 cited in Moehler and Lindberg 2009), on electoral outcomes. However, the challenge with this argument and with its extension to electoral outcomes is whether the undesirability of the outcome, namely losing an election, shapes an individual’s perception of the integrity of the electoral process. Moehler and Lindberg note that any electoral flaws will be viewed as harmless mistakes by winners and as intentional by losers (Moehler and Lindberg 2009, 1452).  
+
+The results for the effect of electoral qualities is mixed. As noted above, Moehler (2009) finds that perceptions of electoral integrity mediate the effects of winning the election. In another work, Moehler and Lindberg (2009) fail to find an effect for election qualities predicting levels of political support. I argue that perceptions of electoral integrity cannot be expected to mediate the effect of electoral outcome for two reasons. First, it is not clear that the separation between perceptions of rules and procedures from perceptions of the party that controls the executive branch is achieved. The measure of electoral fairness could be a place where respondents are expressing their distrust in the ruling power as opposed to objectively assessing the fairness of the process. Second, the literature that measures trust in political institutions usually includes the electoral commission as a key political institution in an institutional trust index (Moehler and Lindberg 2009)^[Moehler (2009) excludes the electoral commission from her measure of institutional support and the results are not very different.]) . If respondents are separating elections from their attitudes about other governing institutions, it is not clear how they would assess the electoral commission.  
+
+I argue that perceptions of electoral integrity do not mediate the effects of winning/losing the most recent elections. I argue that items which measure perceptions of electoral integrity are difficult instruments to use as mediating variables. This is the case because the hypothesized bias in political support would possibly absorb perceptions of electoral integrity. When testing this hypothesis, I expect my results to be consistent with that which was found by previous scholars (Moehler 2009). That is, I expect having more confidence in the electoral process to lead to having higher levels of political support. However, I expect that responses to the items that measure electoral integrity to be highly correlated with questions about political institutions among partisans. If the items are not correlated and the data shows that we have a meaningful distinction between these survey items, then Moehler (2009)’s theory will be test across all available AB survey waves.  
+
+## H3: Electoral Turnover and Narrowing the Gap in Political Support
+
+[Insert Diagram]
+
+In addition to the presence of an effect of winning/losing the most recent elections, scholars argue that political turnover narrows the legitimacy gap between winners and losers of the elections (Moehler and Lindberg 2009). However, looking at alignment with the party of the president and attitudes towards the judiciary, other research finds that partisanship matters and finds convergence in attitudes^[See Figure 1 in Bartels and Kramon (2020).] (Bartels and Kramon 2020). This hypothesis presents an additional challenge to the claim that attitudes are stable (Banducci and Karp 2003). Not only are attitudes determined by short term pressures exerted by the most recent election, attitudes of partisan respondents are expected to converge with political turnover.  
+
+Why does this convergence occur? The following argument has been presented as an explanation for the convergence of attitudes. First, new winners get a boost in confidence while their attitudes are still shaped by skepticism they held before winning the election. Second, new losers are expected to have a decline in support after losing but are expected to maintain some of their previous levels of confidence and institutional legitimacy (Moehler and Lindberg 2009, 1451). However, this argument does not tell us about how long we should expect the effect of turnover to last^[Moehler and Lindberg (2009) make not of this on page 1463. The explain that they were not able to test the effect of more than one turnover because none of the countries sampled experienced more than one turnover in the time of analysis (1999-2006).]. Therefore, extending this argument and testing it with more recent survey waves requires testing whether the effect of political turnover continue to narrow the legitimacy gap between winner and losers.  
+
+Another challenge, one that may cast doubt on whether the convergence that is observed in previous works actually represents moderation in the attitudes of partisans (Moehler and Lindberg 2009; Bartels and Kramon 2020), has to do with the role respondents that identify with the winning parties on surveys. The fact that some respondents identify with the winning party on measures of party affiliation and vote preference has led scholars to study this phenomenon extensively (Lindberg and Morrison 2005; Lindberg and Morrison 2008; cited in Moehler and Lindberg 2009). While previous literature shows, at least in the case of Ghana, that approximately 80 percent voters have stable voting preference, it is worth exploring the challenges that swing partisan can impose on a theory that relies of political turnover as mechanism that moderate the views of partisans.  
+
+The evidence observed for political turnovers narrowing the legitimacy gap is that winners and losers’ predicted levels of political support converge on measures such as institutional trust, perceived accountability, and consent to authority (Lindberg and Moehler 2009, 1459). Other work shows convergence in the proportion of winners and losers that support various forms of judicial power (Bartels and Kramon 2020).  Having a group of respondents that are likely to identify with the winning party threatens the validity of conclusions. If the levels of political support among swing respondents is moderate, then, whenever these respondents are surveyed, it is likely that they are causing the moderation in the view of winners and losers.  
+
+To clarify this point, I return to the argument presented by Moehler and Lindberg (2009). It can be the case that new winners increase level of support while maintaining skepticism from previous experiences. Similarly, losers are likely to decrease political support after losing, but the decline may not be drastic because of previous experiences. Since we cannot test whether new winner and new loser maintain previous levels of political support, it is important to consider the following possibility. Suppose the presence of a proportion of respondents that are likely to claim to be winners whenever they are surveyed. If this group has moderate and stable levels of support, political turnover means that repeatedly sampling these types of respondents leads to moderation between winners and losers. The absence of panel surveys makes distinguishing between both possibilities difficult. However, to identify when political turnovers have an effect, according to the argument presented by Moehler and Lindberg (2009) or otherwise, or whether the effect of turnovers operates through allowing swing respondents to narrow the legitimacy gap, it is necessary to extend the analysis to countries and times that experience more political turnovers.  
+
+If after multiple turnovers levels of political support among winners and losers polarize after converging, this would be evidence that turnovers do not have a lasting effect and we can eliminate the effect of swing voters. We only eliminate the effects of swing voters if they have moderate levels of support and because polarization among traditional partisans would eliminate a long-lasting effect of turnovers. However, this does not allow us to account for swing voters especially considering that their levels of political support may not be stable and moderate.  
+
+## Data and Methods:  
+To analyze the hypotheses described above, I use six waves of AB data. The AB surveys are nationally representative surveys conducted in 34 African countries across seven waves^[Although an early version has been released, the seventh wave is not included in this analysis. The reason for this is that the codebook has not been published yet.]. The surveys are conducted using a random, clustered, stratified, multi-stage probability sample (Afrobarometer 2019). In addition to being a valuable data source for studying attitudes in Africa, the AB surveys are used by scholars working on the same research question (Bratton et al 2005; Moehler 2009; Moehler and Lindberg 2009; Bartels and Kramon 2020). The presence of comparable public opinion data allows scholars to test and extend previous findings. With the exception of Bartels and Kramon (2020), which focuses on trust in the judiciary, previous research on the effects of identifying with the winning party uses data as recent as the third AB survey wave (Moehler and Lindberg 2009). Since the third waves of AB surveys, four additional survey waves have been available for use (Afrobarometer 2019). I test my hypothesis using six waves of AB data. Among other advantages, the inclusion of additional and more recent data allows this analysis to overcome the following concern. Respondents surveyed in the early waves of the AB surveys reside in countries that are more democratic than the African average (Moehler and Lindberg 2009, 1453). With the inclusion of additional states within each survey round, these concerns about generalizability are slightly alleviated.  
+
+### Measuring Trust in Political Institutions:    
+A key component of measuring political legitimacy and political support are levels of trust in political institutions (Moehler 2009; Moehler and Lindberg 2009). While the AB surveys ask about various political institutions, such as the presidency, the legislature, and the electoral commission, it is argued that respondents do not always distinguish between institutions in their evaluation. More specifically, measures of trust in political institutions “can be considered as a general assessment of the political culture in a country that guides the behavior of politicians and civil servants alike” (Zmerli and Hooghe 2013, 4). Yet, scholars that measure the effect of electoral outcomes discard measures of trust that can be associated with a politician (Moehler 2009; Moehler and Lindberg 2009). The justification for excluding certain institutions, such as the presidency and the legislature, is that the measure is intended to be an index on trust in institutions and not persons (Moehler 2009, 305 footnote 21). Therefore, this argument reflects a concern that responses to questions about institutions easily attributable to persons would merely capture evaluations of the persons in power. Thus, in previous work, measures of trust in the presidency, the legislature, or any particular representative are excluded (Moehler 2009; Moehler and Lindberg 2009). I adopt this approach when generating the *Institutional Trust Index*. Similar to previous works, this index sums measures of trust in: the electoral commission, the courts of law, the army, and the police (Moehler 2009, 350).  
+
+### Measures of the Independent Variables:  
+The primary independent variable is *Winner* and it captures whether a respondent is affiliated with the political party that won the most recent elections. As discussed in the description of the first hypothesis, previous studies have measured this variable differently. Some measure winner status through voting intention (Norris 1999), the party a respondent voted for in the last elections, or most preferred party (Holmberg 1999; Moehler 2009). In Moehler (2009), this variable is measured with lower values indicating that a respondent identifies with the political party that lost the elections, middle values indicating respondents that do not feel close to any political party, and respondents that identify with the winning party are coded in the higher categories. Another approach is to separate this variable into a series of binary indicators and including all but the reference category in the model (Moehler and Lindberg 2009; Bartels and Kramon 2020). Since I argue that the effects of winning and losing should not be conflated, I generate *Winner* and *Independent* variables and I leave losers as the reference category. This way of operationalizing the party affiliation variable into a winner status variable is beneficial because it allows for controlling for the effect of independents.  
+
+The second hypothesis highlights the role of perceptions of electoral integrity. I include the variable *Free and Fair Election*^[I maintain the coding decisions employed in Moehler (2009). See the in-article appendix for more detail about the coding decisions.] to test whether the mechanism proposed by Moehler (2009) continues to have an effect after the first round of the AB surveys. In addition to testing the effect of electoral integrity as a mediating variable, I test whether the hypothesized partisan bias extends to electoral integrity. Since the variable Free and Fair Election is included in all but the second wave of the AB surveys, I exclude the second wave from the analysis when I test the second hypothesis.  
+
+Finally, the first and third hypotheses require testing the effect of political turnovers. Since Moehler (2009) does not test the effect of political turnovers, I explore how other scholars have dealt with political turnovers. Previous works have measured turnovers differently^[Moehler and Lindberg (2009) measure both full and partial turnovers based on whether turnovers occurs in both branches or one. Bartels and Kramon (2020) focus on the presidency. Political turnovers are assumed to be when the party of the president changes.] (Moehler and Lindberg 2009; Bartels and Kramon 2020). In this article, political turnovers are measured as transitions in power particularly in the chief executive. I focus on political turnovers in the chief executive because this is the most salient political change and would probably produce the largest effect on respondents. Since my argument casts doubt on whether political changes factor into evaluations of political institution, using the most salient political change is most conservative approach.  
+
+### Controls  
+To best capture the effect of the independent variables, I include a series of control variables. To maintain comparability with previous research, I include control variables that were included in previous research^[I include the all controls employed by Moehler (2009).] (Moehler 2009). That being said, I challenge previous model specifications and conduct theoretically motivated robustness checks in the online appendices. I include the demographic variables: *Education*, *Female*, and *Age*. In addition to demographic variables, I include the following political engagement variables: *Electoral Participation*^[This variable is not included in the second round of the AB surveys.], *Political Interest*, and *Exposure to Mass Media*.  
+
+Previous work also controls for the effects of performance evaluations (Moehler 2009). Other work implies that partisan bias may lead self-proclaimed winners to be less willing to criticize the performance of their government (Bratton et al. 2005, 259; cited in Moehler and Lindberg 2009, 1454). This suggests that presence of multicollinearity in models that include both party affiliation and measures of government performance. While that may be the case, I include *Government Performance* and *Economic Performance* and report results of models that exclude these variables. Government performance is a combined scale that asks respondents about their evaluations of how the government is handling multiple issues^[See appendix for list of issue that are included.]. Economic performance is a combined scale that includes perceptions of both national and personal economic conditions^[See appendix for the list of items that were combined in this index.].  
+
+In addition to the controls included by Moehler (2009) I control for: Distance from Election. If elections have the hypothesized short-term effects, then the proximity of the election should matter. To account for the effect of being in an election year or being surveyed at times distant from elections, I include a variable that indicates how many years have passed since the last election.  
+
+### Modeling Technique  
+To model the relationship between winning and trust in political institutions, I explore several modelling techniques. Previous literature includes --J-1--country level indicators to account for the multilevel structure of the data and to control for variation caused by country level factors (Moehler 2009; Moehler and Lindberg 2009). Modeling decisions in this paper are guided by the following factors. First, the third hypothesis requires testing the effect of the number of turnovers, a country-level covariate, so, depending only on models with individual-level indicators is not possible. Second, since the interest is in individuals and not countries, I use a random effects model as opposed to using a fixed effects model^[Gelman et al.  also propose that fixed effects should be used when all possible groups are included in the data. However, given this proposition, they recommend using random effects (Gelman et al. 2006, 246).] (Searle et al. 1992; cited by Gelman et al 2006). Third, since I am interested in testing the effects of time-varying, group-level covariates, years since last election and political turnovers, I fix the coefficients for these variables. Therefore, I deal with time by including year dummies and I interact the year variable with time varying covariates^[This approach requires including the mean of the time varying covariates and the difference from mean.] (Fairbrother 2014). Lastly, inconsistencies in the presence/absence of variables from waves^[With the exception of an item asking about voting in the last election, which itself is excluded in the second-round survey, the three variables required to build the electoral participation index are not repeated in any of the following surveys. Also, Trust in the Army, one of the four variable the make up the index used as the dependent variable (Institutional Trust), is excluded from the fourth-round survey.] and in the number of item response categories^[In subsequent surveys, the possible response categories for the political interest and education items changes from the first surveys.] makes pooling all waves difficult.  
+
+Therefore, I begin by testing the hypotheses on data from the first round of AB surveys. 
+
+
+
+
+
+
+
+
+
+
+
+
+```{r setup, echo=FALSE, eval=FALSE}
 #Begin by making sure the data is in the correct place. The following commands bring the data in as they are named by AB. 
 
 #Load each survey round. 
@@ -239,8 +354,9 @@ library(car)
   Round_1$educ <- recode(Round_1$educ, "99=NA")
   
   #Gender (Female)
-  Round_1$gender <- recode(Round_1$gender, "2=1")
   Round_1$gender <- recode(Round_1$gender, "1=0")
+  Round_1$gender <- recode(Round_1$gender, "2=1")
+  Round_1$gender <- recode(Round_1$gender, "99=NA")
   
   #Age 
   Round_1$age <- recode(Round_1$age, "0=NA")
@@ -324,6 +440,8 @@ library(car)
     Round_1$independent[Round_1$pidwin == 8] <- NA
     Round_1$independent[Round_1$pidwin == 9] <- NA
     Round_1$independent[Round_1$pidwin == 99] <- NA
+    
+    
 
 #Round 2
       #Institutional Trust (Police, Court of Law, Army, Electoral Commission)
@@ -472,19 +590,23 @@ library(car)
   Round_2$mass_media <- Round_2$q26a + Round_2$q26b + Round_2$q26c
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
-  Round_2$educ <- recode(Round_2$q84, "0=0")
-  Round_2$educ <- recode(Round_2$q84, "98=NA")
-  Round_2$educ <- recode(Round_2$q84, "99=NA")
-  Round_2$educ <- recode(Round_2$q84, "-1=NA")
+  Round_2$q84 <- recode(Round_2$q84, "0=0")
+  Round_2$q84 <- recode(Round_2$q84, "98=NA")
+  Round_2$q84 <- recode(Round_2$q84, "99=NA")
+  Round_2$q84 <- recode(Round_2$q84, "-1=NA")
+  Round_2$educ <- Round_2$q84
+  
   
   #Gender (Female)
-  Round_2$gender <- recode(Round_2$q96, "2=1")
-  Round_2$gender <- recode(Round_2$q96, "1=0")
+  Round_2$q96 <- recode(Round_2$q96, "1=0")
+  Round_2$q96 <- recode(Round_2$q96, "2=1")
+  Round_2$gender <- Round_2$q96
   
   #Age 
-  Round_2$age <- recode(Round_2$q80, "-1=NA")
-  Round_2$age <- recode(Round_2$q80, "998=NA")
-  Round_2$age <- recode(Round_2$q80, "999=NA")  
+  Round_2$q80 <- recode(Round_2$q80, "-1=NA")
+  Round_2$q80 <- recode(Round_2$q80, "998=NA")
+  Round_2$q80 <- recode(Round_2$q80, "999=NA") 
+  Round_2$age <- Round_2$q80
 
   #Elections by Country
     #Year (Interview year is the last year of the round.)
@@ -556,7 +678,7 @@ library(car)
     Round_2$year_turnover[Round_2$country == 4] <- 1966   #Malawi
     Round_2$year_turnover[Round_2$country == 5] <- 2002 #Mali
     Round_2$year_turnover[Round_2$country == 6] <- 1990  #Namibia
-    Round_2$year_turnover[Round_2$country == 7] <- 1983  #Nigeria
+    Round_2$year_turnover[Round_2$country == 7] <- 1999  #Nigeria
     Round_2$year_turnover[Round_2$country == 8] <- 1994 #South Africa
     Round_2$year_turnover[Round_2$country == 9] <- 1962 #Tanzania
     Round_2$year_turnover[Round_2$country == 10] <- 1963 #Uganda
@@ -678,14 +800,15 @@ library(car)
     
   
     #Election Free and Fair (I do not understand the question dropped)
-    Round_3$q45 <- recode(Round_3$q45, "4=1")
-    Round_3$q45 <- recode(Round_3$q45, "3=0.5")    
+  Round_3$q45 <- recode(Round_3$q45, "-1=NA")  
+  Round_3$q45 <- recode(Round_3$q45, "3=0.5")    
     Round_3$q45 <- recode(Round_3$q45, "9=0") 
     Round_3$q45 <- recode(Round_3$q45, "2=-0.5")  
     Round_3$q45 <- recode(Round_3$q45, "1=-1")  
     Round_3$q45 <- recode(Round_3$q45, "8=NA")  
-    Round_3$q45 <- recode(Round_3$q45, "98=NA")  
-    Round_3$q45 <- recode(Round_3$q45, "-1=NA")  
+    Round_3$q45 <- recode(Round_3$q45, "98=NA") 
+        Round_3$q45 <- recode(Round_3$q45, "4=1")
+      
   
     Round_3$free_fair <- Round_3$q45
     
@@ -773,19 +896,22 @@ library(car)
   Round_3$mass_media <- Round_3$q15a + Round_3$q15b + Round_3$q15c
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
-  Round_3$educ <- recode(Round_3$q90, "0=0")
-  Round_3$educ <- recode(Round_3$q90, "98=NA")
-  Round_3$educ <- recode(Round_3$q90, "99=NA")
-  Round_3$educ <- recode(Round_3$q90, "-1=NA")
+  Round_3$q90 <- recode(Round_3$q90, "0=0")
+  Round_3$q90 <- recode(Round_3$q90, "98=NA")
+  Round_3$q90 <- recode(Round_3$q90, "99=NA")
+  Round_3$q90 <- recode(Round_3$q90, "-1=NA")
+  Round_3$educ <- Round_3$q90
   
   #Gender (Female)
-  Round_3$gender <- recode(Round_3$q101, "2=1")
-  Round_3$gender <- recode(Round_3$q101, "1=0")
+  Round_3$q101 <- recode(Round_3$q101, "1=0")
+  Round_3$q101 <- recode(Round_3$q101, "2=1")
+Round_3$gender <- Round_3$q101
   
   #Age 
-  Round_3$age <- recode(Round_3$q1, "-1=NA")
-  Round_3$age <- recode(Round_3$q1, "998=NA")
-  Round_3$age <- recode(Round_3$q1, "999=NA")  
+  Round_3$q1 <- recode(Round_3$q1, "-1=NA")
+  Round_3$q1 <- recode(Round_3$q1, "998=NA")
+  Round_3$q1 <- recode(Round_3$q1, "999=NA")
+  Round_3$age <- Round_3$q1
   
   #Elections by Country
     #Year (Interview year is the last year of the round.)
@@ -864,7 +990,7 @@ library(car)
     Round_3$year_turnover[Round_3$country == 8] <- 2004   #Malawi
     Round_3$year_turnover[Round_3$country == 9] <- 2002 #Mali
     Round_3$year_turnover[Round_3$country == 11] <- 1990  #Namibia
-    Round_3$year_turnover[Round_3$country == 12] <- 1983  #Nigeria
+    Round_3$year_turnover[Round_3$country == 12] <- 1999  #Nigeria
     Round_3$year_turnover[Round_3$country == 15] <- 1994 #South Africa
     Round_3$year_turnover[Round_3$country == 15] <- 1962 #Tanzania
     Round_3$year_turnover[Round_3$country == 16] <- 1963 #Uganda
@@ -1024,14 +1150,16 @@ library(car)
   
   
       #Election Free and Fair (I do not understand the question dropped)
-    Round_4$Q71 <- recode(Round_4$Q71, "4=1")
-    Round_4$Q71 <- recode(Round_4$Q71, "3=0.5")    
+        Round_4$Q71 <- recode(Round_4$Q71, "-1=NA") 
+  Round_4$Q71 <- recode(Round_4$Q71, "3=0.5")    
     Round_4$Q71 <- recode(Round_4$Q71, "9=0") 
     Round_4$Q71 <- recode(Round_4$Q71, "2=-0.5")  
     Round_4$Q71 <- recode(Round_4$Q71, "1=-1")  
     Round_4$Q71 <- recode(Round_4$Q71, "8=NA")  
+        Round_4$Q71 <- recode(Round_4$Q71, "4=1")
     Round_4$Q71 <- recode(Round_4$Q71, "998=NA")  
-    Round_4$Q71 <- recode(Round_4$Q71, "-1=NA")  
+
+    Round_4$free_fair <- Round_4$Q71
   
   #Participation: Since the only variable Moehler 2009 includes in this index and included in this round is voting. Use is it as a binary indicator of participation.
   
@@ -1043,8 +1171,11 @@ library(car)
   Round_4$Q23D <- recode(Round_4$Q23D, "6=0")
   Round_4$Q23D <- recode(Round_4$Q23D, "7=0")
   Round_4$Q23D <- recode(Round_4$Q23D, "9=0")
+    Round_4$Q23D <- recode(Round_4$Q23D, "300=0")
   Round_4$Q23D <- recode(Round_4$Q23D, "998=NA")
   Round_4$Q23D <- recode(Round_4$Q23D, "-1=NA")
+    Round_4$Q23D <- recode(Round_4$Q23D, "88=NA") 
+        Round_4$Q23D <- recode(Round_4$Q23D, "77=NA") 
   
   Round_4$elec_part <- Round_4$Q23D
 
@@ -1076,19 +1207,23 @@ library(car)
   Round_4$mass_media <- Round_4$Q12A + Round_4$Q12B + Round_4$Q12C
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
-  Round_4$educ <- recode(Round_4$Q89, "0=0")
-  Round_4$educ <- recode(Round_4$Q89, "998=NA")
-  Round_4$educ <- recode(Round_4$Q89, "99=NA")
-  Round_4$educ <- recode(Round_4$Q89, "-1=NA")
+  Round_4$Q89 <- recode(Round_4$Q89, "0=0")
+  Round_4$Q89 <- recode(Round_4$Q89, "998=NA")
+  Round_4$Q89 <- recode(Round_4$Q89, "99=NA")
+  Round_4$Q89 <- recode(Round_4$Q89, "-1=NA")
+  Round_4$educ <- Round_4$Q89
   
   #Gender (Female)
-  Round_4$gender <- recode(Round_4$Q101, "2=1")
-  Round_4$gender <- recode(Round_4$Q101, "1=0")
+  Round_4$Q101 <- recode(Round_4$Q101, "1=0")
+  Round_4$Q101 <- recode(Round_4$Q101, "2=1")
+  Round_4$gender <- Round_4$Q101
+
   
   #Age 
-  Round_4$age <- recode(Round_4$Q1, "-1=NA")
-  Round_4$age <- recode(Round_4$Q1, "998=NA")
-  Round_4$age <- recode(Round_4$Q1, "999=NA")  
+  Round_4$Q1 <- recode(Round_4$Q1, "-1=NA")
+  Round_4$Q1 <- recode(Round_4$Q1, "998=NA")
+  Round_4$Q1 <- recode(Round_4$Q1, "999=NA")  
+  Round_4$age <- Round_4$Q1
   
   #Elections by Country
     #Year (Interview year is the last year of the round.)
@@ -1175,7 +1310,7 @@ library(car)
     Round_4$year_turnover[Round_4$state == 17] <- 2004   #Malawi
     Round_4$year_turnover[Round_4$state == 18] <- 2002 #Mali
     Round_4$year_turnover[Round_4$state == 22] <- 1990  #Namibia
-    Round_4$year_turnover[Round_4$state == 24] <- 1983  #Nigeria
+    Round_4$year_turnover[Round_4$state == 24] <- 1999  #Nigeria
     Round_4$year_turnover[Round_4$state == 28] <- 1994 #South Africa
     Round_4$year_turnover[Round_4$state == 31] <- 1962 #Tanzania
     Round_4$year_turnover[Round_4$state == 34] <- 2006 #Uganda
@@ -1354,6 +1489,7 @@ library(car)
   Round_5$Q27 <- recode(Round_5$Q27, "5=0")
   Round_5$Q27 <- recode(Round_5$Q27, "6=0")
   Round_5$Q27 <- recode(Round_5$Q27, "7=0")
+  Round_5$Q27 <- recode(Round_5$Q27, "8=0")
   Round_5$Q27 <- recode(Round_5$Q27, "9=0")
   Round_5$Q27 <- recode(Round_5$Q27, "998=NA")
   Round_5$Q27 <- recode(Round_5$Q27, "-1=NA")
@@ -1385,22 +1521,28 @@ library(car)
   Round_5$Q13C <- recode(Round_5$Q13C, "998=NA")
   Round_5$Q13C <- recode(Round_5$Q13C, "-1=NA")
   
-  Round_6$mass_media <- Round_5$Q13C + Round_5$Q13B + Round_5$Q13A
+  Round_5$mass_media <- Round_5$Q13C + Round_5$Q13B + Round_5$Q13A
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
-  Round_5$educ <- recode(Round_5$Q97, "0=0")
-  Round_5$educ <- recode(Round_5$Q97, "998=NA")
-  Round_5$educ <- recode(Round_5$Q97, "99=NA")
-  Round_5$educ <- recode(Round_5$Q97, "-1=NA")
+  Round_5$Q97 <- recode(Round_5$Q97, "0=0")
+  Round_5$Q97 <- recode(Round_5$Q97, "998=NA")
+  Round_5$Q97 <- recode(Round_5$Q97, "99=NA")
+  Round_5$Q97 <- recode(Round_5$Q97, "-1=NA")
+  Round_5$educ <- Round_5$Q97
   
   #Gender (Female)
-  Round_5$gender <- recode(Round_5$Q101, "2=1")
-  Round_5$gender <- recode(Round_5$Q101, "1=0")
+  Round_5$Q101 <- recode(Round_5$Q101, "1=0")
+    Round_5$Q101 <- recode(Round_5$Q101, "2=1")
+    Round_5$gender <- Round_5$Q101
   
   #Age 
-  Round_5$age <- recode(Round_5$Q1, "-1=NA")
-  Round_5$age <- recode(Round_5$Q1, "998=NA")
-  Round_5$age <- recode(Round_5$Q1, "999=NA")  
+  Round_5$Q1 <- recode(Round_5$Q1, "-1=NA")
+  Round_5$Q1 <- recode(Round_5$Q1, "998=NA")
+  Round_5$Q1 <- recode(Round_5$Q1, "999=NA")  
+  
+  Round_5$age <- Round_5$Q1
+  
+  
   
   #Elections by Country
     #Year (Interview year is the last year of the round.)
@@ -1439,15 +1581,15 @@ library(car)
     Round_5$state[Round_5$COUNTRY_ALPHA == 31] <- 32  #Togo  
 
     #Election Free and Fair (I do not understand the question dropped)
-    Round_5$Q28 <- recode(Round_5$Q28, "4=1")
+        Round_5$Q28 <- recode(Round_5$Q28, "-1=NA")  
     Round_5$Q28 <- recode(Round_5$Q28, "3=0.5")    
     Round_5$Q28 <- recode(Round_5$Q28, "9=0") 
     Round_5$Q28 <- recode(Round_5$Q28, "2=-0.5")  
     Round_5$Q28 <- recode(Round_5$Q28, "1=-1")  
-    Round_5$Q28 <- recode(Round_5$Q28, "8=NA")  
+    Round_5$Q28 <- recode(Round_5$Q28, "8=NA")
+    Round_5$Q28 <- recode(Round_5$Q28, "4=1")
     Round_5$Q28 <- recode(Round_5$Q28, "998=NA")  
-    Round_5$Q28 <- recode(Round_5$Q28, "-1=NA")  
-    
+
     Round_5$free_fair <- Round_5$Q28
 
     #Election Year
@@ -1524,7 +1666,7 @@ library(car)
     Round_5$year_turnover[Round_5$state == 17] <- 2009   #Malawi
     Round_5$year_turnover[Round_5$state == 18] <- 2007 #Mali
     Round_5$year_turnover[Round_5$state == 22] <- 1990  #Namibia
-    Round_5$year_turnover[Round_5$state == 24] <- 1983  #Nigeria
+    Round_5$year_turnover[Round_5$state == 24] <- 1999  #Nigeria
     Round_5$year_turnover[Round_5$state == 28] <- 1994 #South Africa
     Round_5$year_turnover[Round_5$state == 31] <- 1962 #Tanzania
     Round_5$year_turnover[Round_5$state == 34] <- 2006 #Uganda
@@ -1609,7 +1751,7 @@ library(car)
   Round_6$Q52H <- recode(Round_6$Q52H, "9=0")
   Round_6$Q52H <- recode(Round_6$Q52H, "2=0.125")
   Round_6$Q52H <- recode(Round_6$Q52H, "3=0.250")
-  Round_6$Q52H <- recode(Round_6$Q52H, "998=NA")
+  Round_6$Q52H <- recode(Round_6$Q52H, "98=NA")
   Round_6$Q52H <- recode(Round_6$Q52H, "-1=NA")
   
   #Courts
@@ -1618,7 +1760,7 @@ library(car)
   Round_6$Q52J <- recode(Round_6$Q52J, "9=0")
   Round_6$Q52J <- recode(Round_6$Q52J, "2=0.125")
   Round_6$Q52J <- recode(Round_6$Q52J, "3=0.250")
-  Round_6$Q52J <- recode(Round_6$Q52J, "998=NA")
+  Round_6$Q52J <- recode(Round_6$Q52J, "98=NA")
   Round_6$Q52J <- recode(Round_6$Q52J, "-1=NA")
   
   
@@ -1628,7 +1770,7 @@ library(car)
   Round_6$Q52I <- recode(Round_6$Q52I, "9=0")
   Round_6$Q52I <- recode(Round_6$Q52I, "2=0.125")
   Round_6$Q52I <- recode(Round_6$Q52I, "3=0.250")
-  Round_6$Q52I <- recode(Round_6$Q52I, "998=NA")
+  Round_6$Q52I <- recode(Round_6$Q52I, "98=NA")
   Round_6$Q52I <- recode(Round_6$Q52I, "-1=NA")
   
   #Trust Electoral Commission
@@ -1637,7 +1779,8 @@ library(car)
   Round_6$Q52C <- recode(Round_6$Q52C, "9=0")
   Round_6$Q52C <- recode(Round_6$Q52C, "2=0.125")
   Round_6$Q52C <- recode(Round_6$Q52C, "3=0.250")
-  Round_6$Q52C <- recode(Round_6$Q52C, "998=NA")
+  Round_6$Q52C <- recode(Round_6$Q52C, "98=NA")
+    Round_6$Q52C <- recode(Round_6$Q52C, "99=NA")
   Round_6$Q52C <- recode(Round_6$Q52C, "-1=NA")
 
   #Institutional Trust Variable for Round 1. 
@@ -1651,6 +1794,7 @@ library(car)
   Round_6$Q66H <- recode(Round_6$Q66H, "3=3")
   Round_6$Q66H <- recode(Round_6$Q66H, "4=4")
   Round_6$Q66H <- recode(Round_6$Q66H, "98=NA")
+    Round_6$Q66H <- recode(Round_6$Q66H, "99=NA")
   Round_6$Q66H <- recode(Round_6$Q66H, "-1=NA")
     #Health
   Round_6$Q66G <- recode(Round_6$Q66G, "1=0")
@@ -1659,6 +1803,7 @@ library(car)
   Round_6$Q66G <- recode(Round_6$Q66G, "3=3")
   Round_6$Q66G <- recode(Round_6$Q66G, "4=4")
   Round_6$Q66G <- recode(Round_6$Q66G, "98=NA")
+    Round_6$Q66G <- recode(Round_6$Q66G, "99=NA")
   Round_6$Q66G <- recode(Round_6$Q66G, "-1=NA")
     #Jobs 
   Round_6$Q66C <- recode(Round_6$Q66C, "1=0")
@@ -1667,6 +1812,7 @@ library(car)
   Round_6$Q66C <- recode(Round_6$Q66C, "3=3")
   Round_6$Q66C <- recode(Round_6$Q66C, "4=4")
   Round_6$Q66C <- recode(Round_6$Q66C, "98=NA")
+    Round_6$Q66C <- recode(Round_6$Q66C, "99=NA")
   Round_6$Q66C <- recode(Round_6$Q66C, "-1=NA")
     #Prices
   Round_6$Q66D <- recode(Round_6$Q66D, "1=0")
@@ -1675,6 +1821,7 @@ library(car)
   Round_6$Q66D <- recode(Round_6$Q66D, "3=3")
   Round_6$Q66D <- recode(Round_6$Q66D, "4=4")
   Round_6$Q66D <- recode(Round_6$Q66D, "98=NA")
+    Round_6$Q66D <- recode(Round_6$Q66D, "99=NA")
   Round_6$Q66D <- recode(Round_6$Q66D, "-1=NA")
   
   #Government Performance Index
@@ -1730,22 +1877,24 @@ library(car)
   Round_6$Q21 <- recode(Round_6$Q21, "5=0")
   Round_6$Q21 <- recode(Round_6$Q21, "6=0")
   Round_6$Q21 <- recode(Round_6$Q21, "7=0")
+    Round_6$Q21 <- recode(Round_6$Q21, "8=0")
   Round_6$Q21 <- recode(Round_6$Q21, "9=0")
   Round_6$Q21 <- recode(Round_6$Q21, "98=NA")
+    Round_6$Q21 <- recode(Round_6$Q21, "99=NA")
   Round_6$Q21 <- recode(Round_6$Q21, "-1=NA")
   
   Round_6$elec_part <- Round_6$Q21
 
   #Political Interest (This is the interest in public affair variable which is availible in all but the first round. This differrent than the first round because it has four and not three possible response categories!)
-  Round_6$Q13 <- recode(Round_6$Q14, "0=0")
-  Round_6$Q13 <- recode(Round_6$Q14, "1=1")
-  Round_6$Q13 <- recode(Round_6$Q14, "2=2")
-  Round_6$Q13 <- recode(Round_6$Q14, "3=3")  
-  Round_6$Q13 <- recode(Round_6$Q14, "9=NA")
-  Round_6$Q13 <- recode(Round_6$Q14, "98=NA")
-  Round_6$Q13 <- recode(Round_6$Q14, "-1=NA")
+  Round_6$Q13 <- recode(Round_6$Q13, "0=0")
+  Round_6$Q13 <- recode(Round_6$Q13, "1=1")
+  Round_6$Q13 <- recode(Round_6$Q13, "2=2")
+  Round_6$Q13 <- recode(Round_6$Q13, "3=3")  
+  Round_6$Q13 <- recode(Round_6$Q13, "9=NA")
+  Round_6$Q13 <- recode(Round_6$Q13, "98=NA")
+  Round_6$Q13 <- recode(Round_6$Q13, "-1=NA")
   
-  Round_$interest <- Round_6$Q13
+  Round_6$interest <- Round_6$Q13
   
     #Exposure to Mass Media (Same applies to do not knows here)
     #Radio
@@ -1764,19 +1913,27 @@ library(car)
   Round_6$mass_media <- Round_6$Q12A + Round_6$Q12B + Round_6$Q12C
   
   #Education (Same applies to do not knows here. This has more categories than the previous item in round 1. It has some high school etc.)
-  Round_6$educ <- recode(Round_6$Q97, "0=0")
-  Round_6$educ <- recode(Round_6$Q97, "98=NA")
-  Round_6$educ <- recode(Round_6$Q97, "99=NA")
-  Round_6$educ <- recode(Round_6$Q97, "-1=NA")
+  Round_6$Q97 <- recode(Round_6$Q97, "0=0")
+  Round_6$Q97 <- recode(Round_6$Q97, "98=NA")
+  Round_6$Q97 <- recode(Round_6$Q97, "99=NA")
+  Round_6$Q97 <- recode(Round_6$Q97, "-1=NA")
+  
+  Round_6$educ <- Round_6$Q97
+  
   
   #Gender (Female)
-  Round_6$gender <- recode(Round_6$Q101, "2=1")
-  Round_6$gender <- recode(Round_6$Q101, "1=0")
+  Round_6$Q101 <- recode(Round_6$Q101, "1=0")
+  Round_6$Q101 <- recode(Round_6$Q101, "2=1")
+
+  Round_6$gender <- Round_6$Q101
   
   #Age 
-  Round_6$age <- recode(Round_6$Q1, "-1=NA")
-  Round_6$age <- recode(Round_6$Q1, "98=NA")
-  Round_6$age <- recode(Round_6$Q1, "999=NA")  
+  Round_6$Q1 <- recode(Round_6$Q1, "-1=NA")
+  Round_6$Q1 <- recode(Round_6$Q1, "98=NA")
+    Round_6$Q1 <- recode(Round_6$Q1, "998=NA")  
+  Round_6$Q1 <- recode(Round_6$Q1, "999=NA")
+  Round_6$age <- Round_6$Q1
+  
   
   #Elections by Country
     #Year (Interview year is the last year of the round.)
@@ -1819,15 +1976,15 @@ library(car)
     
     
     #Election Free and Fair (I do not understand the question dropped)
-    Round_6$Q22 <- recode(Round_6$Q22, "4=1")
+        Round_6$Q22 <- recode(Round_6$Q22, "-1=NA")  
     Round_6$Q22 <- recode(Round_6$Q22, "3=0.5")    
     Round_6$Q22 <- recode(Round_6$Q22, "9=0") 
     Round_6$Q22 <- recode(Round_6$Q22, "2=-0.5")  
     Round_6$Q22 <- recode(Round_6$Q22, "1=-1")  
     Round_6$Q22 <- recode(Round_6$Q22, "8=NA")  
-    Round_6$Q22 <- recode(Round_6$Q22, "98=NA")  
-    Round_6$Q22 <- recode(Round_6$Q22, "-1=NA")  
-    
+    Round_6$Q22 <- recode(Round_6$Q22, "98=NA") 
+        Round_6$Q22 <- recode(Round_6$Q22, "4=1")
+
     Round_6$free_fair <- Round_6$Q22
 
     #Election Year
@@ -1911,7 +2068,7 @@ library(car)
     Round_6$year_turnover[Round_6$state == 17] <- 2009   #Malawi
     Round_6$year_turnover[Round_6$state == 18] <- 2013 #Mali
     Round_6$year_turnover[Round_6$state == 22] <- 1990  #Namibia
-    Round_6$year_turnover[Round_6$state == 24] <- 1983  #Nigeria
+    Round_6$year_turnover[Round_6$state == 24] <- 1999  #Nigeria
     Round_6$year_turnover[Round_6$state == 28] <- 1994 #South Africa
     Round_6$year_turnover[Round_6$state == 31] <- 1962 #Tanzania
     Round_6$year_turnover[Round_6$state == 34] <- 2006 #Uganda
@@ -1964,7 +2121,7 @@ library(car)
     Round_6$winner[Round_6$Q90B==1220 & Round_6$state == 6] <- 1  #Cameroon   
     Round_6$winner[Round_6$Q90B==1262 & Round_6$state == 8] <- 1  #Cote d'Ivoire  
     Round_6$winner[Round_6$Q90B==1300 & Round_6$state == 12] <- 1  #Guinea  
-    Round_6$winner[Round_6$Q90B==903 & Round_6state == 19] <- 1  #Mauritius  
+    Round_6$winner[Round_6$Q90B==903 & Round_6$state == 19] <- 1  #Mauritius  
     Round_6$winner[Round_6$Q90B==900 & Round_6$state == 19] <- 1  #Mauritius  
     Round_6$winner[Round_6$Q90B==901 & Round_6$state == 19] <- 1  #Mauritius  
     Round_6$winner[Round_6$Q90B==1105 & Round_6$state == 24] <- 1  #Niger  
@@ -1987,9 +2144,67 @@ library(car)
     Round_6$independent[Round_6$Q90A == 8] <- NA
     Round_6$independent[Round_6$Q90A == 9] <- NA
     Round_6$independent[Round_6$Q90A == -1] <- NA  
+  
+    #There is not codebook for round 7
+    
+    Round_2$elec_part <- NA
+    Round_2$free_fair <- NA
     
           
 ```
+
+```{r eval=FALSE}
+#Merged for purposes of descriptive stats. 
+
+vars <- c("state","year","educ","int_trust","free_fair", "gov_perf", "econ_sat", "elec_part", "interest", "mass_media", "educ", "gender", "age", "election_year", "pol_turnover", "years_since_election", "year_turnover", "winner", "independent")
+W1 <- Round_1[vars]
+W2 <- Round_2[vars]
+W3 <- Round_3[vars]
+W4 <- Round_4[vars]
+W5 <- Round_5[vars]
+W6 <- Round_6[vars]
+
+describe <- rbind(W1,W2,W3,W4,W5,W6)
+
+describe$Round[describe$year == 2001] <- "Round 1"
+describe$Round[describe$year == 2003] <- "Round 2"
+describe$Round[describe$year == 2006] <- "Round 3"
+describe$Round[describe$year == 2009] <- "Round 4"
+describe$Round[describe$year == 2013] <- "Round 5"
+describe$Round[describe$year == 2015] <- "Round 6"
+
+
+
+
+
+library(table1)
+table1::label(describe$int_trust) <- "Institutional Trust Index"
+table1::label(describe$winner) <- "Winner"
+table1::label(describe$independent) <- "Independent"
+table1::label(describe$free_fair) <- "Electoral Integrity"
+table1::label(describe$gov_perf) <- "Government Performance Index"
+table1::label(describe$econ_sat) <- "Economic Satisfaction Index"
+table1::label(describe$elec_part) <- "Electoral Participation"
+table1::label(describe$interest) <- "Political Interest"
+table1::label(describe$mass_media) <- "Mass Media Exposure Index"
+table1::label(describe$educ) <- "Education"
+table1::label(describe$gender) <- "Female"
+table1::label(describe$age) <- "Age"
+table1::label(describe$election_year) <- "Year of Election"
+table1::label(describe$pol_turnover) <- "Number of Political Turnovers"
+table1::label(describe$years_since_election) <- "Years Since Election"
+table1::label(describe$year_turnover) <- "Year of Last Turnover"
+
+Descriptive_Stats_All <-  table1::table1(~int_trust + winner + independent + free_fair + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + election_year + pol_turnover + years_since_election + year_turnover  | Round, data = describe)
+
+
+```
+
+
+
+
+
+
 
 ## R Markdown
 
