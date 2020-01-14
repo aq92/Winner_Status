@@ -6,7 +6,7 @@ output:
     fig_caption: true
     latex_engine: pdflatex
     template: svm-latex-ms2.tex
-title: "e" 
+title: "Electoral Winners and Trust in Political Institutions" 
 thanks: "The paper's revision history and the materials needed to reproduce its analyses can be found [on Github here](https://github.com/aq92/Winner_Status.git). Corresponding author: [ahmad-qabazard@uiowa.edu](mailto:ahmad-qabazard@uiowa.edu). Current version: `r format(Sys.time(), '%B %d, %Y')`."
 author:
 - name: Ahmad S. Qabazard
@@ -2142,7 +2142,7 @@ In addition to this limitation, previous research conflates the effects of winni
 
 In order to determine whether attitudes are stable or fluctuate as a result of electoral results and to address the aforementioned concerns, I test whether winning status predicts levels of political support. In my coding decisions, I separate the effects of winning and losing for clarity. Evidence of an effect of party affiliation supports the “home team” hypothesis and confirms the findings of previous scholars (Moehler 2009; Moehler and Lindberg 2009). An absence of the consistent effect of party affiliation is evidence that scholars may be overestimating the effects of electoral outcomes and attitudes instability. While we may not conclude that the absence of an effect is evidence of a particular factor at play, we can look to factors such as the distance from the most recent elections, whether there was political turnover, or whether the effect is driven by winners or losers as evidence that respondents are not behaving in ways theories of the “home team” hypothesis expect of them.  
 
-As a result of the time the AB data is collected, some respondents are surveyed soon after elections and others a times distant from elections. Since the effects of electoral outcomes are discussed as short-term forces, accounting for time passed since the elections is necessary to test whether the effect is, in fact, short-termed (Banducci and Karp 2003). If the effect of winning holds regardless of how distant the election was from the time respondents were surveyed, this is evidence that electoral outcomes have persistent effects. If the effects of winning the elections decline with that passes after the elections, this is evidence that the effect is short-termed (Banducci and Karp 2003). If the effect of winning holds regardless of how distant the election was from the time respondents were surveyed, this is evidence that electoral outcomes have persistent effects. If the effects of winning the elections decline with that passes after the elections, this is evidence that the effect is short-termed.  
+As a result of the time the AB data is collected, some respondents are surveyed soon after elections and others at times distant from elections. Since the effects of electoral outcomes are discussed as short-term forces, accounting for time passed since the elections is necessary to test whether the effect is, in fact, short-termed (Banducci and Karp 2003). If the effect of winning holds regardless of how distant the election was from the time respondents were surveyed, this is evidence that electoral outcomes have persistent effects. If the effects of winning the elections decline with that passes after the elections, this is evidence that the effect is short-termed (Banducci and Karp 2003). If the effect of winning holds regardless of how distant the election was from the time respondents were surveyed, this is evidence that electoral outcomes have persistent effects. If the effects of winning the elections decline with that passes after the elections, this is evidence that the effect is short-termed.  
 
 *H1C: Conditional on the years that passed since the most recent election, winner status leads to higher levels of political trust and support.*  
   
@@ -2175,13 +2175,13 @@ H3 <- DiagrammeR("graph LR;
 ![](H3.png)
 In addition to the presence of an effect of winning/losing the most recent elections, scholars argue that political turnover narrows the legitimacy gap between winners and losers of the elections (Moehler and Lindberg 2009). However, looking at alignment with the party of the president and attitudes towards the judiciary, other research finds that partisanship matters and finds convergence in attitudes^[See Figure 1 in Bartels and Kramon (2020).] (Bartels and Kramon 2020). This hypothesis presents an additional challenge to the claim that attitudes are stable (Banducci and Karp 2003). Not only are attitudes determined by short term pressures exerted by the most recent election, attitudes of partisan respondents are expected to converge with political turnover.  
 
-Why does this convergence occur? The following argument has been presented as an explanation for the convergence of attitudes. First, new winners get a boost in confidence while their attitudes are still shaped by skepticism they held before winning the election. Second, new losers are expected to have a decline in support after losing but are expected to maintain some of their previous levels of confidence and institutional legitimacy (Moehler and Lindberg 2009, 1451). However, this argument does not tell us about how long we should expect the effect of turnover to last^[Moehler and Lindberg (2009) make not of this on page 1463. The explain that they were not able to test the effect of more than one turnover because none of the countries sampled experienced more than one turnover in the time of analysis (1999-2006).]. Therefore, extending this argument and testing it with more recent survey waves requires testing whether the effect of political turnover continue to narrow the legitimacy gap between winner and losers.  
+Why does this convergence occur? The following argument has been presented as an explanation for the convergence of attitudes. First, new winners get a boost in confidence while their attitudes are still shaped by skepticism they held before winning the election. Second, new losers are expected to have a decline in support after losing but are expected to maintain some of their previous levels of confidence and institutional legitimacy (Moehler and Lindberg 2009, 1451). However, this argument does not tell us about how long we should expect the effect of turnover to last^[Moehler and Lindberg (2009) make not of this on page 1463. The explain that they were not able to test the effect of more than one turnover because none of the countries sampled experienced more than one turnover in the time of analysis (1999-2006).]. Therefore, extending this argument and testing it with more recent survey waves requires testing whether the effect of political turnover continue to narrow the legitimacy gap between winners and losers.  
 
-Another challenge, one that may cast doubt on whether the convergence that is observed in previous works actually represents moderation in the attitudes of partisans (Moehler and Lindberg 2009; Bartels and Kramon 2020), has to do with the role respondents that identify with the winning parties on surveys. The fact that some respondents identify with the winning party on measures of party affiliation and vote preference has led scholars to study this phenomenon extensively (Lindberg and Morrison 2005; Lindberg and Morrison 2008; cited in Moehler and Lindberg 2009). While previous literature shows, at least in the case of Ghana, that approximately 80 percent voters have stable voting preference, it is worth exploring the challenges that swing partisan can impose on a theory that relies of political turnover as mechanism that moderate the views of partisans.  
+Another challenge, one that may cast doubt on whether the convergence that is observed in previous works actually represents moderation in the attitudes of partisans (Moehler and Lindberg 2009; Bartels and Kramon 2020), has to do with the role of respondents that identify with the winning parties on surveys. The fact that some respondents identify with the winning party on measures of party affiliation and vote preference has led scholars to study this phenomenon extensively (Lindberg and Morrison 2005; Lindberg and Morrison 2008; cited in Moehler and Lindberg 2009). While previous literature shows, at least in the case of Ghana, that approximately 80 percent of voters have stable voting preferences, it is worth exploring the challenges that swings partisans can impose on a theory that relies of political turnover as a mechanism that moderates the views of partisans.  
 
 The evidence observed for political turnovers narrowing the legitimacy gap is that winners and losers’ predicted levels of political support converge on measures such as institutional trust, perceived accountability, and consent to authority (Lindberg and Moehler 2009, 1459). Other work shows convergence in the proportion of winners and losers that support various forms of judicial power (Bartels and Kramon 2020).  Having a group of respondents that are likely to identify with the winning party threatens the validity of conclusions. If the levels of political support among swing respondents is moderate, then, whenever these respondents are surveyed, it is likely that they are causing the moderation in the view of winners and losers.  
 
-To clarify this point, I return to the argument presented by Moehler and Lindberg (2009). It can be the case that new winners increase level of support while maintaining skepticism from previous experiences. Similarly, losers are likely to decrease political support after losing, but the decline may not be drastic because of previous experiences. Since we cannot test whether new winner and new loser maintain previous levels of political support, it is important to consider the following possibility. Suppose the presence of a proportion of respondents that are likely to claim to be winners whenever they are surveyed. If this group has moderate and stable levels of support, political turnover means that repeatedly sampling these types of respondents leads to moderation between winners and losers. The absence of panel surveys makes distinguishing between both possibilities difficult. However, to identify when political turnovers have an effect, according to the argument presented by Moehler and Lindberg (2009) or otherwise, or whether the effect of turnovers operates through allowing swing respondents to narrow the legitimacy gap, it is necessary to extend the analysis to countries and times that experience more political turnovers.  
+To clarify this point, I return to the argument presented by Moehler and Lindberg (2009). It can be the case that new winners increase levels of support while maintaining skepticism from previous experiences. Similarly, losers are likely to decrease political support after losing, but the decline may not be drastic because of previous experiences. Since we cannot test whether new winners and new losers maintain previous levels of political support, it is important to consider the following possibility. Suppose the presence of a proportion of respondents that are likely to claim to be winners whenever they are surveyed. If this group has moderate and stable levels of support, political turnover means that repeatedly sampling these types of respondents leads to moderation between winners and losers. The absence of panel surveys makes distinguishing between both possibilities difficult. However, to identify when political turnovers have an effect, according to the argument presented by Moehler and Lindberg (2009) or otherwise, or whether the effect of turnovers operates through allowing swing respondents to narrow the legitimacy gap, it is necessary to extend the analysis to countries and times that experience more political turnovers.  
 
 If after multiple turnovers levels of political support among winners and losers polarize after converging, this would be evidence that turnovers do not have a lasting effect and we can eliminate the effect of swing voters. We only eliminate the effects of swing voters if they have moderate levels of support and because polarization among traditional partisans would eliminate a long-lasting effect of turnovers. However, this does not allow us to account for swing voters especially considering that their levels of political support may not be stable and moderate.  
 
@@ -2197,14 +2197,14 @@ The primary independent variable is *Winner* and it captures whether a responden
 
 The second hypothesis highlights the role of perceptions of electoral integrity. I include the variable *Free and Fair Election*^[I maintain the coding decisions employed in Moehler (2009). See the in-article appendix for more detail about the coding decisions.] to test whether the mechanism proposed by Moehler (2009) continues to have an effect after the first round of the AB surveys. In addition to testing the effect of electoral integrity as a mediating variable, I test whether the hypothesized partisan bias extends to electoral integrity. Since the variable Free and Fair Election is included in all but the second wave of the AB surveys, I exclude the second wave from the analysis when I test the second hypothesis.  
 
-Finally, the first and third hypotheses require testing the effect of political turnovers. Since Moehler (2009) does not test the effect of political turnovers, I explore how other scholars have dealt with political turnovers. Previous works have measured turnovers differently^[Moehler and Lindberg (2009) measure both full and partial turnovers based on whether turnovers occurs in both branches or one. Bartels and Kramon (2020) focus on the presidency. Political turnovers are assumed to be when the party of the president changes.] (Moehler and Lindberg 2009; Bartels and Kramon 2020). In this article, political turnovers are measured as transitions in power particularly in the chief executive. I focus on political turnovers in the chief executive because this is the most salient political change and would probably produce the largest effect on respondents. Since my argument casts doubt on whether political changes factor into evaluations of political institution, using the most salient political change is most conservative approach.  
+Finally, the first and third hypotheses require testing the effect of political turnovers. Since Moehler (2009) does not test the effect of political turnovers, I explore how other scholars have dealt with political turnovers. Previous works have measured turnovers differently^[Moehler and Lindberg (2009) measure both full and partial turnovers based on whether turnovers occurs in both branches or one. Bartels and Kramon (2020) focus on the presidency. Political turnovers are assumed to be when the party of the president changes.] (Moehler and Lindberg 2009; Bartels and Kramon 2020). In this article, political turnovers are measured as transitions in power particularly in the chief executive. I focus on political turnovers in the chief executive because this is the most salient political change and would probably produce the largest effect on respondents. Since my argument casts doubt on whether political changes factor into evaluations of political institutions, using the most salient political change is a conservative approach.  
 
 ### Controls  
 To best capture the effect of the independent variables, I include a series of control variables. To maintain comparability with previous research, I include control variables that were included in previous research^[I include the all controls employed by Moehler (2009).] (Moehler 2009). That being said, I challenge previous model specifications and conduct theoretically motivated robustness checks in the online appendices. I include the demographic variables: *Education*, *Female*, and *Age*. In addition to demographic variables, I include the following political engagement variables: *Electoral Participation*^[This variable is not included in the second round of the AB surveys.], *Political Interest*, and *Exposure to Mass Media*.  
 
 Previous work also controls for the effects of performance evaluations (Moehler 2009). Other work implies that partisan bias may lead self-proclaimed winners to be less willing to criticize the performance of their government (Bratton et al. 2005, 259; cited in Moehler and Lindberg 2009, 1454). This suggests that presence of multicollinearity in models that include both party affiliation and measures of government performance. While that may be the case, I include *Government Performance* and *Economic Performance* and report results of models that exclude these variables. Government performance is a combined scale that asks respondents about their evaluations of how the government is handling multiple issues^[See appendix for list of issue that are included.]. Economic performance is a combined scale that includes perceptions of both national and personal economic conditions^[See appendix for the list of items that were combined in this index.].  
 
-In addition to the controls included by Moehler (2009) I control for: Distance from Election. If elections have the hypothesized short-term effects, then the proximity of the election should matter. To account for the effect of being in an election year or being surveyed at times distant from elections, I include a variable that indicates how many years have passed since the last election.  
+In addition to the controls included by Moehler (2009) I control for: *Years Since Election*. If elections have the hypothesized short-term effects, then the proximity of the election should matter. To account for the effect of being in an election year or being surveyed at times distant from elections, I include a variable that indicates how many years have passed since the last election.  
 
 ### Modeling Technique  
 To model the relationship between winning and trust in political institutions, I explore several modelling techniques. Previous literature includes --J-1-- country level indicators to account for the multilevel structure of the data and to control for variation caused by country level factors (Moehler 2009; Moehler and Lindberg 2009). Modeling decisions in this paper are guided by the following factors. First, the third hypothesis requires testing the effect of the number of turnovers, a country-level covariate, so, depending only on models with individual-level indicators is not possible. Second, since the interest is in individuals and not countries, I use a random effects model as opposed to using a fixed effects model^[Gelman et al.  also propose that fixed effects should be used when all possible groups are included in the data. However, given this proposition, they recommend using random effects (Gelman et al. 2006, 246).] (Searle et al. 1992; cited by Gelman et al 2006). Third, since I am interested in testing the effects of time-varying, group-level covariates, years since last election and political turnovers, I fix the coefficients for these variables. Therefore, I deal with time by including year dummies and I interact the year variable with time varying covariates^[This approach requires including the mean of the time varying covariates and the difference from mean.] (Fairbrother 2014). Lastly, inconsistencies in the presence/absence of variables from waves^[With the exception of an item asking about voting in the last election, which itself is excluded in the second-round survey, the three variables required to build the electoral participation index are not repeated in any of the following surveys. Also, Trust in the Army, one of the four variable the make up the index used as the dependent variable (Institutional Trust), is excluded from the fourth-round survey.] and in the number of item response categories^[In subsequent surveys, the possible response categories for the political interest and education items changes from the first surveys.] makes pooling all waves difficult.  
@@ -2330,6 +2330,108 @@ Figure_2
 
 
 
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+#Testing Hypothesis 3
+H3_test <- rbind(W1,W2,W3,W4,W5,W6)
+H3_test$loser <- 0
+H3_test$loser[H3_test$winner==0 & H3_test$independent==0] <- 1
+H3_test$winner_loser <- "Loser"
+H3_test$winner_loser[H3_test$independent==1] <- NA
+H3_test$winner_loser[H3_test$winner==1] <- "Winner"
+
+df = subset(H3_test, select =c(winner_loser,year,int_trust,pol_turnover) )
+
+library(dplyr)
+mean_data <- group_by(df, year, winner_loser) %>%
+             summarise(int_trust2 = mean(int_trust, na.rm = TRUE))
+
+library(ggplot2)
+Figure4 <- ggplot(na.omit(mean_data), aes(x = year, y = int_trust2, colour = winner_loser)) +
+  geom_point() + geom_line()+ labs(
+    title = "Figure 4: Trust Gap Between Winners and Losers",
+    y = "Average Level of Trust in Political Institutions",
+    x = "Year",
+    colour = NULL
+  )
+
+
+mean_data2 <- group_by(df, pol_turnover, winner_loser) %>%
+             summarise(int_trust23 = mean(int_trust, na.rm = TRUE))
+
+library(ggplot2)
+
+Figure5 <- ggplot(na.omit(mean_data2), aes(x = pol_turnover, y = int_trust23, colour = winner_loser)) +
+  geom_point() + geom_line()+ labs(
+    title = "Figure 5: Trust Gap Between Winners and Losers",
+    y = "Average Level of Trust in Political Institutions",
+    x = "Political Turnovers",
+    colour = NULL
+  )
+
+#Testing H2 predicting electoral integrity using winner status
+
+Electoral_Integrity <- lmer(free_fair ~ winner + independent + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + (1 | state), data = H3_test, REML = FALSE)
+
+Electoral_Integrity2 <- lmer(free_fair ~ winner + winner*pol_turnover + independent + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + years_since_election+ pol_turnover + (1 | state), data = H3_test, REML = FALSE)
+
+
+Figure_3 <- dwplot(list(Electoral_Integrity, Electoral_Integrity2),
+       vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) %>% # plot line at zero _behind_ coefs
+    relabel_predictors(c(winner = "Winner", 
+                         independent = "Independent", 
+                         free_fair = "Electoral Integrity", 
+                         years_since_election ="Years Since Election",
+                         pol_turnover = "Political Turnover",
+                         gov_perf = "Government Performance", 
+                         econ_sat = "Economic Satisfaction", 
+                         elec_part = "Electoral Participation",
+                         interest = "Political Interest",
+                         mass_media = "Mass Media Exposure",
+                         educ = "Education", 
+                         gender = "Female",
+                         year = "Year",
+                         age = "Age")) +
+     theme_bw() + xlab("Coefficient Estimate") + ylab("") +
+     geom_vline(xintercept = 0, colour = "grey60", linetype = 2) +
+     ggtitle("Figure 3: Predicting Perceived Electoral Integrity") +
+     theme(plot.title = element_text(face="bold"),
+           legend.position = c(0.007, 0.01),
+           legend.justification = c(0, 0), 
+           legend.background = element_rect(colour="grey80"),
+           legend.title = element_blank() + 
+             scale_color_grey(start = .3, end = .7,
+                              name = "Trans",
+                              breaks = c(0,1),
+               labels = c("Individual-level Model", "Country-level Model")))
+
+
+
+```
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+Figure_3
+
+```
+
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+Figure4
+```
+
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+Figure5
+```
+
 \pagebreak
 
 # Appendix A^[From appendix in Moehler 2009]
@@ -2361,6 +2463,13 @@ Figure_2
 * *Year:* Last year surveys were conducted in that particular round of AB surveys.
 
 * *Number of Political Turnovers:* ranges from 0 to 5.
+
+\pagebreak
+
+# Country Inclusion in AB Survey^[Countries not in Sub-Saharan Africa are excluded from the analysis they are included here to show the coverage of the AB surveys.]
+
+![](Country_list.png)
+
 
 \pagebreak
 
@@ -2544,6 +2653,8 @@ Figure_A4
 ```
 
 This model pools all survey round together and excludes variables missing from any round (Electoral Integrity and Electoral Participation). The variables in this model have coding inconsistencies discussed in the paper. However, this model is included for references. The number of observations is: 166058 and 162,739, respectively.Results are from a OLS regression with random intercepts at the country level and year/round fixed effects. 
+
+\pagebreak
 
 # References: 
 
