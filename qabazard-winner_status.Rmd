@@ -11,12 +11,12 @@ thanks: "The paper's revision history and the materials needed to reproduce its 
 author:
 - name: Ahmad S. Qabazard
   affiliation: University of Iowa
-abstract: "e"
-keywords: "e"
+abstract: "Being affiliated with the party that won the election is thought to heighten political support. Yet, previous work disregards the proximity of elections and the role of political turnovers in balancing trust in political institutions. Using data from 124 country-years across six rounds of Afrobarometer survey data (1999-2015), I show that, relative to losing, winning leads to more trust in political institutions. Contrary to initial expectations, the proximity of elections does not seem to matter in relationships between winner status and trust in institutions. Similarly, the effect of political turnovers does not influence whether winners are likely to trust institutions more than losers."
+keywords: "Political Trust, Political Institutions, Winner Status"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 12pt
 spacing: double
-bibliography: \dummy{`r file.path(getwd(),'qabazard-7450')`}
+bibliography: \dummy{`r file.path(getwd(),'CP-Qual')`}
 
 biblio-style: apsr
 citecolor: black
@@ -2095,8 +2095,8 @@ Since the winners of today, in cases where turnover occurs, are the losers of to
     
 Revisiting the question of partisanship in Sub-Saharan Africa is a fruitful opportunity to test whether the effects observed in previous studies hold (Moehler 2009; Moehler and Lindberg 2009). Having more free, fair, and competitive elections in the region allows for increased opportunities to test the effects of winner status on trust in political institutions. Additionally, the presence of several additional waves of Afrobarometer (AB) data allows for more coverage of elections and larger samples analyzed after each election.  
 
-This paper uses data from six rounds of AB surveys conducted in 32 countries in Sub-Saharan Africa between 1999 and 2015.   
-	
+This paper uses data from six rounds of AB surveys conducted in 32 countries in Sub-Saharan Africa between 1999 and 2015. The results suggest that being affiliated with the winning party has a consistent positive effect on trust in political institutions. Contrary to expectations, the proximity of the election does not have a consistent effect in conditioning the effect of being affiliated with the winning party. Also, the number of political turnovers does not influence winners being more likely to trust in political institutions.  
+
 # Electoral Outcomes and Political Support:  
 
 While political support is undoubtably important, it is unclear what levels of trust and perceived legitimacy are required in a democratic polity (Warren 2017). The question is especially challenging to scholars studying newly democratized states (Anderson et al 2005). In democracies, citizens are expected to be critical of institutions. The literature that focuses on advanced democracies shows levels of trust in institutions to be declining (Norris 1999). However, scholars have noted a gap in political trust and perceived legitimacy among winners and losers of electoral contests.  
@@ -2107,7 +2107,7 @@ Reducing the gap in levels of political support between winners and losers is cr
   
 What explains the legitimacy gap between winners and losers? To explain the link between winning/losing and trust, scholars argue that winners award their governments more legitimacy than independents and supporters of the losing party (Moehler 2009; 348). Others emphasize losers’ consent and claim that losing has stronger negative effects in newly democratized states (Anderson et al. 2005). Others shed light on problems that are not always considered by scholars working on this topic. Some respondents may identify with the winning party and this may lead to problems in inference^[See Bratton et al. 2004 in the following chapter and section “Institutional Influences: Party Identification”].  
 
-Beyond the direct influence of party identification, previous literature emphasizes perceptions of the fairness of the electoral process. Scholars working with cross-national samples, samples that include advanced industrialized democracies, and regional analyses that focus on newly democratized states all refer to perceptions of the fairness of the electoral process (Craig et al 2005; Moehler 2009; Moehler and Lindberg 2006). While a gap between the perceptions of winners and losers may exist, an individual affiliated with a losing political party, while also perceiving the electoral process to be fair, may be more inclined to trust in political institutions.  
+Beyond the direct influence of party identification, previous literature emphasizes perceptions of the fairness of the electoral process. Scholars working with cross-national samples, samples that include advanced industrialized democracies, and regional analyses that focus on newly democratized states all refer to perceptions of the fairness of the electoral process (Craig et al 2005; Moehler 2009; Moehler and Lindberg 2009). While a gap between the perceptions of winners and losers may exist, an individual affiliated with a losing political party, while also perceiving the electoral process to be fair, may be more inclined to trust in political institutions.  
   
 In the case of the legitimacy gap in Sub-Saharan Africa, the increase in the number of competitive, multiparty elections beginning in the 1990s imposes additional challenges to the mechanisms that link electoral outcomes to political support (Bratton et al. 2004, 256). Working with multiple AB survey waves^[Moehler and Lindberg 2009 use rounds 1-3 of the Afrobarometer surveys.], Moehler and Lindberg show that the political legitimacy gap has decreased with at least one political turnover. However, they show that electoral fairness does not matter in decreasing the gap between winners and losers of the most recent election^[The assessment of electoral fairness used by Moehler and Lindberg (2009) is the perception measure from the AB surveys. The measure is external.]  (Moehler and Lindberg 2009). Looking only at survey responses between 1999 and 2006, it is not clear whether political turnovers are moderating levels of political support among winners and losers.  
   
@@ -2187,7 +2187,7 @@ If after multiple turnovers levels of political support among winners and losers
 
 
 ## Data and Methods:  
-To analyze the hypotheses described above, I use six waves of AB data. The AB surveys are nationally representative surveys conducted in 34 African countries across seven waves^[Although an early version has been released, the seventh wave is not included in this analysis. The reason for this is that the codebook has not been published yet.]. The surveys are conducted using a random, clustered, stratified, multi-stage probability sample (Afrobarometer 2019). In addition to being a valuable data source for studying attitudes in Africa, the AB surveys are used by scholars working on the same research question (Bratton et al 2005; Moehler 2009; Moehler and Lindberg 2009; Bartels and Kramon 2020). The presence of comparable public opinion data allows scholars to test and extend previous findings. With the exception of Bartels and Kramon (2020), which focuses on trust in the judiciary, previous research on the effects of identifying with the winning party uses data as recent as the third AB survey wave (Moehler and Lindberg 2009). Since the third waves of AB surveys, four additional survey waves have been available for use (Afrobarometer 2019). I test my hypothesis using six waves of AB data. Among other advantages, the inclusion of additional and more recent data allows this analysis to overcome the following concern. Respondents surveyed in the early waves of the AB surveys reside in countries that are more democratic than the African average (Moehler and Lindberg 2009, 1453). With the inclusion of additional states within each survey round, these concerns about generalizability are slightly alleviated.  
+To analyze the hypotheses described above, I use six waves of AB data. The AB surveys are nationally representative surveys conducted in 34 African countries across seven waves^[Although an early version has been released, the seventh wave is not included in this analysis. The reason for this is that the codebook has not been published yet.]. The surveys are conducted using a random, clustered, stratified, multi-stage probability sample (Afrobarometer 2019). In addition to being a valuable data source for studying attitudes in Africa, the AB surveys are used by scholars working on the same research question (Bratton et al 2004; Moehler 2009; Moehler and Lindberg 2009; Bartels and Kramon 2020). The presence of comparable public opinion data allows scholars to test and extend previous findings. With the exception of Bartels and Kramon (2020), which focuses on trust in the judiciary, previous research on the effects of identifying with the winning party uses data as recent as the third AB survey wave (Moehler and Lindberg 2009). Since the third waves of AB surveys, four additional survey waves have been available for use (Afrobarometer 2019). I test my hypothesis using six waves of AB data. Among other advantages, the inclusion of additional and more recent data allows this analysis to overcome the following concern. Respondents surveyed in the early waves of the AB surveys reside in countries that are more democratic than the African average (Moehler and Lindberg 2009, 1453). With the inclusion of additional states within each survey round, these concerns about generalizability are slightly alleviated.  
 
 ### Measuring Trust in Political Institutions:    
 A key component of measuring political legitimacy and political support are levels of trust in political institutions (Moehler 2009; Moehler and Lindberg 2009). While the AB surveys ask about various political institutions, such as the presidency, the legislature, and the electoral commission, it is argued that respondents do not always distinguish between institutions in their evaluation. More specifically, measures of trust in political institutions “can be considered as a general assessment of the political culture in a country that guides the behavior of politicians and civil servants alike” (Zmerli and Hooghe 2013, 4). Yet, scholars that measure the effect of electoral outcomes discard measures of trust that can be associated with a politician (Moehler 2009; Moehler and Lindberg 2009). The justification for excluding certain institutions, such as the presidency and the legislature, is that the measure is intended to be an index on trust in institutions and not persons (Moehler 2009, 305 footnote 21). Therefore, this argument reflects a concern that responses to questions about institutions easily attributable to persons would merely capture evaluations of the persons in power. Thus, in previous work, measures of trust in the presidency, the legislature, or any particular representative are excluded (Moehler 2009; Moehler and Lindberg 2009). I adopt this approach when generating the *Institutional Trust Index*. Similar to previous works, this index sums measures of trust in: the electoral commission, the courts of law, the army, and the police (Moehler 2009, 350).  
@@ -2202,14 +2202,12 @@ Finally, the first and third hypotheses require testing the effect of political 
 ### Controls  
 To best capture the effect of the independent variables, I include a series of control variables. To maintain comparability with previous research, I include control variables that were included in previous research^[I include the all controls employed by Moehler (2009).] (Moehler 2009). That being said, I challenge previous model specifications and conduct theoretically motivated robustness checks in the online appendices. I include the demographic variables: *Education*, *Female*, and *Age*. In addition to demographic variables, I include the following political engagement variables: *Electoral Participation*^[This variable is not included in the second round of the AB surveys.], *Political Interest*, and *Exposure to Mass Media*.  
 
-Previous work also controls for the effects of performance evaluations (Moehler 2009). Other work implies that partisan bias may lead self-proclaimed winners to be less willing to criticize the performance of their government (Bratton et al. 2005, 259; cited in Moehler and Lindberg 2009, 1454). This suggests that presence of multicollinearity in models that include both party affiliation and measures of government performance. While that may be the case, I include *Government Performance* and *Economic Performance* and report results of models that exclude these variables. Government performance is a combined scale that asks respondents about their evaluations of how the government is handling multiple issues^[See appendix for list of issue that are included.]. Economic performance is a combined scale that includes perceptions of both national and personal economic conditions^[See appendix for the list of items that were combined in this index.].  
+Previous work also controls for the effects of performance evaluations (Moehler 2009). Other work implies that partisan bias may lead self-proclaimed winners to be less willing to criticize the performance of their government (Bratton et al. 2004, 259; cited in Moehler and Lindberg 2009, 1454). This suggests that presence of multicollinearity in models that include both party affiliation and measures of government performance. While that may be the case, I include *Government Performance* and *Economic Performance* and report results of models that exclude these variables. Government performance is a combined scale that asks respondents about their evaluations of how the government is handling multiple issues^[See appendix for list of issue that are included.]. Economic performance is a combined scale that includes perceptions of both national and personal economic conditions^[See appendix for the list of items that were combined in this index.].  
 
 In addition to the controls included by Moehler (2009) I control for: *Years Since Election*. If elections have the hypothesized short-term effects, then the proximity of the election should matter. To account for the effect of being in an election year or being surveyed at times distant from elections, I include a variable that indicates how many years have passed since the last election.  
 
 ### Modeling Technique  
-To model the relationship between winning and trust in political institutions, I explore several modelling techniques. Previous literature includes --J-1-- country level indicators to account for the multilevel structure of the data and to control for variation caused by country level factors (Moehler 2009; Moehler and Lindberg 2009). Modeling decisions in this paper are guided by the following factors. First, the third hypothesis requires testing the effect of the number of turnovers, a country-level covariate, so, depending only on models with individual-level indicators is not possible. Second, since the interest is in individuals and not countries, I use a random effects model as opposed to using a fixed effects model^[Gelman et al.  also propose that fixed effects should be used when all possible groups are included in the data. However, given this proposition, they recommend using random effects (Gelman et al. 2006, 246).] (Searle et al. 1992; cited by Gelman et al 2006). Third, since I am interested in testing the effects of time-varying, group-level covariates, years since last election and political turnovers, I fix the coefficients for these variables. Therefore, I deal with time by including year dummies and I interact the year variable with time varying covariates^[This approach requires including the mean of the time varying covariates and the difference from mean.] (Fairbrother 2014). Lastly, inconsistencies in the presence/absence of variables from waves^[With the exception of an item asking about voting in the last election, which itself is excluded in the second-round survey, the three variables required to build the electoral participation index are not repeated in any of the following surveys. Also, Trust in the Army, one of the four variable the make up the index used as the dependent variable (Institutional Trust), is excluded from the fourth-round survey.] and in the number of item response categories^[In subsequent surveys, the possible response categories for the political interest and education items changes from the first surveys.] makes pooling all waves difficult.  
-
-Since not all rounds are comparable for the aforementioned reasons, I run separate models for the cross-section that cannot be pooled (Rounds 1, 2, and 4) and I pooled model that includes respondent from the third, fifth, and sixth round.   
+To model the relationship between winning and trust in political institutions, I explore several modelling techniques. Previous literature includes --J-1-- country level indicators to account for the multilevel structure of the data and to control for variation caused by country level factors (Moehler 2009; Moehler and Lindberg 2009). Modeling decisions in this paper are guided by the following factors. First, the third hypothesis requires testing the effect of the number of turnovers, a country-level covariate, so, depending only on models with individual-level indicators is not possible. Second, since the interest is in individuals and not countries, I use a random effects model as opposed to using a fixed effects model^[Gelman et al.  also propose that fixed effects should be used when all possible groups are included in the data. However, given this proposition, they recommend using random effects (Gelman et al. 2006, 246). I deal with the fact that respondents are nested in countries by allowing for varying intercepts.] (Searle et al. 1992; cited by Gelman et al 2006). Third, since I am interested in testing the effects of time-varying, group-level covariates, years since last election and political turnovers, I fix the coefficients for these variables. Therefore, I deal with time by including year fixed effects. Additionally, to test for the presence of longitudinal effects, I deal with time by including year dummies and I interact the year variable with time varying covariates^[This approach requires including the mean of the time varying covariates and the difference from mean.] (Fairbrother 2014). Lastly, inconsistencies in the presence/absence of variables from waves^[With the exception of an item asking about voting in the last election, which itself is excluded in the second-round survey, the three variables required to build the electoral participation index are not repeated in any of the following surveys. Also, Trust in the Army, one of the four variable the make up the index used as the dependent variable (Institutional Trust), is excluded from the fourth-round survey.] and in the number of item response categories^[In subsequent surveys, the possible response categories for the political interest and education items changes from the first surveys.] makes pooling all waves difficult.Since not all rounds are comparable for the aforementioned reasons, I run separate models for the cross-sections that cannot be pooled (Rounds 1, 2, and 4) and I pooled models that include respondents from the third, fifth, and sixth round^[In the appendix, I include models that pool all waves and exclude the variable that are missing].          
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -2267,24 +2265,41 @@ Figure_1
 
 ```
 
+# Results  
+### Hypothesis 1:  
+To test the hypotheses, I run several models, the results of which are displayed in the following figures. To test the home team hypothesis (H1), I regress the binary indicator of winner status, including the controls used by Moehler (2009), on the institutional trust index. In addition to the controls included by Moehler, I test for the effects of the number of political turnovers and years since the last election. The inclusion of these variables constitutes a test of Hypothesis 1 (Including 1A, 1B, 1C). The results in **Figure 1** are from the first, second, and fourth wave of AB surveys. Model 1 includes data from the first round (1999-2001) and this model, with the exception of the aforementioned addition, replicates the finding in Moehler (2009). Model 2 uses data from the second round (2002-2003) and, as results, exclude electoral participation and electoral integrity for their absence from the dataset. Model 3 uses data from the fourth round of AB surveys (2008-2009). While this model includes the variables omitted from the third model, several variables are scale differently as a result of how items are worded and item omissions. First, the dependent variable, institutional trust, is missing the trust in the army item, one of the components of the index. As a result of this, the dependent variable ranges from -0.5 to 0.5 instead of ranging from -1 to 1. Also, unlike Model 1, the electoral participation variable is not an index. In Model 1, the electoral participation index included a measure of whether a respondent voted, attended a rally, or worked for a political candidate. Since subsequent survey waves exclude two of these items. In models that use data from subsequent survey waves, the electoral participation variable is a binary indicator of whether a respondent voted. As a result of the aforementioned inconsistencies, the hypotheses are tested on each of the three survey waves separately.  
+
+The results in **Figure 1** show that, relative to losers, winners have, on average, higher levels of trust in political institution. The effect of winning status is consistent across all models. Relative losers, independent are expected to have higher level of trust in political institutions in Models 1 and 3. In Model 2, however, independents are expected to have lower levels of political trust. To test H1A, I include the number of political turnovers experience in a country to test whether it influence trust in political institutions. I fail to find a consistent effect for the number of political turnovers. Also, winner status does not appear to be influence be the presence of this variable. When testing H1B, I find, as shown in Moehler (2009), that winners are more likely to trust in political institutions and the results hold regardless of how winner status is operationalized. To test H1C, I include years since election and this variable measures how distant an election was to the time respondents were surveyed. The data shows that, on average, elections were only slightly more proximate to respondents surveyed in the first round^[The average number of years since an election for respondents in the first round is 3.022. The average is 3.205 for the second wave and 3.213 in the fourth wave.] However, the effect of years since the election is inconsistent and does not meet thresholds for statistical significance in all models.  
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 pooled <- rbind(W3,W5,W6)
-pooled$mean_pol_turnover[pooled$year==2006] <- 0.584
-pooled$mean_pol_turnover[pooled$year==2013] <- 0.895
-pooled$mean_pol_turnover[pooled$year==2015] <- 1.001
-
-pooled$Diff_pol_turnover <- pooled$pol_turnover - pooled$mean_pol_turnover
-
-pooled$mean_years_since_election[pooled$year==2006] <- 0.584
-pooled$mean_years_since_election[pooled$year==2013] <- 0.895
-pooled$mean_years_since_election[pooled$year==2015] <- 1.001
-
-pooled$Diff_years_since_election <- pooled$years_since_election - pooled$mean_years_since_election
 
 
-pooled$country_wave <- (pooled$state * pooled$year)
+df01 = subset(pooled, select =c(int_trust, winner, state, independent, free_fair, gov_perf, econ_sat, elec_part, interest, mass_media, educ, gender, age, year,  years_since_election, pol_turnover))
+
+library(dplyr)
+
+df01 <- group_by(df01, state) %>%
+             mutate(mean_pol_turnover = mean(pol_turnover, na.rm = TRUE))
+
+df01$Diff_pol_turnover <- df01$pol_turnover - df01$mean_pol_turnover
+
+df01 <- group_by(df01, state) %>%
+             mutate(mean_years_since_election = mean(years_since_election, na.rm = TRUE))
+
+df01$Diff_years_since_election <- df01$years_since_election - df01$mean_years_since_election
+
+
+df01$country_wave <- (df01$state * df01$year)
+
+fairbrothermodel1 <- lmer(int_trust ~ winner + independent + free_fair + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + (1 | country_wave) + (1 | state), data = df01, REML = FALSE)
+
+fairbrothermodel2 <- lmer(int_trust ~ winner + independent + free_fair + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + mean_pol_turnover + Diff_pol_turnover + mean_pol_turnover*year + mean_years_since_election + Diff_years_since_election+ (1 | country_wave) + (1 | state), data = df01, REML = FALSE)
+
+
+
+
 
   
 
@@ -2329,11 +2344,10 @@ Figure_2
 ```
 
 
+Using the remaining AB surveys, I continue to test the home team hypothesis. **Figure 2** shows results for the models that pool the remaining surveys (Round 3, Round 5, and Round 6). Model 1 presents results for the model before adding country level predictors. Even after including the number of political turnovers and years since the previous elections, winner status, relative to loser status, leads to higher levels of trust in political institutions. Relative to losers, independents are predicted to have lower levels of trust in political institutions. Similar to models in the first figure, proximity to elections does not predict levels of political trust. Unlike the previous regression, with each additional political turnover experienced, the levels of political trust among respondents are expected to decrease. However, political turnover fails to show a longitudinal effect^[See Figure A5 in Appendix D].  
 
-
-
-
-
+Therefore, the results indicate that the evidence for the home team hypothesis is consistent and robust to challenges that may prevent this partisan bias from professing itself among surveyed respondents. I hypothesize that the ability of partisans to be influenced by election results to be challenged when election are distant. That is, I expected that the results shown in Moehler (2009) to be a product of having respondents surveyed soon after elections. Contrary to my expectations, distance from the election does not seem to matter in predicting levels of political trust. The same is true for the effect of political turnovers. While I had predicted turnovers to make the partisan bias difficult to identify in Moehler’s regression model, the effect of winner status continues to predict trust in political institutions. Even when pooling all six AB survey rounds together, being a winner, relative to a loser, is predicted to lead to higher levels of political trust^[See Figure A4 in Appendix C for these results].  
+	
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 #Testing Hypothesis 3
@@ -2410,6 +2424,18 @@ Figure_3 <- dwplot(list(Electoral_Integrity, Electoral_Integrity2),
                labels = c("Individual-level Model", "Country-level Model")))
 
 
+H3_test2 <- subset(H3_test, independent==1)
+H3_test3 <- subset(H3_test, independent==0)
+
+#cor.test(H3_test2$int_trust, H3_test2$free_fair,  method = "pearson", use = "complete.obs")
+
+
+#cor(H3_test$int_trust, H3_test$free_fair,  method = "pearson", use = "complete.obs")
+
+
+
+
+
 
 ```
 
@@ -2419,18 +2445,103 @@ Figure_3
 
 ```
 
+### Hypothesis 2:  
+
+While the effect of being a winner is consistent, the role of perceptions of electoral integrity as a mediating factor is challenged. **Figure 3** shows the results for the pooled model. Model 1 includes only individual-level predictors. Model 2 includes country-level predictors. The results show that winners are more likely to have favorable views about the freeness and fairness of the elections. Independents are, relative to losers, expected to have more favorable perceptions of electoral integrity. This is evidence that the partisan bias also explains perceptions of electoral integrity.  
+
+However, when checking for the correlation between levels of trust in political institutions and perceptions of electoral integrity the evidence is not as clear. The Pearson correlation between responses to the institutional trust index (consists of four items) is not as high as expected and does not change between partisan and independents. Among partisans, the correlation is 0.17704 and among non-partisans the correlation is 0.1716.  
+
+While there is no evidence of correlation between the dependent variable and perceptions of electoral integrity, evidence in Figure 3 suggests that the partisan bias extends to evaluations of the freeness and fairness of the election. However, additional evidence suggests that having more favorable views about the election reduces the effect of winner status when predicting levels of political trust^[See Figure A6 in Appendix E for model with an interaction between winner status and perception of electoral integrity. The interaction holds for all models presented in this article with the exception of the model that only uses the first wave of AB survey data.].  
+	
+Therefore, the results for analysis of the second hypothesis are mixed. While we see winner status predicting perceptions of electoral integrity, the correlation between the dependent variable and perceptions of fairness on not as high as expected. Moreover, the negative coefficient for the interaction between winner status and perceptions of fairness of elections supports the argument presented by Moehler (2009). Moehler notes, in addition to the presence of direct link between electoral outcomes and trust in political institutions, that electoral integrity mediates the effect of electoral outcomes. While effect of this interaction may not hold in the data used by Moehler, it holds in subsequent rounds of AB data.    
 
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 Figure4
 ```
 
+# Hypothesis 3:  
 
+This hypothesis explores the role of turnovers in reducing the legitimacy gap between winners and losers. At the individual level, the previous section shows mixed results for the effect of political turnovers when predicting an individual’s level of trust in political institutions. Additionally, when testing the effect of political turnovers conditioned on the number of political turnovers experienced in a state, the results are mixed. A model interacting the effect of winning and political turnovers shows that political turnovers reduce the effect of winning the election^[See Figure A7 in Appendix F]. However, these results hold in all models except that which uses Round 4 of the AB survey.  
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 
 Figure5
 ```
+
+Looking at the aggregate level, previous scholars argue that the legitimacy gap is reduced with experiencing political turnovers (Moehler and Lindberg 2009). Moehler and Lindberg ask whether Huntington’s “two-turnover test” is meaningful in this context (Huntington 1991, Moehler and Lindberg 2009, 1449). Looking at trust in political institutions and benefiting from additional rounds of AB data, I plot the political trust gap between winners and losers. **Figure 4** shows the gap to be present across all included rounds of AB data. **Figure 5** plots average levels of political trust among winners and losers by the number of political turnovers experienced in a country. Consistent with that which is found by Moehler and Lindberg, experiencing a turnover does seem to reduce the gap in political trust. The difference in the gaps between states that have yet to experience a political turnover and states that experience only one turnover is large. In this dataset, 56 country-years have yet to experience a political turnover and 35 county-years have experienced only one political turnover. Since less country-years have experienced more political turnovers^[25 country-years experienced two political turnovers. 6 country-years experienced three turnovers and 2 experienced five turnovers.], we are less confident as the plot moves towards high numbers of political turnovers. That being said, the gap does not seem to decrease when comparing country-years that experienced 1 and 2 political turnovers.  
+
+Faced by the same limitations that challenged Lindberg and Moehler (2009) and are discussed in the theory section of this article, it is difficult to infer anything about the effect of turnovers on aggregate level data. Since this data set lacks a sufficient number of countries that experience two or more political turnovers^[Only Ghana, Malawi, and Mali experienced two or more political turnovers when under observation. See Bartels and Kramon (2020) for analysis that shows the trust in judiciary gap decreasing with political turnovers in Ghana.], we cannot be sure about whether the gap is reduced or increased as the plot presented here shows. Taken with the mixed results on the effects of political turnovers at the individual level, the results suggest the absence of evidence of political turnovers influencing levels of political trust at the individual and aggregate levels.  
+
+# Conclusion:  
+
+Across 126 country-years, the results in this article show levels of trust in political institutions to be polarized between winners and losers of the electoral process. Across multiple model specifications and methods of operationalization, winners are expected, relative to losers, to have higher trust in political institutions. This is evidence of what previous scholars have called the “home team” hypothesis (Holmberg 1999). These findings confirm what previous scholars, also looking at public opinion in Sub-Saharan Africa, have shown (Moehler 2009; Moehler and Linberg 2009; Bartels and Kramon 2020). Using six rounds of AB data, I show the presence of a partisan bias in evaluations of political institution. These results have normative implications and implications on our understanding of political trust. Normatively, the findings confirm that citizens are not engaging in the cognitively demanding evaluation of political institutions (Zmerli and Hooghe 2013). Rather, partisans seem to be looking at who is in power as opposed to the performance of institutions.  
+
+While this article confirms findings that undermine understandings of political support as stable attitudes (Banducci and Karp 2003), it subjects the evidence of a partisan bias to scrutiny. I argue that evidence of partisan bias should be challenged because this bias is more cognitively demanding than is assumed and this varies based on political context. When a party has been in power for many years, respondents that win or lose the election can easily associate the ruling political party with the government and political institutions. When political context change, such as the case when a country experiences a turnover, respondents must balance their evaluation of the new ruling party with past experiences and evaluation of institutions. When testing the home team hypothesis, previous work does not account for the number of political turnovers experience by a country (Moehler 2009). Evidence in this analysis suggest that controlling for the number of political turnovers. The effect of winner status holds and is in the hypothesized direction.  
+
+Another important factors that was not accounted for in studies hitherto is the proximity of elections. If the partisan bias is the results of citizens observing who won the elections and using that information to evaluate political institutions, the distance from the elections should matter. Since the AB waves survey respondents from the same country, in many instances, multiple times between elections, this is an additional reason to test for the effect of the proximity of elections. Interestingly, levels of political trust are not predicted by how recent an election^[The effect of winning is not condition by the proximity of elections. See Figure A8 in Appendix G. Coefficient is not in a consistent direction and does not always meet thresholds of statistical significance.]. Nor does controlling for the effect of the proximity of elections influence the effect of being a winner.  
+
+While the proximity of elections does not seem to matter for winners, previous work shows that the effect of winning is mediated by perceptions of electoral integrity (Moehler 2009). I argue that the partisan bias, which is hypothesized to effect evaluations of institutions, should also extend to evaluations of the electoral process. I find evidence that winners are more likely to have positive evaluations of the election. However, when interacting winning status with evaluations of the election, results indicate that positive evaluations of the election lead to a decrease in the effect of winning relative to losing. However, the results do not hold when tested on data from the first round of AB surveys.  
+
+In addition to the absence of an effect for political turnovers at the individual level, plotting the average levels of trust of winners and losers shows the presence of a trust gap across all waves of AB data. Additionally, the gap in political trust is largest in country-years that have not yet experienced political turnovers. The gap shrinks in units that experience one turnover but increases in country-years that experience their third political turnover. However, the absence of frequent turnover limits what can be done at the aggregate level.  
+
+Future research may benefit from increased political turnovers and elections. However, more work needs to account for factors such as ethnicity and its relationship to affiliation with political parties. While the importance of ethnic identities in predicting partisan affiliation is challenged (Lindberg and Morrison 2008; Basedau and Stroh 2011), others find ethno-linguistic identities to be correlated with vote choice in some countries (Bratton et al. 2004, 306). Moreover, work on winner status and the legitimacy gap shows the ethnicity of the president not to matter when predicting trust in the judiciary (Bartels and Kramon 2020). However, the absence of data on the ethnicity of political elites makes accounting for ethnic co-partisanship difficult. An additional difficulty is in the fact that ethnicity can determine partisan identification. Which suggest that the effects of partisanship may incorporate the effect of ethnicity.  
+
+Dealing with respondents that identify with the winning political party is another challenge that requires attention. While the data suggest that winners of elections are more likely to trust political institutions, we do not know which winners have decided to be winners. While previous work addresses this as a concern (Bratton et al. 2004; Moehler and Lindberg 2009). More needs to be done to test how this influences results of works that focus on the legitimacy gap and political turnovers.   
+
+
+\pagebreak
+
+# References: 
+  
+  
+Afrobarometer. “Sampling Principles and Weighting,” 2019. https://www.afrobarometer.org/surveys-and-methods/sampling-principles.  
+
+Anderson, Christopher J., André Blais, Shaun Bowler, Todd Donovan, and Ola Listhaug. Losers’ Consent: Elections and Democratic Legitimacy. Oxford University Press, 2005. https://www.oxfordscholarship.com/view/10.1093/0199276382.001.0001/acprof-9780199276387.  
+
+Anderson, Christopher J., and Christine A. Guillory. “Political Institutions and Satisfaction with Democracy: A Cross-National Analysis of Consensus and Majoritarian Systems.” The American Political Science Review 91, no. 1 (1997): 66–81. https://doi.org/10.2307/2952259.  
+
+Banducci, Susan A., and Jeffrey A. Karp. “How Elections Change the Way Citizens View the Political System: Campaigns, Media Effects and Electoral Outcomes in Comparative Perspective.” British Journal of Political Science 33, no. 3 (2003): 443–67.  
+
+Bratton, Michael, Robert Mattes, and E. Gyimah-Boadi. Public Opinion, Democracy, and Market Reform in Africa by Michael Bratton. Cambridge University Press, 2004. https://doi.org/10.1017/CBO9780511617324.  
+
+Craig, Stephen C., Michael D. Martinez, Jason Gainous, and James G. Kane. “Winners, Losers, and Election Context: Voter Responses to the 2000 Presidential Election.” Political Research Quarterly 59, no. 4 (2006): 579–92.  
+
+Fairbrother, Malcolm. “Two Multilevel Modeling Techniques for Analyzing Comparative Longitudinal Survey Datasets*.” Political Science Research and Methods 2, no. 1 (April 2014): 119–40. https://doi.org/10.1017/psrm.2013.24.  
+
+Gelman, Andrew, Professor in the Department of Statistics Andrew Gelman, and Jennifer Hill. Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge University Press, 2007.  
+
+Ginsberg, Benjamin, and Robert Weissberg. “Elections and the Mobilization of Popular Support.” American Journal of Political Science 22, no. 1 (1978): 31–55. https://doi.org/10.2307/2110668.  
+
+Hlavac, Marek (2018). stargazer: Well-Formatted Regression and Summary Statistics Tables.R package version 5.2.2. https://CRAN.R-project.org/package=stargazer.  
+
+Holmberg, Sören. “Down and Down We Go: Political Trust in Sweden.” In Critical Citizens: Global Support for Democratic Government. Oxford University Press, 1999. https://www.oxfordscholarship.com/view/10.1093/0198295685.001.0001/acprof-9780198295686-chapter-5.  
+
+Lind, E. Allan, and Tom R. Tyler. The Social Psychology of Procedural Justice. Springer Science & Business Media, 2013.  
+
+Lindberg, Staffan I., and Minion K. C. Morrison. “Exploring Voter Alignments in Africa: Core and Swing Voters in Ghana.” The Journal of Modern African Studies 43, no. 4 (2005): 565–86.  
+
+Lindberg, Staffan I., and Minion K. C. Morrison. “Are African Voters Really Ethnic or Clientelistic? Survey Evidence from Ghana.” Political Science Quarterly 123, no. 1 (2008): 95–122.  
+
+Moehler, Devra C. “Critical Citizens and Submissive Subjects: Election Losers and Winners in Africa.” British Journal of Political Science 39, no. 2 (April 2009): 345–66. https://doi.org/10.1017/S0007123408000513.  
+
+Moehler, Devra C., and Staffan I. Lindberg. “Narrowing the Legitimacy Gap: Turnovers as a Cause of Democratic Consolidation.” The Journal of Politics 71, no. 4 (2009): 1448–66. https://doi.org/10.1017/s0022381609990120.  
+
+Nadeau, Richard, and André Blais. “Accepting the Election Outcome: The Effect of Participation on Losers’ Consent.” British Journal of Political Science 23, no. 4 (October 1993): 553–63. https://doi.org/10.1017/S0007123400006736.  
+
+Norris, Pippa. Critical Citizens: Global Support for Democratic Government. Oxford University Press, 1999.  
+
+Searle, Shayle R., George Casella, and Charles E. McCulloch. Variance Components. John Wiley & Sons, 2009.  
+
+Solt, Frederick, Yue Hu, Oliver Keyes, Ben Bolker, Stefan Müller, and Thomas Leeper. Dotwhisker: Dot-and-Whisker Plots of Regression Results (version 0.5.0), 2018. https://CRAN.R-project.org/package=dotwhisker.  
+		
+Van der Meer, Tom W. G., and Armen Hakhverdian. “Political Trust as the Evaluation of Process and Performance: A Cross-National Study of 42 European Countries.” Political Studies 65, no. 1 (March 1, 2016): 81–102. https://doi.org/10.1177/0032321715607514.  
+
+Warren, Mark E. “What Kinds of Trust Does a Democracy Need? Trust from the Perspective of Democratic Theory.” In Handbook on Political Trust, 2017. https://www.elgaronline.com/view/edcoll/9781782545101/9781782545101.00013.xml.  
+
+Zmerli, Sonja, and Marc Hooghe. Political Trust: Why Context Matters. ECPR Press, 2013.  
+
+
 
 \pagebreak
 
@@ -2448,7 +2559,7 @@ Figure5
 
 * *Economic Performance:* How satisfied are you with the condition of the [ ____ ] economy today? How do economic conditions in [ ____ ] now compare to one year ago? What about in twelve months’ time: do you expect economic conditions in [ ____ ] to be worse, the same, or better than they are now? Would you say that your own living conditions are worse, the same, or better than other [nationality name]? Very dissatisfied/much worse= 0; Dissatisfied/worse =1; Don’t know/ neither/same=2; Satisfied/better=3; Very satisfied/much better=4. The index ranges from 0 to 16.
 
-* *Electoral Participation^[After the first round this become I binary indicatior of whether a person voted. Reason for this is the other items are not asked again.]:* Understanding that some [ ____ ] choose not to vote, let me ask you: did you vote [in the most recent national election]? Did not vote/not able to vote/don’t know=0; Voted = 1.) I will read out a list of things that people sometimes do as citizens. Please tell me how often you, personally, have done any of these things [during the last five years]: Attended an election rally? Work for a political candidate or party? Never/no chance to/don’t know = 0; Only once/once or twice = 0.333; Sometimes/a few times = 0.667; Often = 1. (The combined ‘electoral participation’ scale for three items ranges from 0 to 3.).
+* *Electoral Participation^[After the first round this becomes a binary indicatior of whether a person voted. Reason for this is the other items are not asked again.]:* Understanding that some [ ____ ] choose not to vote, let me ask you: did you vote [in the most recent national election]? Did not vote/not able to vote/don’t know=0; Voted = 1.) I will read out a list of things that people sometimes do as citizens. Please tell me how often you, personally, have done any of these things [during the last five years]: Attended an election rally? Work for a political candidate or party? Never/no chance to/don’t know = 0; Only once/once or twice = 0.333; Sometimes/a few times = 0.667; Often = 1. (The combined ‘electoral participation’ scale for three items ranges from 0 to 3.).
 
 * *Political Interest^[One response category is excluded in the second round. So, the variable ranges from 0 to 2 in the second round survey.]:* Some people seem to follow what’s going on in government and public affairs most of the time, whether there’s an election going on or not. Others aren’t that interested. Would you say you follow what’s going on in government and public affairs:________? How interested are you in politics and government? Hardly/not interested=0; Only now and then=1; Some of the time/somewhat interested = 2; Always/most of the time/very interested = 3.
 
@@ -2458,11 +2569,11 @@ Figure5
 
 * *Age:* ranges from 15 years old to 100 years old.
 
-* *Years from Election:* ranges from 0 to 9.
+* *Years from Election^[Source: African Elections Database. More recent election dates taken through Wiki pages]:* ranges from 0 to 9.
 
 * *Year:* Last year surveys were conducted in that particular round of AB surveys.
 
-* *Number of Political Turnovers:* ranges from 0 to 5.
+* *Number of Political Turnovers^[Source: African Elections Database. More recent election results taken through Wiki pages]:* Political turnovers are transitions of power uninterrupted by military coups within regime classification [Restricted Democratic Practice, Emerging Democracy, Democracy]. Looks only at transition in the position of chief executive. Ranges from 0 to 5.
 
 \pagebreak
 
@@ -2616,15 +2727,18 @@ A4Model3_W3W5W6 <- lmer(int_trust ~ winner + independent + gov_perf + econ_sat +
 
 A4Model3_W3W5W62 <- lmer(int_trust ~ winner + independent + gov_perf + econ_sat + interest + mass_media + educ + gender + age + year + years_since_election + pol_turnover + (1 | state), data = describe, REML = FALSE)
 
+describe$years_since_turnover <- describe$year - describe$year_turnover
 
+A4Model3_W3W5W623 <- lmer(int_trust ~ winner + independent + gov_perf + econ_sat + interest + mass_media + educ + gender + age + year + years_since_election + years_since_turnover + pol_turnover + (1 | state), data = describe, REML = FALSE)
 
-Figure_A4 <- dwplot(list(A4Model3_W3W5W6, A4Model3_W3W5W62),
+Figure_A4 <- dwplot(list(A4Model3_W3W5W6, A4Model3_W3W5W62, A4Model3_W3W5W623),
        vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) %>% # plot line at zero _behind_ coefs
     relabel_predictors(c(winner = "Winner",                       
                          independent = "Independent", 
                          free_fair = "Electoral Integrity", 
                          years_since_election ="Years Since Election",
                          pol_turnover = "Political Turnover",
+                         years_since_turnover = "Years Since Political Turnover",
                          gov_perf = "Government Performance", 
                          econ_sat = "Economic Satisfaction", 
                          elec_part = "Electoral Participation",
@@ -2652,14 +2766,205 @@ Figure_A4
 
 ```
 
-This model pools all survey round together and excludes variables missing from any round (Electoral Integrity and Electoral Participation). The variables in this model have coding inconsistencies discussed in the paper. However, this model is included for references. The number of observations is: 166058 and 162,739, respectively.Results are from a OLS regression with random intercepts at the country level and year/round fixed effects. 
+This model pools all survey round together and excludes variables missing from any round (Electoral Integrity and Electoral Participation). The variables in this model have coding inconsistencies discussed in the paper. However, this model is included for references. The number of observations is: 166,058 and 162,739, respectively.Results are from a OLS regression with random intercepts at the country level and year/round fixed effects. Model 3 includes a control varaible that measures how many years have passed since an turnover was experienced.  
 
 \pagebreak
 
-# References: 
+# Appendix D 
 
-Please cite as: 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+Figure_TEST <- dwplot(list(fairbrothermodel1, fairbrothermodel2),
+       vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) %>% # plot line at zero _behind_ coefs
+    relabel_predictors(c(winner = "Winner",                       
+                         independent = "Independent", 
+                         free_fair = "Electoral Integrity", 
+                         years_since_election ="Years Since Election",
+                         pol_turnover = "Political Turnover",
+                         gov_perf = "Government Performance", 
+                         econ_sat = "Economic Satisfaction", 
+                         elec_part = "Electoral Participation",
+                         interest = "Political Interest",
+                         mass_media = "Mass Media Exposure",
+                         educ = "Education", 
+                         gender = "Female",
+                         year = "Year",
+                         age = "Age",
+                       mean_pol_turnover = "Pol. Turnover (Mean)",
+                       Diff_pol_turnover = "Pol. Turnover (Diff.)",
+                       mean_years_since_election = "Years Since Election (Mean)", 
+                       Diff_years_since_election = "Years Since Election (Diff.)")) +
+     theme_bw() + xlab("Coefficient Estimate") + ylab("") +
+     geom_vline(xintercept = 0, colour = "grey60", linetype = 2) +
+     ggtitle("FigureA5: Longitudinal Effect Three-Level-Model") +
+     theme(plot.title = element_text(face="bold"),
+           legend.position = c(0.007, 0.01),
+           legend.justification = c(0, 0), 
+           legend.background = element_rect(colour="grey80"),
+           legend.title = element_blank() + 
+             scale_color_grey(start = .3, end = .7,
+                              name = "Trans",
+                              breaks = c(0,1),
+               labels = c("Individual-level Model", "Country-level Model")))
 
-Hlavac, Marek (2018). stargazer: Well-Formatted Regression and Summary Statistics Tables.R package version 5.2.2. https://CRAN.R-project.org/package=stargazer 
+Figure_TEST
+
+
+```
+
+
+\pagebreak 
+
+# Appendix E
+
+```{r message=FALSE, echo=FALSE, warning=FALSE}
+
+Interaction_model1 <- lmer(int_trust ~ winner + independent + free_fair + winner*free_fair + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + years_since_election + pol_turnover + (1 | state), data = W1, REML = FALSE)
+
+Interaction_model3 <- lmer(int_trust ~ winner + independent + free_fair + winner*free_fair + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + years_since_election + pol_turnover + (1 | state), data = W4, REML = FALSE)
+
+Interaction_model4 <- lmer(int_trust ~ winner + independent + free_fair + winner*free_fair  + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + years_since_election + pol_turnover + (1 | state), data = pooled, REML = FALSE)
+
+Interaction_model5 <- lmer(int_trust ~ winner + independent + free_fair + winner*free_fair  + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + (1 | state), data = pooled, REML = FALSE)
+
+
+Figure_A6 <- dwplot(list(Interaction_model1, Interaction_model3, Interaction_model4, Interaction_model5),
+       vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) %>% # plot line at zero _behind_ coefs
+    relabel_predictors(c(winner = "Winner",                       
+                         independent = "Independent", 
+                         free_fair = "Electoral Integrity", 
+                         years_since_election ="Years Since Election",
+                         pol_turnover = "Political Turnover",
+                         gov_perf = "Government Performance", 
+                         econ_sat = "Economic Satisfaction", 
+                         elec_part = "Electoral Participation",
+                         interest = "Political Interest",
+                         mass_media = "Mass Media Exposure",
+                         educ = "Education", 
+                         gender = "Female",
+                         year = "Year",
+                         age = "Age")) +
+     theme_bw() + xlab("Coefficient Estimate") + ylab("") +
+     geom_vline(xintercept = 0, colour = "grey60", linetype = 2) +
+     ggtitle("Figure A6: Interaction Winner X Electoral Integrity") +
+     theme(plot.title = element_text(face="bold"),
+           legend.position = c(0.007, 0.01),
+           legend.justification = c(0, 0), 
+           legend.background = element_rect(colour="grey80"),
+           legend.title = element_blank() + 
+             scale_color_grey(start = .3, end = .7,
+                              name = "Trans",
+                              breaks = c(0,1),
+               labels = c("Individual-level Model", "Country-level Model")))
+
+Figure_A6
+
+
+
+```
+
+\pagebreak 
+
+
+# Appendix F
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+Interaction_model5 <- lmer(int_trust ~ winner + independent + free_fair + winner*pol_turnover + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + years_since_election + pol_turnover + (1 | state), data = W1, REML = FALSE)
+
+Interaction_model6 <- lmer(int_trust ~ winner + independent + winner*pol_turnover + gov_perf + econ_sat + interest + mass_media + educ + gender + age + years_since_election + pol_turnover + (1 | state), data = W2, REML = FALSE)
+
+Interaction_model7 <- lmer(int_trust ~ winner + independent + free_fair + winner*pol_turnover + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + years_since_election + pol_turnover + (1 | state), data = W4, REML = FALSE)
+
+Interaction_model8 <- lmer(int_trust ~ winner + independent + free_fair + winner*pol_turnover  + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + years_since_election + pol_turnover + (1 | state), data = pooled, REML = FALSE)
+
+Interaction_model9 <- lmer(int_trust ~ winner + independent + free_fair + winner*pol_turnover  + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + (1 | state), data = pooled, REML = FALSE)
+
+
+Figure_A7 <- dwplot(list(Interaction_model5 ,Interaction_model6, Interaction_model7, Interaction_model8, Interaction_model9),
+       vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) %>% # plot line at zero _behind_ coefs
+    relabel_predictors(c(winner = "Winner",                       
+                         independent = "Independent", 
+                         free_fair = "Electoral Integrity", 
+                         years_since_election ="Years Since Election",
+                         pol_turnover = "Political Turnover",
+                         gov_perf = "Government Performance", 
+                         econ_sat = "Economic Satisfaction", 
+                         elec_part = "Electoral Participation",
+                         interest = "Political Interest",
+                         mass_media = "Mass Media Exposure",
+                         educ = "Education", 
+                         gender = "Female",
+                         year = "Year",
+                         age = "Age")) +
+     theme_bw() + xlab("Coefficient Estimate") + ylab("") +
+     geom_vline(xintercept = 0, colour = "grey60", linetype = 2) +
+     ggtitle("Figure A7: Interaction Winner X Political Turnover") +
+     theme(plot.title = element_text(face="bold"),
+           legend.position = c(0.007, 0.01),
+           legend.justification = c(0, 0), 
+           legend.background = element_rect(colour="grey80"),
+           legend.title = element_blank() + 
+             scale_color_grey(start = .3, end = .7,
+                              name = "Trans",
+                              breaks = c(0,1),
+               labels = c("Individual-level Model", "Country-level Model")))
+
+Figure_A7
+
+```
+
+
+\pagebreak 
+
+# Appendix G
+
+```{r message=FALSE, echo=FALSE, warning=FALSE}
+
+Interaction_model10 <- lmer(int_trust ~ winner + independent + free_fair + winner*years_since_election + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + years_since_election + pol_turnover + (1 | state), data = W1, REML = FALSE)
+
+Interaction_model30 <- lmer(int_trust ~ winner + independent + free_fair + winner*years_since_election + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + years_since_election + pol_turnover + (1 | state), data = W4, REML = FALSE)
+
+Interaction_model40 <- lmer(int_trust ~ winner + independent + free_fair + winner*years_since_election  + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + years_since_election + pol_turnover + (1 | state), data = pooled, REML = FALSE)
+
+Interaction_model50 <- lmer(int_trust ~ winner + independent + free_fair + winner*years_since_election  + gov_perf + econ_sat + elec_part + interest + mass_media + educ + gender + age + year + (1 | state), data = pooled, REML = FALSE)
+
+
+Figure_A8 <- dwplot(list(Interaction_model10, Interaction_model30, Interaction_model40, Interaction_model50),
+       vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) %>% # plot line at zero _behind_ coefs
+    relabel_predictors(c(winner = "Winner",                       
+                         independent = "Independent", 
+                         free_fair = "Electoral Integrity", 
+                         years_since_election ="Years Since Election",
+                         pol_turnover = "Political Turnover",
+                         gov_perf = "Government Performance", 
+                         econ_sat = "Economic Satisfaction", 
+                         elec_part = "Electoral Participation",
+                         interest = "Political Interest",
+                         mass_media = "Mass Media Exposure",
+                         educ = "Education", 
+                         gender = "Female",
+                         year = "Year",
+                         age = "Age")) +
+     theme_bw() + xlab("Coefficient Estimate") + ylab("") +
+     geom_vline(xintercept = 0, colour = "grey60", linetype = 2) +
+     ggtitle("Figure A8: Interaction Winner X Year Since Election") +
+     theme(plot.title = element_text(face="bold"),
+           legend.position = c(0.007, 0.01),
+           legend.justification = c(0, 0), 
+           legend.background = element_rect(colour="grey80"),
+           legend.title = element_blank() + 
+             scale_color_grey(start = .3, end = .7,
+                              name = "Trans",
+                              breaks = c(0,1),
+               labels = c("Individual-level Model", "Country-level Model")))
+
+Figure_A8
+
+```
+
+
+
+\pagebreak
+
+
 
 
